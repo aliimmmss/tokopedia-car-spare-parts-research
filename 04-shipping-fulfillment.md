@@ -24,7 +24,9 @@ Tokopedia uses **Volumetric Weight** for bulky items.
 Automotive parts are often heavy and made of metal or glass. Standard bubble wrap is not enough.
 
 ### 🛡️ The "Zero Damage" Protocol:
-1. **Brake Pads:** Wrap in bubble wrap $ightarrow$ Place in a tight-fitting cardboard box $ightarrow$ Fill gaps with crumpled paper to prevent shifting.
+1. **Brake Pads:** Wrap in bubble wrap $
+ightarrow$ Place in a tight-fitting cardboard box $
+ightarrow$ Fill gaps with crumpled paper to prevent shifting.
 2. **Headlights/Lamps:** 
    - **Inner layer:** Soft foam wrap.
    - **Middle layer:** Heavy-duty bubble wrap.

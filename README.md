@@ -31,7 +31,7 @@ For a successful launch, focus on these three pillars first:
 ## 🛠️ Useful Resources
 - [Tokopedia Seller University](https://seller-id.tokopedia.com/university) - Official learning center.
 - [BSN (Badan Standardisasi Nasional)](https://www.bsn.go.id) - For SNI certification inquiries.
-- [TikTok Shop Academy](https://seller-id.tokopedia.com/university) - For content and affiliate training.
+- [TikTok Shop Academy](https://seller-id.tiktok.com/university) - For content and affiliate training.
 
 ---
 **Disclaimer:** This guide is based on current platform policies as of January 2025. Always cross-reference with the latest Tokopedia Terms of Service.
