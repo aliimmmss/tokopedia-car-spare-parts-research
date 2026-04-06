@@ -1,54 +1,37 @@
-# Tokopedia x TikTok Shop - Car Spare Parts Seller Research Guide
+# 🚗 Tokopedia x TikTok Shop - Master Research Guide for Automotive Spare Parts
 
-> Comprehensive research guide for selling car spare parts (brake pads, oil filters, spark plugs, wiper blades, headlights, suspension parts) on Tokopedia x TikTok Shop Indonesia.
+Welcome to the comprehensive operational manual for selling automotive spare parts in the Indonesian market via the Tokopedia and TikTok Shop integration. This repository serves as a living document to ensure compliance, optimize sales, and scale growth.
 
----
+## 📌 Project Scope
+This research specifically targets the high-demand category of consumables and wear-and-tear parts, including:
+- **Brake Systems:** Pads, shoes, and discs.
+- **Filtration:** Oil filters, air filters, and cabin filters.
+- **Ignition:** Spark plugs and ignition coils.
+- **Visibility:** Wiper blades and washer fluids.
+- **Lighting:** LED/Halogen bulbs and full headlight assemblies.
+- **Suspension:** Shock absorbers, bushings, and control arms.
 
-## 📋 Overview
+## 🗺️ Navigation Map
 
-This repository contains detailed research on selling automotive spare parts on Tokopedia and TikTok Shop in Indonesia. It covers policies, brand authorization requirements, listing optimization, shipping logistics, and TikTok Shop strategies.
+| Document | Focus Area | Key Takeaway |
+| :--- | :--- | :--- |
+| [01-restricted-products](./01-restricted-products.md) | **Compliance** | Focus on SNI certification and prohibited hazard materials. |
+| [02-brand-authorization](./02-brand-authorization.md) | **IP Rights** | How to sell NGK/Bosch/Denso legally without an official dealer card. |
+| [03-product-listing-guide](./03-product-listing-guide.md) | **Conversion** | Title formulas and attribute mapping for maximum search visibility. |
+| [04-shipping-fulfillment](./04-shipping-fulfillment.md) | **Logistics** | Managing bulky items (JNE JTR) and fragile packaging for headlights. |
+| [05-tiktok-shop-strategy](./05-tiktok-shop-strategy.md) | **Growth** | Content hooks and affiliate strategies for the Indonesian 'car-guy' community. |
+| [06-action-checklist](./06-action-checklist.md) | **Execution** | Step-by-step checklist from registration to first sale. |
 
-## 📚 Contents
+## 🚀 High-Priority Action Items
+For a successful launch, focus on these three pillars first:
+1. **Compliance First:** Verify if your brake pads need SNI. Selling non-compliant safety parts can lead to permanent account bans.
+2. **Proof of Authenticity:** Organize every single invoice from your suppliers. In the Indonesian market, "KW" (fake) parts are rampant; proving "Original" status is your biggest competitive advantage.
+3. **Logistics Setup:** Automotive parts vary wildly in weight. Ensure you have JNE JTR and Cargo enabled to avoid shipping cost deficits on heavy suspension parts.
 
-| File | Description |
-|------|-------------|
-| [01-restricted-products.md](./01-restricted-products.md) | Restricted and prohibited products policies for automotive parts |
-| [02-brand-authorization.md](./02-brand-authorization.md) | Brand authorization and intellectual property rights |
-| [03-product-listing-guide.md](./03-product-listing-guide.md) | Product listing best practices and requirements |
-| [04-shipping-fulfillment.md](./04-shipping-fulfillment.md) | Shipping and fulfillment for automotive parts |
-| [05-tiktok-shop-strategy.md](./05-tiktok-shop-strategy.md) | TikTok Shop integration and content strategy |
-| [06-action-checklist.md](./06-action-checklist.md) | Quick reference checklists for sellers |
-
-## 🚗 Products Covered
-
-- ✅ Brake pads
-- ✅ Oil filters
-- ✅ Spark plugs
-- ✅ Wiper blades
-- ✅ Headlights
-- ✅ Suspension parts
-
-## 🎯 Key Findings Summary
-
-### Product Status
-Most common car spare parts are **PERMITTED** on Tokopedia. Some items like asbestos-containing brake pads require SNI certification.
-
-### Brand Authorization
-You **CAN** sell branded parts (NGK, Bosch, Denso) without being an authorized dealer, provided products are genuine and you have proof of authenticity.
-
-### TikTok Shop Integration
-Tokopedia seller accounts can link to TikTok Shop with unified product catalog management and affiliate marketing opportunities.
-
-## 📦 Quick Start Checklist
-
-- [ ] Verify products are not prohibited
-- [ ] Check SNI certification requirements
-- [ ] Gather supplier invoices for authenticity
-- [ ] Take high-quality product photos (min. 3 per product)
-- [ ] Write detailed descriptions with vehicle compatibility
-- [ ] Set up appropriate shipping methods
-- [ ] Create TikTok content strategy
-- [ ] Set up affiliate commission (10-15%)
+## 🛠️ Useful Resources
+- [Tokopedia Seller University](https://seller-id.tokopedia.com/university) - Official learning center.
+- [BSN (Badan Standardisasi Nasional)](https://www.bsn.go.id) - For SNI certification inquiries.
+- [TikTok Shop Academy](https://seller-id.tokopedia.com/university) - For content and affiliate training.
 
 ---
-*Last Updated: January 2025*
+**Disclaimer:** This guide is based on current platform policies as of January 2025. Always cross-reference with the latest Tokopedia Terms of Service.
