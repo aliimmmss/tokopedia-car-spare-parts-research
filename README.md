@@ -21,6 +21,13 @@ This research specifically targets the high-demand category of consumables and w
 | [04-shipping-fulfillment](./04-shipping-fulfillment.md) | **Logistics** | Managing bulky items (JNE JTR) and fragile packaging for headlights. |
 | [05-tiktok-shop-strategy](./05-tiktok-shop-strategy.md) | **Growth** | Content hooks and affiliate strategies for the Indonesian 'car-guy' community. |
 | [06-action-checklist](./06-action-checklist.md) | **Execution** | Step-by-step checklist from registration to first sale. |
+| [07-market-pricing-research](./07-market-pricing-research.md) | **Consumer Pricing** | Tokopedia pricing for Avanza/Brio consumables — filters, spark plugs, brake pads. |
+| [08-commercial-vehicle-pricing](./08-commercial-vehicle-pricing.md) | **Commercial Pricing** | Hino/Isuzu/Mitsubishi truck parts pricing — brake linings, injectors, filters. |
+| [09-demand-analysis](./09-demand-analysis.md) | **Market Trends** | Seasonal demand spikes, EURO 4 transition, EV/hybrid parts opportunity. |
+| [10-competitor-analysis](./10-competitor-analysis.md) | **Competition** | Top Tokopedia sellers analysis — AutoAce, Otoklix, WD Indonesia. |
+| [11-promotions-ads-strategy](./11-promotions-ads-strategy.md) | **Marketing** | TopAds, GMV Max, Flash Sale, commission fees, promotion calendar. |
+| [12-return-refund-guide](./12-return-refund-guide.md) | **Disputes** | Return policy, seller protection, packing video requirements, dispute handling. |
+| [13-euro4-transition-guide](./13-euro4-transition-guide.md) | **EURO 4** | Emission standard transition, common rail parts, market opportunity for Euro 4. |
 
 ## 🚀 High-Priority Action Items
 For a successful launch, focus on these three pillars first:

@@ -14,10 +14,7 @@ Tokopedia allows the sale of genuine products purchased from authorized distribu
 If a brand owner (e.g., Bosch Indonesia) files a "Counterfeit" report against your shop, Tokopedia will freeze the listing and ask for proof.
 
 ### Required Proof Documents:
-1. **The Paper Trail:** A complete chain of invoices from the Brand $
-ightarrow$ Main Distributor $
-ightarrow$ Wholesaler $
-ightarrow$ You.
+1. **The Paper Trail:** A complete chain of invoices from the Brand → Main Distributor → Wholesaler → You.
 2. **Matching Batch Numbers:** Photos of the batch/lot numbers on the product packaging that match the supplier's invoice.
 3. **Import Documents:** For imported parts, the **PIB (Pemberitahuan Impor Barang)** document is the ultimate proof of legality.
 

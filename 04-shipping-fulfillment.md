@@ -13,7 +13,7 @@ Tokopedia uses **Volumetric Weight** for bulky items.
 
 | Item Type | Weight | Recommended Courier | Reason |
 | :--- | :--- | :--- | :--- |
-| **Small Consumables** | <<  2kg | J&T, SiCepat | Fast and cheap for small items. |
+|| **Small Consumables** | < 2 kg | J&T, SiCepat | Fast and cheap for small items. |
 | **Medium Parts** | 2-10kg | JNE REG, AnterAja | Balanced speed and cost. |
 | **Heavy/Bulky** | 10-50kg | **JNE JTR (Trucking)** | Significantly cheaper than Regular for heavy items. |
 | **Extreme/Oversize** | > 50kg | **Cargo / Wahana** | Specialized in heavy machinery/parts. |
@@ -24,9 +24,7 @@ Tokopedia uses **Volumetric Weight** for bulky items.
 Automotive parts are often heavy and made of metal or glass. Standard bubble wrap is not enough.
 
 ### 🛡️ The "Zero Damage" Protocol:
-1. **Brake Pads:** Wrap in bubble wrap $
-ightarrow$ Place in a tight-fitting cardboard box $
-ightarrow$ Fill gaps with crumpled paper to prevent shifting.
+1. **Brake Pads:** Wrap in bubble wrap → Place in a tight-fitting cardboard box → Fill gaps with crumpled paper to prevent shifting.
 2. **Headlights/Lamps:** 
    - **Inner layer:** Soft foam wrap.
    - **Middle layer:** Heavy-duty bubble wrap.

@@ -6,7 +6,7 @@
 
 ---
 
-## 1. TOP 10 BEST-SELLING SPARE PARTS ON TOKOPELLA
+## 1. TOP 10 BEST-SELLING SPARE PARTS ON TOKOPEDIA
 
 Based on market research and sales volume data from Tokopedia:
 
