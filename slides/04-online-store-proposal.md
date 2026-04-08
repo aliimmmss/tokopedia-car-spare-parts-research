@@ -8,90 +8,95 @@ style: |
   @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-  :root {
-    --black: #000000;
-    --surface: #111111;
-    --surface-raised: #1A1A1A;
-    --border: #222222;
-    --border-visible: #333333;
-    --text-disabled: #666666;
-    --text-secondary: #999999;
-    --text-primary: #E8E8E8;
-    --text-display: #FFFFFF;
-    --accent-green: #76B900;
-    --accent-gold: #D4AF37;
-    --accent-red: #D71921;
-    --font-display: 'Doto', 'Space Mono', monospace;
-    --font-body: 'Space Grotesk', 'DM Sans', system-ui, sans-serif;
-    --font-mono: 'Space Mono', 'JetBrains Mono', monospace;
-  }
+ :root {
+ --black: #000000 !important;
+ --surface: #111111 !important;
+ --surface-raised: #1A1A1A !important;
+ --border: #222222 !important;
+ --border-visible: #333333 !important;
+ --text-disabled: #666666 !important;
+ --text-secondary: #999999 !important;
+ --text-primary: #E8E8E8 !important;
+ --text-display: #FFFFFF !important;
+ --accent-green: #76B900 !important;
+ --accent-gold: #D4AF37 !important;
+ --accent-red: #D71921 !important;
+ --font-display: 'Doto', 'Space Mono', monospace !important;
+ --font-body: 'Space Grotesk', 'DM Sans', system-ui, sans-serif !important;
+ --font-mono: 'Space Mono', 'JetBrains Mono', monospace !important;
+ /* Override Marp's GitHub Primer variables */
+ --bgColor-default: #000000 !important;
+ --fgColor-default: #E8E8E8 !important;
+ color-scheme: dark !important;
+ }
 
-  section {
-    font-family: var(--font-body);
-    background: var(--black);
-    color: var(--text-primary);
-    padding: 64px 80px;
-    font-size: 18px;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: radial-gradient(circle, var(--border) 0.5px, transparent 0.5px);
-    background-size: 24px 24px;
-  }
+ section {
+ font-family: 'Space Grotesk', 'DM Sans', system-ui, sans-serif !important;
+ background: #000000 !important;
+ color: #E8E8E8 !important;
+ padding: 64px 80px;
+ font-size: 18px;
+ line-height: 1.5;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ background-image: radial-gradient(circle, #222222 0.5px, transparent 0.5px) !important;
+ background-size: 24px 24px !important;
+ color-scheme: dark !important;
+ }
 
-  h1 {
-    font-family: var(--font-display);
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.0;
-    letter-spacing: -0.02em;
-    color: var(--text-display);
-    margin-bottom: 8px;
-  }
+ h1 {
+ font-family: 'Doto', 'Space Mono', monospace !important;
+ font-size: 56px;
+ font-weight: 700;
+ line-height: 1.0;
+ letter-spacing: -0.02em;
+ color: #FFFFFF !important;
+ margin-bottom: 8px;
+ }
 
-  h2 {
-    font-family: var(--font-body);
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--text-display);
-    margin-bottom: 8px;
-  }
+ h2 {
+ font-family: 'Space Grotesk', 'DM Sans', system-ui, sans-serif !important;
+ font-size: 36px;
+ font-weight: 600;
+ line-height: 1.1;
+ letter-spacing: -0.02em;
+ color: #FFFFFF !important;
+ margin-bottom: 8px;
+ }
 
-  h3 {
-    font-family: var(--font-body);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: var(--text-display);
-    margin-bottom: 6px;
-  }
+ h3 {
+ font-family: 'Space Grotesk', 'DM Sans', system-ui, sans-serif !important;
+ font-size: 24px;
+ font-weight: 500;
+ line-height: 1.2;
+ letter-spacing: -0.01em;
+ color: #FFFFFF !important;
+ margin-bottom: 6px;
+ }
 
-  h4 {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 6px;
-  }
+ h4 {
+ font-family: 'Space Mono', 'JetBrains Mono', monospace !important;
+ font-size: 11px;
+ font-weight: 700;
+ color: #999999 !important;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ margin-bottom: 6px;
+ }
 
   p { margin-bottom: 10px; line-height: 1.5; }
 
-  em {
-    font-style: normal;
-    color: var(--accent-green);
-    font-weight: 500;
-  }
+ em {
+ font-style: normal !important;
+ color: #76B900 !important;
+ font-weight: 500 !important;
+ }
 
-  strong {
-    color: var(--accent-gold);
-    font-weight: 600;
-  }
+ strong {
+ color: #D4AF37 !important;
+ font-weight: 600 !important;
+ }
 
   .label {
     font-family: var(--font-mono);
@@ -533,14 +538,53 @@ style: |
     letter-spacing: 0.04em;
   }
 
-  .source {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--text-disabled);
-    margin-top: auto;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
+ .source {
+ font-family: var(--font-mono) !important;
+ font-size: 11px;
+ color: var(--text-disabled) !important;
+ margin-top: auto;
+ letter-spacing: 0.04em;
+ text-transform: uppercase;
+ }
+
+ /* Force-override Marp's Primer CSS specificity */
+ div#\:\$p > svg > foreignObject > section,
+ section {
+ background-color: #000000 !important;
+ color: #E8E8E8 !important;
+ color-scheme: dark !important;
+ }
+ div#\:\$p > svg > foreignObject > section strong {
+ color: #D4AF37 !important;
+ }
+ div#\:\$p > svg > foreignObject > section em {
+ color: #76B900 !important;
+ font-style: normal !important;
+ }
+ div#\:\$p > svg > foreignObject > section blockquote {
+ background: #111111 !important;
+ border-left: 2px solid #D4AF37 !important;
+ color: #999999 !important;
+ }
+ div#\:\$p > svg > foreignObject > section mark {
+ background: rgba(212,175,55,0.2) !important;
+ color: #FFFFFF !important;
+ }
+ div#\:\$p > svg > foreignObject > section code {
+ background: rgba(118,185,0,0.1) !important;
+ color: #BFF230 !important;
+ }
+ div#\:\$p > svg > foreignObject > section table td,
+ div#\:\$p > svg > foreignObject > section table th {
+ border-color: #222222 !important;
+ }
+ div#\:\$p > svg > foreignObject > section table th {
+ background: transparent !important;
+ color: #999999 !important;
+ }
+ div#\:\$p > svg > foreignObject > section table td {
+ color: #E8E8E8 !important;
+ }
 ---
 
 <!-- _class: cover -->
