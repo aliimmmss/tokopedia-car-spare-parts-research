@@ -1,0 +1,13 @@
+# Product Photo Automation Tool
+# For Tokopedia and TikTok Shop batch processing
+
+# Core dependencies
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Optional: Background removal
+# If installation fails, photos will still process (BG removal will be skipped)
+rembg>=2.0.50
+
+# Alternative packages (not required if rembg works)
+# opencv-python-headless>=4.8.0
