@@ -1,0 +1,11 @@
+{
+  "api_base": "https://integrate.api.nvidia.com/v1",
+  "api_key": "YOUR_NVIDIA_API_KEY_HERE",
+  "model": "qwen/qwen3.5-397b-a17b",
+  "language": "indonesian",
+  "store_name": "[Online Store Name]",
+  "store_location": "Bandung",
+  "shipping_partners": ["JNE", "J&T", "SiCepat"],
+  "experience_years": 30,
+  "specialties": ["Hino", "Isuzu", "Mitsubishi Fuso", "Toyota Dyna", "Scania", "Volvo", "MAN", "Mercedes-Benz"]
+}
