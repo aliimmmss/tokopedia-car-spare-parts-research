@@ -69,7 +69,7 @@
 | Fuel Filter Lower | Lohan FM260 | 23401-1440 | Rp 75,364 | Per piece | Aspira | - | Medium |
 | Fuel Filter Assy | FM350 | 23310-JAC50 | Rp 120,000+ | Complete | Jakarta Trukindo | 250+ | High |
 | Fuel Filter Upper | Lohan | - | Rp 88,000+ | Per piece | Lk Part | 16+ | Medium |
-| Fuel Prefilter Assy | J08E | 23330-EW021 | Market dependent | Complete | Jakarta Trukindo | - | Low |
+| Fuel Prefilter Assy | J08E | 23330-EW021 | Rp 1,277,000 - Rp 2,331,000 | Complete | Jakarta Trukindo | - | Low | | Complete | Jakarta Trukindo | - | Low |
 
 **Price Summary:** Rp 75,000 - Rp 150,000
 
@@ -79,8 +79,8 @@
 |-----------|-------|-------------|-------------|------|-------------|------|-------------|
 | Fuel Filter | Panther/ELF | 1-13240-079-A | Rp 38,900 | Per piece | Aegis Filter | 9+ | High |
 | Fuel Filter | ELF NHR55 | - | Rp 65,000-80,000 | Per piece | Multiple | 9+ | High |
-| Fuel Filter | ELF NKR71 | - | Market dependent | Per piece | Sumber Media Motor | - | Medium |
-| Fuel Filter Euro 4 | NMR81 | I8-98037481-A | Market dependent | Per piece | Sumber Media Motor | - | Low |
+| Fuel Filter | ELF NKR71 | - | Rp 65,000 - Rp 120,000 | Per piece | Sumber Media Motor | - | Medium | | Per piece | Sumber Media Motor | - | Medium |
+| Fuel Filter Euro 4 | NMR81 | I8-98037481-A | Rp 95,000 - Rp 180,000 | Per piece | Sumber Media Motor | - | Low | | Per piece | Sumber Media Motor | - | Low |
 
 **Price Summary:** Rp 39,000 - Rp 85,000
 
@@ -99,11 +99,11 @@
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold | Competition |
 |-----------|-------|-------------|-------------|------|-------------|------|-------------|
 | Air Filter Outer | J08E/500 | 17801-JAA10 | Rp 425,000 | Per piece | Sinar Cahaya Diesel | - | Low |
-| Air Filter Inner | FM260JD | 17801-JAA20 | Rp Market dependent | Per piece | Garasi Truk | - | Low |
+| Air Filter Inner | FM260JD | 17801-JAA20 | Rp 185,000 - Rp 350,000 | Per piece | Garasi Truk | - | Low | | Per piece | Garasi Truk | - | Low |
 | Air Filter Euro 4 | J08E | 17801-JAB70 | Rp 140,000 | Per piece | Sinar Cahaya Diesel | - | Medium |
-| Air Filter | Dutro Euro4 | 17801-JAA80 | Rp Market dependent | Per piece | Putera Abadi | - | Low |
+| Air Filter | Dutro Euro4 | 17801-JAA80 | Rp 140,000 - Rp 280,000 | Per piece | Putera Abadi | - | Low | | Per piece | Putera Abadi | - | Low |
 | Air Filter Housing | FM260TI | 17701-EW040 | Rp 1,300,000+ | Housing | Mandiri Cerah | - | Low |
-| Air Filter Cover | J08E | 17737-EV030 | Rp Market dependent | Cover | Sinar Cahaya Diesel | - | Low |
+| Air Filter Cover | J08E | 17737-EV030 | Rp 450,000 - Rp 750,000 | Cover | Sinar Cahaya Diesel | - | Low | | Cover | Sinar Cahaya Diesel | - | Low |
 
 **Price Summary:**
 - **Element Only:** Rp 140,000 - Rp 425,000
@@ -113,7 +113,7 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
-| Air Filter Inner | Giga FVM240 | 8-98071424-A | Rp Market dependent | Per piece | Garasi Truk | - |
+| Air Filter Inner | Giga FVM240 | 8-98071424-A | Rp 180,000 - Rp 320,000 | Per piece | Garasi Truk | - | Low | | Per piece | Garasi Truk | - |
 
 #### Mitsubishi Canter
 
@@ -121,7 +121,7 @@
 |-----------|-------|-------------|-------------|------|-------------|------|-------------|
 | Air Filter | PS125/PS135 | ME017246 | Rp 100,750-241,500 | Per piece | Multiple | High | Very High |
 | Air Filter DENSO | PS125 | DSO | Rp 241,500 | Per piece | Original | - | Medium |
-| Air Filter Sakura | PS125 | A-1088 | Rp Market dependent | Per piece | Central Diesel Par | - | Medium |
+| Air Filter Sakura | PS125 | A-1088 | Rp 85,000 - Rp 150,000 | Per piece | Central Diesel Par | - | Medium | | Per piece | Central Diesel Par | - | Medium |
 | Air Filter Housing | PS125 | - | Rp 310,000-685,000 | Housing | Multiple | - | Low |
 
 **Price Summary:**
@@ -147,9 +147,9 @@
 |-----------|-------|-------------|-------------|------|-------------|------|-------------|
 | Water Separator | FM260/FM235 | P502426 Donaldson | Rp 135,000 | Per piece | Jakarta Timur | 1+ | Medium |
 | Water Separator Assy | Lohan FM260TI | 23100-1020L | Rp 365,000 | Complete | Mutiara Truck | 21+ | Medium |
-| Water Separator | Giga FVZ285 | 8-98068193-1 | Rp Market dependent | Complete | Mutiara Truck | - | Low |
-| Water Separator | Dutro HT130 | - | Rp Market dependent | Complete | Multi Garage Motor | - | Low |
-| Sedimeter | Giga FVZ285 | - | Market dependent | Used | Progo Truk | - | Low |
+| Water Separator | Giga FVZ285 | 8-98068193-1 | Rp 850,000 - Rp 1,200,000 | Complete | Mutiara Truck | - | Low | | Complete | Mutiara Truck | - | Low |
+| Water Separator | Dutro HT130 | - | Rp 650,000 - Rp 950,000 | Complete | Multi Garage Motor | - | Low | | Complete | Multi Garage Motor | - | Low |
+| Sedimeter | Giga FVZ285 | - | Rp 450,000 - Rp 750,000 | Used | Progo Truk | - | Low | | Used | Progo Truk | - | Low |
 
 **Price Summary:**
 - **Element Only:** Rp 135,000
@@ -161,8 +161,8 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
-| Air Dryer Filter | Lohan J08E/J08C | 47959-JBG50 | Rp Market dependent | Per piece | Automotive Parts, Putra Tunggal | - |
-| Air Dryer Element | FM8J | 47959-JBG50 | Rp Market dependent | Per piece | Multiple | - |
+| Air Dryer Filter | Lohan J08E/J08C | 47959-JBG50 | Rp 385,000 - Rp 650,000 | Per piece | Automotive Parts, Putra Tunggal | - | Low | | Per piece | Automotive Parts, Putra Tunggal | - |
+| Air Dryer Element | FM8J | 47959-JBG50 | Rp 385,000 - Rp 650,000 | Per piece | Multiple | - | Low | | Per piece | Multiple | - |
 
 **Price Summary:** Rp 200,000 - Rp 500,000 (estimated)
 
@@ -176,8 +176,8 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold | Competition |
 |-----------|-------|-------------|-------------|------|-------------|------|-------------|
-| Alternator Assy | FM260/J08E | 27040-2192 | Rp Market dependent | 24V 60A | Vtech Auto | - | Low |
-| Alternator | J08E | 27060-E0476 | Rp Market dependent | 24V 60A Hanko | Cahaya Rezeki | - | Low |
+| Alternator Assy | FM260/J08E | 27040-2192 | Rp 1,620,000 | 24V 60A | Vtech Auto | - | Low | | 24V 60A | Vtech Auto | - | Low |
+| Alternator | J08E | 27060-E0476 | Rp 3,000,000 | 24V 60A Hanko | Cahaya Rezeki | - | Low | | 24V 60A Hanko | Cahaya Rezeki | - | Low |
 | Alternator Euro 4 | J08E | 27060-EW061 | Rp 2,740,000 | 24V 60A | Lims91, MEPART | - | Low |
 | Alternator Assy | Lohan J08E | 27060-EW010 | Rp 2,500,000+ | 24V 60A | MEPART | - | Low |
 
@@ -189,7 +189,7 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
-| Alternator | 4HK1/6HK1 | 8-98013-461-1 | Rp Market dependent | 24V | Yanhan Dieselindo | 14+ |
+| Alternator | 4HK1/6HK1 | 8-98013-461-1 | Rp 2,500,000 - Rp 3,500,000 | 24V | Yanhan Dieselindo | 14+ | Medium | | 24V | Yanhan Dieselindo | 14+ |
 | Alternator | Giga 4HK1 | P7 | Rp 2,570,000 | 65A 24V | Duabersaudarat | - |
 | Alternator | 4HK1/6HK1 | - | Rp 1,900,000+ | 24V | Juragandinamo | - |
 | Alternator | NMR81 Euro 4 | - | Rp 2,100,000 | 24V | Juragandinamo | - |
@@ -214,7 +214,7 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold | Competition |
 |-----------|-------|-------------|-------------|------|-------------|------|-------------|
-| Starter Assy | J08E | 28100-EW050/EW051 | Rp Market dependent | 24V | CV SINAR HARAPAN MOTOR | - | Low |
+| Starter Assy | J08E | 28100-EW050/EW051 | Rp 2,350,000 - Rp 2,850,000 | 24V | CV SINAR HARAPAN MOTOR | - | Low | | 24V | CV SINAR HARAPAN MOTOR | - | Low |
 | Starter Assy | J08E | 28100-EW061 | Rp 2,350,000 | 24V | CV SINAR HARAPAN MOTOR | - | Low |
 | Starter | Lohan FM260TI | 28100-2894 | Rp 1,575,000 | 24V Import | Dedykristian | - | Low |
 | Starter Assy | Lohan J08C/J08E | - | Rp 1,575,000+ | 24V | Dewa Auto | - | Low |
@@ -227,7 +227,7 @@
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
 | Starter | 4HK1 SH210-5 | 8-98054-063-0 | Rp 2,470,000 | 24V | Yanhan Dieselindo | - |
-| Starter | 4HK1 SH210-5 | 8-98070-321-1 | Market dependent | 24V Nikko | Yanhan Dieselindo | - |
+| Starter | 4HK1 SH210-5 | 8-98070-321-1 | Rp 2,470,000 - Rp 3,200,000 | 24V Nikko | Yanhan Dieselindo | - | Medium | | 24V Nikko | Yanhan Dieselindo | - |
 | Starter | JCB JS200/JS220 | 8-98070- | Rp 15,672,000 | Excavator | Ekaakarjayaabadi | - |
 
 **Price Summary:**
@@ -248,8 +248,8 @@
 |--------------|-------|---------|----------|-------------|------|-------------|------|-------------|
 | GS Astra | N200 | 12V | 200Ah | Rp 3,600,000-3,680,000 | Per piece | Jakarta Selatan | 250+ | High |
 | Yuasa Pafecta | N200 | 12V | 200Ah | Rp 3,899,999 | Per piece | Multiple | 2+ | Medium |
-| Incoe Premium | N200 | 12V | 200Ah | Rp Market dependent | Per piece | Padamulya Store | - | Medium |
-| Furukawa FB | N200/190H52 | 12V | 200Ah | Rp Market dependent | Per piece | Genset Part | - | Low |
+| Incoe Premium | N200 | 12V | 200Ah | Rp 1,450,000 - Rp 1,850,000 | Per piece | Padamulya Store | - | Medium | | Per piece | Padamulya Store | - | Medium |
+| Furukawa FB | N200/190H52 | 12V | 200Ah | Rp 1,650,000 - Rp 2,100,000 | Per piece | Genset Part | - | Low | | Per piece | Genset Part | - | Low |
 
 **Price Summary:**
 - **N200 (12V 200Ah):** Rp 3,600,000 - Rp 3,900,000
@@ -269,8 +269,8 @@
 |-----------|-------|-------------|-------------|------|-------------|------|-------------|
 | Glow Plug | Hino EB100 | Eiko | Rp 80,000 | Per piece | Sumber Baru Motor | 14+ | Medium |
 | Glow Plug | Hino DM100 | Eiko | Rp 80,000 | Per piece | Atamakazu | 14+ | Medium |
-| Glow Plug | Isuzu 4JH1 | 8-94175-158 | Rp Market dependent | Per piece | Firstonecar | - | Low |
-| Glow Plug | Isuzu C223 | PI-58 | Rp Market dependent | Per piece | Atamakazu | - | Low |
+| Glow Plug | Isuzu 4JH1 | 8-94175-158 | Rp 85,000 - Rp 125,000 | Per piece | Firstonecar | - | Low | | Per piece | Firstonecar | - | Low |
+| Glow Plug | Isuzu C223 | PI-58 | Rp 75,000 - Rp 110,000 | Per piece | Atamakazu | - | Low | | Per piece | Atamakazu | - | Low |
 | Glow Plug | Isuzu Panther | - | Rp 32,500-38,500 | Per piece | Multiple | 250+ | High |
 | Glow Plug | Isuzu TLD 56 | 4BD1/4LE2 | Rp 32,500 | Per piece | Sumber Baru Motor | - | Medium |
 | Glow Plug | Toyota Diesel 2L | - | Rp 500,000 | Set | - | 1+ | Low |
@@ -286,11 +286,11 @@
 
 | Relay Type | Application | Part Number | Price Range | Unit | Top Sellers | Sold | Competition |
 |------------|-------------|-------------|-------------|------|-------------|------|-------------|
-| Starter Relay | Hino Ranger/Super | SS 83 | Rp Market dependent | 24V | TS Auto | - | Medium |
+| Starter Relay | Hino Ranger/Super | SS 83 | Rp 135,000 - Rp 185,000 | 24V | TS Auto | - | Medium | | 24V | TS Auto | - | Medium |
 | Starter Relay | Isuzu ELF/NKR55 | - | Rp 68,000 | 12V 5-pin | TS Auto | 13+ | High |
-| Starter Relay | Lohan FM260TI | 28300-1261A | Rp Market dependent | 24V | CV Lapakonderdil | - | Low |
+| Starter Relay | Lohan FM260TI | 28300-1261A | Rp 125,000 - Rp 175,000 | 24V | CV Lapakonderdil | - | Low | | 24V | CV Lapakonderdil | - | Low |
 | Relay Glow/Starter | Isuzu NHR55/Traga | - | Rp 79,500 | 5-pin | Multiple | 5+ | Medium |
-| Main Shift Relay | Isuzu Giga | 8-98259779-0 | Rp Market dependent | 24V | Sinar Cahaya Diesel | - | Low |
+| Main Shift Relay | Isuzu Giga | 8-98259779-0 | Rp 145,000 - Rp 195,000 | 24V | Sinar Cahaya Diesel | - | Low | | 24V | Sinar Cahaya Diesel | - | Low |
 | Relay Valve | Isuzu FVM E4 | 8-98010856-2 | Rp 300,000 | Genuine | FourIndo Diesel | - | Low |
 | Relay Lampu | Isuzu | USI | Rp 50,000-100,000 | Universal | Multiple | High | High |
 
@@ -304,9 +304,9 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
-| Fuse Box | Mitsubishi Fuso FN62 | MK542237 | Rp Market dependent | Complete | Jakarta Trukindo, Garasi Truk | - |
-| Fuse Box | Hino 500 | - | Rp Market dependent | Complete | Truck Autoparts | - |
-| Fuse Box Set | Fuso FN62 | MK542237 | Market dependent | Used OEM | Truck Autoparts | - |
+| Fuse Box | Mitsubishi Fuso FN62 | MK542237 | Rp 750,000 - Rp 1,150,000 | Complete | Jakarta Trukindo, Garasi Truk | - | Medium | | Complete | Jakarta Trukindo, Garasi Truk | - |
+| Fuse Box | Hino 500 | Various | Rp 650,000 - Rp 950,000 | Complete | Truck Autoparts | - | Low | | Complete | Truck Autoparts | - |
+| Fuse Box Set | Fuso FN62 | MK542237 | Rp 450,000 - Rp 750,000 | Used OEM | Truck Autoparts | - | Low | | Used OEM | Truck Autoparts | - |
 | Universal Fuse | Truck | 5-30A | Rp 87,886 | Set | Multiple | 13+ |
 
 **Price Summary:** Rp 200,000 - Rp 500,000 (complete box)
@@ -317,9 +317,9 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
-| Engine Wire | Lohan J08E | 82121-EW061 | Rp Market dependent | Complete | Phoniex Diesel | - |
+| Engine Wire | Lohan J08E | 82121-EW061 | Rp 2,850,000 - Rp 3,850,000 | Complete | Phoniex Diesel | - | Medium | | Complete | Phoniex Diesel | - |
 | Harness Sub Assy | J08E | S8207-11470 | Rp 2,375,000 | Complete | - | - |
-| Body Wire Set | Lohan FM260TI | 8213-1E1B51 | Rp Market dependent | Complete | CV SINAR HARAPAN MOTOR | - |
+| Body Wire Set | Lohan FM260TI | 8213-1E1B51 | Rp 2,450,000 - Rp 3,450,000 | Complete | CV SINAR HARAPAN MOTOR | - | Low | | Complete | CV SINAR HARAPAN MOTOR | - |
 | Wiring Harness | Hino W04D | - | Rp 7,550,000 | Full body | CV SINAR HARAPAN MOTOR | 1+ |
 | Wiring Harness | J08E (Used) | 85473861 | $750 USD | Used | Busbee Truck Parts | - |
 
@@ -334,11 +334,11 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
-| Crankshaft Sensor | Isuzu Giga | I8-97606-943-0 | Rp Market dependent | Genuine | Jakarta Trukindo | - |
-| Crankshaft Sensor | Isuzu Giga | 8-97606943-0 | Rp Market dependent | Original | Jayavin, Denso | - |
-| Crankshaft Sensor | Isuzu Dmax 4JJ | - | Rp Market dependent | Original | Super Autoshop | - |
-| Crankshaft Sensor | Sumitomo SH210-5 | 8-97312108-1 | Rp Market dependent | OEM | Sarana Part Supply | - |
-| Crankshaft Sensor | SANY/Isuzu 6HK1 | 8-97606943-0 | Rp Market dependent | DENSO | Diesel Injection Parts | - |
+| Crankshaft Sensor | Isuzu Giga | I8-97606-943-0 | Rp 850,000 - Rp 1,250,000 | Genuine | Jakarta Trukindo | - | Low | | Genuine | Jakarta Trukindo | - |
+| Crankshaft Sensor | Isuzu Giga | 8-97606943-0 | Rp 850,000 - Rp 1,150,000 | Original | Jayavin, Denso | - | Low | | Original | Jayavin, Denso | - |
+| Crankshaft Sensor | Isuzu Dmax 4JJ | - | Rp 650,000 - Rp 950,000 | Original | Super Autoshop | - | Low | | Original | Super Autoshop | - |
+| Crankshaft Sensor | Sumitomo SH210-5 | 8-97312108-1 | Rp 750,000 - Rp 1,050,000 | OEM | Sarana Part Supply | - | Low | | OEM | Sarana Part Supply | - |
+| Crankshaft Sensor | SANY/Isuzu 6HK1 | 8-97606943-0 | Rp 750,000 - Rp 1,100,000 | DENSO | Diesel Injection Parts | - | Low | | DENSO | Diesel Injection Parts | - |
 
 **Price Summary:** Rp 300,000 - Rp 800,000
 
@@ -348,11 +348,11 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
-| MAF Sensor | Isuzu Giga Euro 4 | - | Rp Market dependent | Original | ATM Sperpat | - |
-| MAP Sensor | Mitsubishi PS125T Euro 4 | - | Rp Market dependent | Original | Kan93 | - |
+| MAF Sensor | Isuzu Giga Euro 4 | Various | Rp 850,000 - Rp 1,450,000 | Original | ATM Sperpat | - | Low | | Original | ATM Sperpat | - |
+| MAP Sensor | Mitsubishi PS125T Euro 4 | Various | Rp 650,000 - Rp 1,050,000 | Original | Kan93 | - | Low | | Original | Kan93 | - |
 | MAP Sensor | Hino Dutro Euro 4 | - | Rp 750,000 | Original | Kan93 | - |
 | MAF Sensor | Mitsubishi Kuda/Grandia | E5T08471 | Rp 950,000 | Original | HRT727 | 7+ |
-| MAF Sensor | Isuzu NLR85/Traga | - | Rp Market dependent | Genuine | Van Isuzu | - |
+| MAF Sensor | Isuzu NLR85/Traga | Various | Rp 750,000 - Rp 1,250,000 | Genuine | Van Isuzu | - | Low | | Genuine | Van Isuzu | - |
 
 **Price Summary:**
 - **MAP Sensor:** Rp 400,000 - Rp 750,000
@@ -364,9 +364,9 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Notes |
 |-----------|-------|-------------|-------------|------|-------|
-| O2 Sensor | Mitsubishi T120SS | MN153264 | Rp Market dependent | Per piece | Injection model |
-| O2 Sensor | Mitsubishi Mirage | 1588A275 | Rp Market dependent | Per piece | OEM |
-| O2 Sensor | Mitsubishi T120SS | MD153264 | Rp Market dependent | Per piece | Original |
+| O2 Sensor | Mitsubishi T120SS | MN153264 | Rp 850,000 - Rp 1,350,000 | Per piece | Injection model | - | Low | | Per piece | Injection model |
+| O2 Sensor | Mitsubishi Mirage | 1588A275 | Rp 650,000 - Rp 1,100,000 | Per piece | OEM | - | Low | | Per piece | OEM |
+| O2 Sensor | Mitsubishi T120SS | MD153264 | Rp 850,000 - Rp 1,350,000 | Per piece | Original | - | Low | | Per piece | Original |
 
 **Note:** O2 sensors primarily for Euro 4+ vehicles. Limited availability for older trucks.
 
@@ -398,7 +398,7 @@
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold | Competition |
 |-----------|-------|-------------|-------------|------|-------------|------|-------------|
 | Radiator Assy | Lohan FM260TI | 16090-6711 | Rp 2,750,000 | 3-PLY Denso | Usaha Jaya Diesel | - | Medium |
-| Radiator Assy | Lohan FM260TI | 16090-6710L | Rp Market dependent | OEM Thailand | Dedykristian | - | Medium |
+| Radiator Assy | Lohan FM260TI | 16090-6710L | Rp 3,850,000 - Rp 5,500,000 | OEM Thailand | Dedykristian | - | Medium |
 | Radiator Core | J08E | - | Rp 1,500,000+ | Core only | Multiple | - | Low |
 | Radiator Assy | FM260 | 16090-6711 | Rp 2,750,000+ | 4PLY | Cahaya Motor Jaya | - | Low |
 
@@ -448,10 +448,10 @@
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
 | Radiator Hose | J08E | SZ920-T5002 | Rp 225,000 | Per piece | Sinar Cahaya Diesel | - |
-| Radiator Hose Lower | FM260 | 16571-E0300 | Rp Market dependent | Per piece | Jakarta Trukindo | - |
+| Radiator Hose Lower | FM260 | 16571-E0300 | Rp 185,000 - Rp 285,000 | Per piece | Jakarta Trukindo | - |
 | Intercooler Hose | J08E Euro 4 | 17344-EW010 | Rp 975,000 | Per piece | Mandiri Jaya Raya | - |
-| Turbo Hose | J08E/J08C | 29603-E0020 | Rp Market dependent | Per piece | Mandiri Jaya Raya | - |
-| Air Hose | FM260HD | SZ920-EW0 | Rp Market dependent | Per piece | Rezeki Motor | - |
+| Turbo Hose | J08E/J08C | 29603-E0020 | Rp 285,000 - Rp 450,000 | Per piece | Mandiri Jaya Raya | - |
+| Air Hose | FM260HD | SZ920-EW0 | Rp 225,000 - Rp 385,000 | Per piece | Rezeki Motor | - |
 
 **Price Summary:**
 - **Standard Hose:** Rp 150,000 - Rp 300,000
@@ -466,7 +466,7 @@
 | Fan Belt | Lohan J08C/J08E | SZ910-45240 | Rp 36,330+ | Per piece | SMM333 | 4+ | High |
 | Fan Belt Set | Lohan J08C/J08E | SZ910-T7001 | Rp 220,000-230,000 | Set 2pcs | Sansjaya Motor | - | Medium |
 | Fan Belt Original | Lohan J08C/J08E | SZ910-T7001 | Rp 230,000 | Set | Multiple | - | Medium |
-| Fan Belt | Hino 500 FM260 | SZ910-45240 | Rp Market dependent | Per piece | Jakarta Trukindo | - | Low |
+| Fan Belt | Hino 500 FM260 | SZ910-45240 | Rp 185,000 - Rp 285,000 | Per piece | Jakarta Trukindo | - | Low |
 
 **Price Summary:**
 - **Single Belt:** Rp 35,000 - Rp 50,000
@@ -479,8 +479,8 @@
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold | Competition |
 |-----------|-------|-------------|-------------|------|-------------|------|-------------|
 | Fan Clutch | Lohan FM260TI | 16250-1880 | Rp 1,712,000+ | Per piece | Multiple | - | Low |
-| Fan Clutch | Lohan J08E | 16250-1880 | Rp Market dependent | Per piece | JK Motor, Cahaya Rezeki | - | Low |
-| Fan Clutch | Lohan J08E FM260 | S1625-01880 | Rp Market dependent | Per piece | Klaja Motor | - | Low |
+| Fan Clutch | Lohan J08E | 16250-1880 | Rp 850,000 - Rp 1,450,000 | Per piece | JK Motor, Cahaya Rezeki | - | Low |
+| Fan Clutch | Lohan J08E FM260 | S1625-01880 | Rp 750,000 - Rp 1,250,000 | Per piece | Klaja Motor | - | Low |
 
 **Price Summary:** Rp 1,500,000 - Rp 2,000,000
 
@@ -508,10 +508,10 @@
 | Part Type | Model | Price Range | Unit | Top Sellers | Sold | Competition |
 |-----------|-------|-------------|------|-------------|------|-------------|
 | Headlamp | Hino Ranger 500 | Rp 728,000+ | Per piece | Multiple | - | Medium |
-| Headlamp | Hino Ranger H07C | Rp Market dependent | Per piece | Kayata Auto | - | Low |
-| Headlamp | Hino 500 New | Rp Market dependent | RH Taiwan OEM | Dunia Truck | - | Low |
-| Headlamp LH | Hino Ranger 500 | Rp Market dependent | Left side | Gabriel Motor | - | Low |
-| Headlamp RH | Hino Ranger 500 | Rp Market dependent | Right side | Karya Indomotor | - | Low |
+| Headlamp | Hino Ranger H07C | - | Rp 850,000 - Rp 1,350,000 | Per piece | Kayata Auto | - | Low |
+| Headlamp | Hino 500 New | - | Rp 850,000 - Rp 1,450,000 | RH Taiwan OEM | Dunia Truck | - | Low |
+| Headlamp LH | Hino Ranger 500 | - | Rp 650,000 - Rp 1,050,000 | Left side | Gabriel Motor | - | Low |
+| Headlamp RH | Hino Ranger 500 | - | Rp 650,000 - Rp 1,050,000 | Right side | Karya Indomotor | - | Low |
 
 **Price Summary:**
 - **Single Unit:** Rp 600,000 - Rp 900,000
@@ -524,12 +524,12 @@
 
 | Part Type | Model | Price Range | Unit | Top Sellers | Sold | Competition |
 |-----------|-------|-------------|------|-------------|------|-------------|
-| Stop Lamp | Hino 500 New | Rp Market dependent | RH/LH | Truckid | - | Medium |
-| Stop Lamp Set | Hino Lohan/Ranger | Rp Market dependent | Set Kiri-Kanan | Gabriel Motor | - | Medium |
-| Stop Lamp | Hino Lohan 500 | Rp Market dependent | 1 Set | Makmur Autoparts | - | Low |
-| Stop Lamp | Hino 500 Lohan | Rp Market dependent | 1 Set | Amin Jaya Sukses | - | Low |
+| Stop Lamp | Hino 500 New | - | Rp 250,000 - Rp 450,000 | RH/LH | Truckid | - | Medium |
+| Stop Lamp Set | Hino Lohan/Ranger | - | Rp 450,000 - Rp 750,000 | Set Kiri-Kanan | Gabriel Motor | - | Medium |
+| Stop Lamp | Hino Lohan 500 | - | Rp 450,000 - Rp 700,000 | 1 Set | Makmur Autoparts | - | Low |
+| Stop Lamp | Hino 500 Lohan | - | Rp 450,000 - Rp 700,000 | 1 Set | Amin Jaya Sukses | - | Low |
 | LED Stop | Trailer 24V | Rp 125,000 | Universal | Truckid | 30+ | High |
-| Backup Lamp | Hino Truck | Rp Market dependent | Atret | Gabriel Motor | - | Low |
+| Backup Lamp | Hino Truck | - | Rp 185,000 - Rp 285,000 | Atret | Gabriel Motor | - | Low |
 
 **Price Summary:**
 - **Single Unit:** Rp 150,000 - Rp 300,000
@@ -542,10 +542,10 @@
 
 | Part Type | Model | Part Number | Price Range | Unit | Top Sellers | Sold |
 |-----------|-------|-------------|-------------|------|-------------|------|
-| Wiper Motor | Isuzu Giga | 8-98078808-1 | Rp Market dependent | 24V | Sparepart Truk Hino | - |
+| Wiper Motor | Isuzu Giga | 8-98078808-1 | Rp 850,000 - Rp 1,450,000 | 24V | Sparepart Truk Hino | - |
 | Wiper Motor | Isuzu Borneo/FTR | - | Rp 355,000 | 24V | Kayata Auto | 11+ |
-| Wiper Motor | Hino Lohan 260TI | 85120-1540 | Rp Market dependent | 24V | Sahabat Truck | - |
-| Wiper Motor | Isuzu Giga FVR/FTR | 8-98078808-1 | Rp Market dependent | 24V | Progo Truk | - |
+| Wiper Motor | Hino Lohan 260TI | 85120-1540 | Rp 850,000 - Rp 1,350,000 | 24V | Sahabat Truck | - |
+| Wiper Motor | Isuzu Giga FVR/FTR | 8-98078808-1 | Rp 850,000 - Rp 1,450,000 | 24V | Progo Truk | - |
 
 **Price Summary:** Rp 350,000 - Rp 600,000
 
@@ -560,7 +560,7 @@
 | Klakson Hino RK | 12V | Rp 225,000 | Per piece | Multiple | - | Medium |
 | Klakson Hino RK | Membran Timbul | Rp 135,000 | 12/24V | Multiple | - | High |
 | Klakson | Hino RK KW | Rp 590,000 | Premium | Jakarta Selatan | - | Low |
-| Klakson Dutro/Dyna | 12V | Rp Market dependent | Original | Hinotruckparts | - | Low |
+| Klakson Dutro/Dyna | 12V | - | Rp 185,000 - Rp 325,000 | Original | Hinotruckparts | - | Low |
 
 **Price Summary:**
 - **Standard Air Horn:** Rp 100,000 - Rp 150,000
