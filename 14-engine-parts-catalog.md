@@ -75,6 +75,11 @@
 | **Shopee** | Various | Aftermarket | Rp 2,500,000 | Rp 14,000,000 | 50+ | China import |
 | **Alibaba** | Factory Direct | New | $199-350 | $1,000-1,800 | MOQ 6 | Denso compatible |
 | **Denco Diesel (US)** | Official | Reman Denso | $523 | $2,800 | - | Core deposit |
+| **Shopee** | Dieselpart Store | New Aftermarket | Rp 2,150,000 | Rp 12,000,000 set | 25+ | Taiwan import |
+| **Shopee** | Truk Parts ID | Refurbished Denso | Rp 1,850,000 | Rp 10,500,000 set | 40+ | Core return |
+| **Shopee** | Jakarta Sparepart | OEM Hino | Rp 3,450,000 | Rp 19,500,000 set | 15+ | Genuine parts |
+| **Shopee** | Cahaya Diesel | Nozzle only | Rp 850,000 | - | 60+ | G3S6 type |
+
 
 **Price Range Summary:**
 - **Per Unit:** Rp 2,300,000 - Rp 15,000,000 (OEM)
