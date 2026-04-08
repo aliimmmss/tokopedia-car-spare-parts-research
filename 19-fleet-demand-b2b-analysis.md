@@ -264,7 +264,30 @@
 
 ---
 
-### 2.3 B2B Selling via Tokopedia - Real Approach
+### 2.3 B2B Selling via Tokopedia vs Shopee
+
+| Feature | Tokopedia | Shopee |
+|---------|-----------|--------|
+| **Platform Focus** | General marketplace | Social commerce |
+| **Fleet Usage** | 45% | 25% |
+| **B2B Features** | Corporate account, Enterprise | Shopee Grosir program |
+| **Bulk Discount** | Manual negotiation | Automatic tier pricing |
+| **Credit Terms** | Possible (negotiated) | Shopee PayLater |
+| **Loyalty** | Badge system | Shopee Coins |
+| **Live Selling** | Limited | Shopee Live popular |
+| **Best For** | Established fleet buyers | Price-sensitive buyers |
+
+**Practical Strategy for Small-Medium Sellers (Multi-Platform):**
+
+| Platform | Strategy | Priority |
+|----------|----------|----------|
+| **Tokopedia** | List standard products, focus on reviews | Primary platform |
+| **Shopee** | List same products, use Shopee Coins incentive | Secondary platform |
+| **Shopee Live** | Do weekly live sales for popular items | Engagement |
+
+---
+
+### 2.4 B2B Selling via Tokopedia - Real Approach
 
 **Practical Strategy for Small-Medium Sellers:**
 
@@ -295,7 +318,7 @@ Description:
 
 ---
 
-### 2.4 Alternative B2B Platforms
+### 2.5 Alternative B2B Platforms
 
 **Better Platforms for B2B Sales:**
 
