@@ -358,3 +358,29 @@ Final Price: Rp Y
 *Document Version: 2.0*  
 *Last Updated: April 8, 2026*  
 *Apply these templates and watch your search rankings improve!*
+
+## Revenue and Cost Flow Analysis
+
+```mermaid
+flowchart LR
+    subgraph Revenue
+        A1[Product Sales] --> A2[Marketplace Revenue]
+        A3[Bulk Orders] --> A2
+    end
+    subgraph Costs
+        B1[Product Cost 40-60%]
+        B2[Marketplace Fees 4-8%]
+        B3[Shipping Costs 5-15%]
+        B4[Packaging 2-3%]
+        B5[Returns 2-5%]
+        B6[Marketing 5-10%]
+    end
+    A2 --> C[Gross Revenue]
+    C --> D[Minus Product Cost]
+    D --> E[Gross Profit]
+    E --> F[Minus All Costs]
+    F --> G[Net Profit Margin Target 15-25%]
+    style G fill:#4caf50,color:#fff
+    style C fill:#1565c0,color:#fff
+```
+

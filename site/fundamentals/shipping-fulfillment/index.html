@@ -1108,6 +1108,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#supply-chain-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supply Chain Flowchart
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2352,6 +2363,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#supply-chain-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supply Chain Flowchart
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2797,6 +2819,27 @@ Hour 4-24: Courier pickup</p>
 <p><em>Document Version: 2.0</em><br />
 <em>Last Updated: April 8, 2026</em><br />
 <em>Proper packaging saves money and reputation!</em></p>
+<h2 id="supply-chain-flowchart">Supply Chain Flowchart<a class="headerlink" href="#supply-chain-flowchart" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A[Supplier / Distributor] --&gt;|Bulk Purchase| B[Your Warehouse]
+    B --&gt;|Quality Check| C[Inventory Management]
+    C --&gt;|List Products| D[Tokopedia Store]
+    C --&gt;|List Products| E[Shopee Store]
+    C --&gt;|List Products| F[TikTok Shop]
+    D --&gt;|Customer Order| G[Order Processing]
+    E --&gt;|Customer Order| G
+    F --&gt;|Customer Order| G
+    G --&gt;|Pick and Pack| H[Shipping Partner]
+    H --&gt;|JNE / J&amp;T / SiCepat| I[Customer]
+    I --&gt;|Issues?| J[Return/Refund]
+    J --&gt;|Approved| K[Restock or Refund]
+    K --&gt; B
+    style A fill:#f9a825
+    style B fill:#1565c0,color:#fff
+    style D fill:#42b883
+    style E fill:#ee4d2d,color:#fff
+    style F fill:#000,color:#fff
+    style I fill:#4caf50,color:#fff</code></pre>
 
 
 

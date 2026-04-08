@@ -690,3 +690,31 @@
 *Report Generated: April 7, 2026*  
 *Data Sources: Tokopedia Search Results, Marketplace Official Pages, Industry Estimates*  
 *Recommendations based on commercial vehicle parts market analysis*
+
+## Marketplace Fee Structure Comparison
+
+```mermaid
+graph LR
+    subgraph Tokopedia
+        T1[Product Price Rp 1.000.000] --> T2[Service Fee 2-5%]
+        T2 --> T3[Transaction Fee 1-2%]
+        T3 --> T4[Admin Fee Rp 1.000-3.000]
+        T4 --> T5[Net Revenue Rp 920.000-960.000]
+    end
+    subgraph Shopee
+        S1[Product Price Rp 1.000.000] --> S2[Commission Fee 2-6%]
+        S2 --> S3[Transaction Fee 2-4%]
+        S3 --> S4[Service Fee Rp 1.000]
+        S4 --> S5[Net Revenue Rp 900.000-950.000]
+    end
+    subgraph TikTokShop[TikTok Shop]
+        TT1[Product Price Rp 1.000.000] --> TT2[Commission 1-5%]
+        TT2 --> TT3[Transaction Fee 1%]
+        TT3 --> TT4[Affiliate Fee 0-10%]
+        TT4 --> TT5[Net Revenue Rp 840.000-970.000]
+    end
+    style T5 fill:#42b883
+    style S5 fill:#ee4d2d,color:#fff
+    style TT5 fill:#000,color:#fff
+```
+

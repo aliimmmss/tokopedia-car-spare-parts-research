@@ -1797,6 +1797,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pricing-strategy-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pricing Strategy Decision Tree
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2291,6 +2302,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pricing-strategy-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pricing Strategy Decision Tree
+      
+    </span>
+  </a>
   
 </li>
       
@@ -3802,6 +3824,25 @@ END CONSUMER
 <p><em>Report Generated: April 7, 2026</em><br />
 <em>Data Sources: Tokopedia marketplace research, industry estimates</em><br />
 <em>Note: Prices and margins are estimates based on marketplace analysis. Actual costs may vary by supplier relationship, volume, and negotiation.</em></p>
+<h2 id="pricing-strategy-decision-tree">Pricing Strategy Decision Tree<a class="headerlink" href="#pricing-strategy-decision-tree" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    START[New Product Listed] --&gt; Q1{Order Volume?}
+    Q1 --&gt;|Single Unit| RETAIL[Retail Pricing Strategy]
+    Q1 --&gt;|5-20 Units| SMALL_WH[Small Wholesale]
+    Q1 --&gt;|20+ Units| LARGE_WH[Large Wholesale B2B]
+    RETAIL --&gt; R1{Marketplace?}
+    R1 --&gt;|Tokopedia| R2[Match competitor lowest + Rp 5.000-10.000]
+    R1 --&gt;|Shopee| R3[Below average + Free shipping voucher]
+    R1 --&gt;|TikTok Shop| R4[Bundle deals + video demo]
+    SMALL_WH --&gt; SW1[10-15% discount from retail]
+    SW1 --&gt; SW2[Free shipping on 5+ units]
+    LARGE_WH --&gt; LW1[20-30% discount from retail]
+    LW1 --&gt; LW2[Dedicated account manager]
+    LW2 --&gt; LW3[Net 30 payment terms]
+    LW3 --&gt; LW4[Priority shipping and warranty]
+    style RETAIL fill:#42b883
+    style SMALL_WH fill:#f9a825
+    style LARGE_WH fill:#1565c0,color:#fff</code></pre>
 
 
 

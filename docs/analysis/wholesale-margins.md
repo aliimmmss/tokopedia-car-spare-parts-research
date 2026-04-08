@@ -540,3 +540,27 @@ END CONSUMER
 *Report Generated: April 7, 2026*  
 *Data Sources: Tokopedia marketplace research, industry estimates*  
 *Note: Prices and margins are estimates based on marketplace analysis. Actual costs may vary by supplier relationship, volume, and negotiation.*
+
+## Pricing Strategy Decision Tree
+
+```mermaid
+flowchart TD
+    START[New Product Listed] --> Q1{Order Volume?}
+    Q1 -->|Single Unit| RETAIL[Retail Pricing Strategy]
+    Q1 -->|5-20 Units| SMALL_WH[Small Wholesale]
+    Q1 -->|20+ Units| LARGE_WH[Large Wholesale B2B]
+    RETAIL --> R1{Marketplace?}
+    R1 -->|Tokopedia| R2[Match competitor lowest + Rp 5.000-10.000]
+    R1 -->|Shopee| R3[Below average + Free shipping voucher]
+    R1 -->|TikTok Shop| R4[Bundle deals + video demo]
+    SMALL_WH --> SW1[10-15% discount from retail]
+    SW1 --> SW2[Free shipping on 5+ units]
+    LARGE_WH --> LW1[20-30% discount from retail]
+    LW1 --> LW2[Dedicated account manager]
+    LW2 --> LW3[Net 30 payment terms]
+    LW3 --> LW4[Priority shipping and warranty]
+    style RETAIL fill:#42b883
+    style SMALL_WH fill:#f9a825
+    style LARGE_WH fill:#1565c0,color:#fff
+```
+

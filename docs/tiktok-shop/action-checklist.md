@@ -653,3 +653,37 @@ Signature: _________________
 
 **Document Version:** 2.0 | **Last Updated:** April 8, 2026  
 **Related Files:** 01-restricted-products.md, 05-tiktok-shop-strategy.md, 07-market-pricing-research.md
+
+## 90-Day Launch Timeline
+
+```mermaid
+gantt
+    title Commercial Vehicle Parts 90-Day Launch Plan
+    dateFormat YYYY-MM-DD
+    axisFormat %b %d
+    section Pre-Launch
+        Register seller accounts     :done, a1, 2026-04-01, 3d
+        Brand verification           :done, a2, 2026-04-04, 5d
+        Warehouse setup              :done, a3, 2026-04-04, 7d
+        Product photography          :done, a4, 2026-04-09, 7d
+        Write product listings       :active, a5, 2026-04-14, 7d
+    section Soft Launch
+        List first 20 on Tokopedia   :b1, 2026-04-21, 3d
+        List first 20 on Shopee      :b2, 2026-04-21, 3d
+        Launch TikTok Shop           :b3, 2026-04-24, 2d
+        Create product videos        :b4, 2026-04-24, 5d
+        Monitor orders               :b5, 2026-04-28, 7d
+    section Growth
+        Expand to 100+ SKUs          :c1, 2026-05-05, 14d
+        Activate TopAds            :c2, 2026-05-05, 7d
+        Shopee Ads campaign          :c3, 2026-05-12, 7d
+        TikTok LIVE selling          :c4, 2026-05-12, 14d
+        Build reviews 50+          :c5, 2026-05-19, 14d
+    section Scale
+        Negotiate bulk pricing       :d1, 2026-06-02, 14d
+        B2B wholesale tier           :d2, 2026-06-02, 7d
+        Expand to Bukalapak          :d3, 2026-06-09, 7d
+        Automate operations          :d4, 2026-06-16, 7d
+        Review and optimize          :d5, 2026-06-23, 7d
+```
+

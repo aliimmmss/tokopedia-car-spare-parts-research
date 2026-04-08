@@ -523,3 +523,29 @@ Additional Components:
 
 *Report Generated: April 7, 2026*  
 *Research Method: Web Search + Content Extraction from Government Sources, Manufacturer Training Documents, and Industry Publications*
+
+## Euro 4 Implementation Timeline
+
+```mermaid
+timeline
+    title Indonesia Emission Standards Timeline
+    2021 : Euro 4 Mandate Announced
+         : PP 22/2021
+    2023 : Jakarta and Surrounding
+         : Phase 1
+    2024 : Java and Bali
+         : Phase 2
+    2025 : Sumatra and Kalimantan
+         : Phase 3
+    2026 : Nationwide
+         : Full Euro 4
+    section Impact on Parts
+        High Demand : Common Rail Injectors
+                   : DPF Filters
+                   : ECU Modules
+        Declining : Carburetor Parts
+                  : Mechanical Injection
+        Opportunities : Diagnostic Tools
+                      : Emission Testing
+```
+

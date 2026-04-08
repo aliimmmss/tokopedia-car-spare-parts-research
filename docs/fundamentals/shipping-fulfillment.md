@@ -373,3 +373,29 @@ Tracking:
 *Document Version: 2.0*  
 *Last Updated: April 8, 2026*  
 *Proper packaging saves money and reputation!*
+
+## Supply Chain Flowchart
+
+```mermaid
+flowchart TD
+    A[Supplier / Distributor] -->|Bulk Purchase| B[Your Warehouse]
+    B -->|Quality Check| C[Inventory Management]
+    C -->|List Products| D[Tokopedia Store]
+    C -->|List Products| E[Shopee Store]
+    C -->|List Products| F[TikTok Shop]
+    D -->|Customer Order| G[Order Processing]
+    E -->|Customer Order| G
+    F -->|Customer Order| G
+    G -->|Pick and Pack| H[Shipping Partner]
+    H -->|JNE / J&T / SiCepat| I[Customer]
+    I -->|Issues?| J[Return/Refund]
+    J -->|Approved| K[Restock or Refund]
+    K --> B
+    style A fill:#f9a825
+    style B fill:#1565c0,color:#fff
+    style D fill:#42b883
+    style E fill:#ee4d2d,color:#fff
+    style F fill:#000,color:#fff
+    style I fill:#4caf50,color:#fff
+```
+

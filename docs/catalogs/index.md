@@ -41,3 +41,41 @@ Oil filters, fuel filters, air filters, alternators, starters, wiring, and body 
 ---
 
 *Navigate to specific catalogs for detailed product listings with prices.*
+
+## Commercial Vehicle Parts Category Map
+
+```mermaid
+mindmap
+  root((Commercial Vehicle Spare Parts))
+    Engine System
+      Piston and Rings
+      Cylinder Head and Gasket
+      Injector and Common Rail
+      Turbocharger
+      Oil Pump and Pan
+    Brake System
+      Brake Pad and Shoe
+      Brake Disc and Drum
+      Master Cylinder
+      ABS Sensor
+    Drivetrain
+      Clutch Kit and Cover
+      Gearbox and Transmission
+      Propeller Shaft
+      Differential and Axle
+    Filters and Fluids
+      Air Filter
+      Oil Filter
+      Fuel Filter
+      Coolant and Radiator
+    Electrical System
+      Alternator
+      Starter Motor
+      Battery
+      Sensor and ECU
+    Body and Cabin
+      Headlamp and Tail Lamp
+      Mirror and Glass
+      Bumper and Fender
+```
+
