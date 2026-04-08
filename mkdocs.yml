@@ -1,0 +1,82 @@
+site_name: Commercial Vehicle Spare Parts — Indonesia Market Research
+site_description: Comprehensive marketplace research for selling commercial vehicle spare parts on Tokopedia, Shopee, and TikTok Shop
+site_author: Ali Imams
+repo_url: https://github.com/aliimmmss/tokopedia-car-spare-parts-research
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang: en
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+nav:
+  - Home: index.md
+  - Marketplace Fundamentals:
+    - fundamentals/index.md
+    - Restricted Products: fundamentals/restricted-products.md
+    - Brand Authorization: fundamentals/brand-authorization.md
+    - Product Listing Guide: fundamentals/product-listing-guide.md
+    - Shipping & Fulfillment: fundamentals/shipping-fulfillment.md
+  - TikTok Shop Strategy:
+    - tiktok-shop/index.md
+    - Strategy Overview: tiktok-shop/strategy.md
+    - Action Checklist: tiktok-shop/action-checklist.md
+  - Market Research:
+    - market-research/index.md
+    - Pricing Research: market-research/pricing-research.md
+    - Demand Analysis: market-research/demand-analysis.md
+    - Competitor Analysis: market-research/competitor-analysis.md
+    - Promotions & Ads: market-research/promotions-ads.md
+    - Returns & Refunds: market-research/return-refund.md
+    - Euro 4 Transition: market-research/euro4-transition.md
+  - Parts Catalogs:
+    - catalogs/index.md
+    - Commercial Vehicle Pricing: catalogs/commercial-vehicle-pricing.md
+    - Engine Parts: catalogs/engine-parts.md
+    - Brake & Drivetrain: catalogs/brake-drivetrain.md
+    - Filters, Electrical & Body: catalogs/filters-electrical-body.md
+  - Market Analysis:
+    - analysis/index.md
+    - Marketplace Comparison: analysis/marketplace-comparison.md
+    - Wholesale Margins: analysis/wholesale-margins.md
+    - Fleet Demand & B2B: analysis/fleet-demand-b2b.md
