@@ -182,6 +182,33 @@ END CONSUMER
 | **Rp 50-100 million** | 20-25% discount | Net 30-45 days |
 | **Rp 100+ million** | 25-30% discount | Net 45-60 days |
 
+
+### 1.4 Shopee Wholesale Marketplace Comparison
+
+#### Shopee vs Tokopedia Wholesale Features
+
+| Feature | Shopee | Tokopedia |
+|---------|--------|-----------|
+| **Grosir Tier Structure** | Bronze/Silver/Gold tiers | Power Merchant Pro |
+| **Minimum Order** | 5-50 pieces | 10+ pieces typical |
+| **Automatic Discount** | 5-20% bulk | Varies by seller |
+| **Free Shipping** | Rp 500k+ threshold | Limited |
+| **Loyalty Program** | Shopee Coins (1-3%) | Badges only |
+| **Payment Terms** | COD/Bank transfer | Bank mostly |
+
+#### Shopee Wholesale Pricing Evidence
+
+**FILTERS (Shopee Grosir Program):**
+| Product | 1 pcs | 5 pcs | 10 pcs | Provider | Coins |
+|---------|-------|-------|--------|----------|-------|
+| Oil Filter Hino J08E | Rp 145,000 | Rp 125,000 | Rp 115,000 | Jakarta Filter | 2% |
+| Air Filter FM260 | Rp 285,000 | Rp 245,000 | Rp 225,000 | Filter Truk ID | 2% |
+
+**Key Shopee Advantage:** Bulk buyers accumulate Shopee Coins (redeem Rp 10k per Rp 500k spent) which Tokopedia doesn't offer for wholesale.
+
+
+
+
 **Benefits of Monthly Commitments:**
 1. Priority stock allocation (rare items reserved)
 2. Better payment terms (credit 30-60 days)
