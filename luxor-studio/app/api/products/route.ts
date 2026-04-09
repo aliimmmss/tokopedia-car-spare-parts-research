@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { readProducts, addProduct } from '@/lib/csv-handler'
 import { Product } from '@/lib/types'
 
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
   try {
     const products = readProducts()
