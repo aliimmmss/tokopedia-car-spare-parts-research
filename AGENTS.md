@@ -11,120 +11,147 @@
 **Purpose:** Comprehensive marketplace research for selling commercial vehicle spare parts on Indonesian e-commerce platforms.
 **Business Segment:** Commercial vehicles ONLY — trucks, buses, heavy equipment. NOT consumer cars.
 
+---
+
+## Repo Structure
+
+```
+├── research/          # Full research files (21 files)
+│   ├── 01-*.md       # Marketplace fundamentals
+│   ├── 14-*.md       # Product catalogs
+│   └── 17-19*.md     # Market analysis & B2B
+├── wiki/              # Quick-reference wiki pages
+│   ├── README.md
+│   └── pages/         # Vehicle brands, sourcing, personas, etc.
+├── luxor-studio/      # Web dashboard application
+├── tools/             # Python automation scripts
+├── slides/            # Marp presentation files
+└── AGENTS.md          # This file
+```
+
+---
+
+## File Categories
+
+### research/ — Deep Research Files
+- **Naming:** `XX-description.md` (2-digit number)
+- **Size:** 200-500 lines minimum
+- **Content:** Full market analysis, pricing data, competitor deep dives
+- **Examples:** `17-marketplace-comparison.md`, `19-fleet-demand-b2b-analysis.md`
+
+### wiki/pages/ — Quick Reference
+- **Naming:** `kebab-case.md` (descriptive)
+- **Size:** 50-150 lines
+- **Content:** Summaries, quick lookups, operational guides
+- **Examples:** `vehicle-brands.md`, `competitor-tracker.md`, `sourcing-guide.md`
+
+---
+
 ## Business Context
 
 - **Seller focus:** B2B and B2C hybrid — selling to fleet operators, workshops, and individual truck/bus owners
-- **Primary marketplaces:** Tokopedia, Shopee, TikTok Shop (in order of priority)
-- **Secondary marketplaces:** Bukalapak, Blibli, JD.ID
-- **Product scope:** Engine parts, brake systems, drivetrain, filters, electrical, body panels for commercial vehicles (Hino, Isuzu, Mitsubishi Fuso, Toyota Dyna, Scania, Volvo, MAN)
-- **Geographic focus:** Indonesia — all 34 provinces, with emphasis on Java, Sumatra, Kalimantan (high commercial vehicle density)
+- **Primary marketplaces:** Tokopedia, Shopee, TikTok Shop
+- **Product scope:** Engine parts, brake systems, drivetrain, filters, electrical, body panels
+- **Vehicle brands:** Hino, Isuzu, Mitsubishi Fuso, Toyota Dyna, Scania, Volvo, MAN
+- **Geographic focus:** Indonesia (Java, Sumatra, Kalimantan priority)
 
-## File Structure & Content Rules
+---
 
-### Research Files
+## Content Standards
 
-All research files follow this naming convention: `XX-description.md` where XX is a 2-digit number.
+### Research Files (`research/`)
+1. **Minimum 200 lines** per file. Target 300-500 lines.
+2. **Tables extensively** for pricing data and comparisons
+3. **Always include prices in Rupiah (Rp)** with realistic ranges
+4. **Multi-marketplace data required** — Tokopedia AND Shopee minimum
+5. **Never use placeholder prices** — use `(estimated)` tag if necessary
+6. **Include seller details:** Shop name, rating, location, price range
+7. **Write in English**
 
-| Range | Category | Files |
-|-------|----------|-------|
-| 01-04 | Marketplace Fundamentals | Restricted products, brand auth, listing guide, shipping |
-| 05-06 | TikTok Shop Strategy | Strategy, action checklist |
-| 07-13 | Consumer Car Parts Research | Pricing, demand, competitor analysis, promotions, returns, Euro 4 |
-| 14-16 | Commercial Vehicle Parts Catalogs | Engine, brake/drivetrain, filters/electrical/body |
-| 17-19 | Market Analysis & B2B | Marketplace comparison, wholesale margins, fleet demand |
+### Wiki Pages (`wiki/pages/`)
+1. **Quick reference format** — bullet points, tables, checklists
+2. **Link to research files** for deep dives
+3. **Updated frequently** as operations change
+4. **English**
 
-### Content Standards
-
-When creating or editing research files:
-
-1. **Minimum 200 lines** per file. Target 300-500 lines for new files.
-2. **Use tables extensively** for pricing data, comparisons, and seller listings. Tables are more compact and readable than prose for structured data.
-3. **Always include prices in Rupiah (Rp)** with realistic ranges based on actual marketplace data.
-4. **Multi-marketplace data required** — every catalog/pricing section must include data from BOTH Tokopedia AND Shopee minimum. TikTok Shop where available.
-5. **Never use placeholder prices.** If a price can't be found, use estimated range with `(estimated)` tag based on similar products.
-6. **Zero "Market dependent" entries.** Every price field must have a concrete value.
-7. **Include seller details:** Shop name, rating, location, price range, stock status.
-8. **Write in English** for research files.
+---
 
 ## Research Methodology
 
-When searching marketplace data:
+1. **Primary search:** Use `web_search` to find product URLs on Tokopedia/Shopee
+2. **Deep scrape:** Use `stealthy_fetch` for blocked pages
+3. **Cross-reference:** Verify prices across at least 2 marketplaces
+4. **B2B pricing:** Note bulk/wholesale pricing, MOQs, fleet discounts
+5. **Seasonal factors:** Note fluctuations during Lebaran, year-end, peak seasons
 
-1. **Primary search:** Use `web_search` to find product URLs on Tokopedia and Shopee
-2. **Deep scrape:** Use `stealthy_fetch` (Scrapling MCP) for product pages that block standard requests
-3. **Cross-reference:** Always verify prices across at least 2 marketplaces
-4. **B2B pricing:** Note bulk/wholesale pricing, minimum order quantities, and fleet discounts
-5. **Seasonal factors:** Note price fluctuations during Hari Raya, year-end, and trucking peak seasons
+---
 
 ## Git Workflow
 
 ### Commit Rules
-
-- **Commit after EACH file** is completed — never batch multiple file changes
-- **Descriptive commit messages:** `Fix: [what was fixed]` or `Add: [what was added]`
+- **Commit after EACH file** — never batch changes
+- **Descriptive messages:** `feat: add sourcing guide` or `update: Hino pricing`
 - **Push immediately** after each commit
-- **Never force push** to main branch
+- **Never force push**
 
-### Branch Rules
+### Update Order
+When modifying related files:
+1. Update `research/` file (detailed data)
+2. Update `wiki/pages/` file (summary/quick ref)
+3. Commit separately or together if small changes
+4. Push
 
-- `main` is the primary branch
-- Feature branches: `feature/short-description`
-- Research updates go directly to `main` (single-developer workflow)
+---
 
-## Common Tasks & Prompts
+## Quick Commands
 
-### Adding a New Product Category
+### Adding Wiki Page
+```
+Create wiki/pages/[page-name].md
+- Use research/ files as sources (relative links: ../research/XX-file.md)
+- Keep under 150 lines
+- Include "Related" section with links
+- Commit:
+```
 
-Research [product category] for [vehicle brand/model] commercial vehicles.
-Requirements:
+### Updating Research
+```
+Update research/[XX-file].md
+- Add new pricing data
+- Update tables
+- Check wiki/pages/ if summary needs update
+- Commit each file separately
+```
 
-- Search Tokopedia AND Shopee for pricing and seller data
-- Minimum 10 products with full details (seller, price, rating, location)
-- Include B2B/wholesale pricing if available
-- Output as markdown table
-- Target file size: 300-500 lines
-- Commit and push after completion
-
-### Updating Pricing Data
-
-Update pricing data in [file-name.md] for the [product category] section.
-
-- Search current prices on Tokopedia and Shopee
-- Replace old prices with current ranges
-- Add any new sellers found
-- Note any significant price changes (>10%)
-- Commit and push after completion
-
-
-### Expanding a File
-
-Expand [file-name.md] from [current] lines to at least 300 lines.
-
-- Keep all existing content
-- Add new sections with detailed, actionable information
-- Use tables for structured data
-- Include real marketplace examples and data
-- Commit and push after completion
-
+---
 
 ## Prohibited Actions
 
-- Do NOT delete any existing research files
-- Do NOT change file naming convention
+- Do NOT delete existing research files
+- Do NOT change `research/` file naming convention (XX-*.md)
 - Do NOT use placeholder text like "Market dependent" for prices
-- Do NOT focus on consumer car parts — this is commercial vehicles only
-- Do NOT batch commits — commit after each file
-- Do NOT write in Indonesian — all research files in English
+- Do NOT focus on consumer car parts — commercial vehicles only
+- Do NOT batch commits across multiple research files
+- Do NOT write in Indonesian — English only
 - Do NOT add prices without sourcing from actual marketplace data
+
+---
 
 ## Quality Checklist
 
-Before considering any file "done," verify:
+Before marking file "done":
 
+**Research Files:**
 - [ ] File is 200+ lines (300+ preferred)
-- [ ] All prices are in Rp with real/estimated values
-- [ ] No "Market dependent" or empty price entries
-- [ ] Both Tokopedia and Shopee data included
-- [ ] Seller details present (name, rating, location)
-- [ ] Tables used for structured/comparison data
-- [ ] File committed and pushed to GitHub
+- [ ] All prices in Rp with real/estimated values
+- [ ] No "Market dependent" entries
+- [ ] Tokopedia AND Shopee data included
+- [ ] Seller details present
+- [ ] Tables used for structured data
+- [ ] Written in English
+
+**Wiki Pages:**
+- [ ] Links to relevant research files
+- [ ] Quick reference format (not full research)
+- [ ] Under 150 lines
+- [ ] Includes "Related" section
