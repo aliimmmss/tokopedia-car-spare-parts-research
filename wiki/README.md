@@ -18,6 +18,9 @@ Quick reference pages for day-to-day operations.
 ### Customers & Sales
 - [B2B Customer Personas](./pages/b2b-customer-personas.md) — Fleets, workshops
 
+### Platform & Seller Academy
+- [Tokopedia & TikTok Shop Seller Academy](./pages/tokopedia-tiktok-seller-academy.md) — Complete platform rules, policies, fees
+
 ### Research (Deep Dives)
 See [../research/](../research/) for full pricing, demand, and strategy files.
 
