@@ -1,10 +1,34 @@
 # B2B Customer Personas
 
-Understanding your buyers in fleet and workshop segments.
+Based on [research/19-fleet-demand-b2b-analysis.md](../research/19-fleet-demand-b2b-analysis.md)
 
-## Workshop Owner (Bengkel)
+## Fleet Operator Types
 
-**Profile**: 
+### Government/Public Transport Fleets
+
+| Company | Fleet Size | Bus Types | Spare Parts Budget |
+|---------|------------|-----------|-------------------|
+| **TransJakarta** | 4,000+ | Hino, Volvo, Mercedes | Very High |
+| **Perum DAMRI** | 1,500+ | Hino, Mercedes, Scania | High |
+| **Suroboyo Bus** | 150+ | Hino, Mercedes | Medium |
+| **Trans Jogja** | 200+ | Hino, Isuzu | Medium |
+
+**Procurement Method:** Government e-procurement portals (eproc.transjakarta.co.id, eproc.damri.co.id)
+
+**Key Spare Parts Needed:**
+- Oil filters (J08E, A12C engines)
+- Air filters (high dust traffic)
+- Brake linings (high frequency stops)
+- Alternators (24V 60A)
+- Turbochargers (high mileage rebuilds)
+
+---
+
+## Customer Segments
+
+### Workshop Owner (Bengkel)
+
+**Profile**:
 - Male, 35-55 years
 - 5-20 years in business
 - Owns 1-3 workshop locations
@@ -32,13 +56,20 @@ Understanding your buyers in fleet and workshop segments.
 
 ---
 
-## Fleet Manager
+### Fleet Manager
 
 **Profile**:
 - Male, 30-50 years
 - Manages 10-100+ vehicles
 - Logistics, mining, or rental company
-- Reports to operations director
+
+**Top Logistics Companies:**
+| Rank | Company | Fleet Size | Annual Parts Spend |
+|------|---------|------------|-------------------|
+| 1 | PT SiCepat Express | 2,000+ | Rp 80-120 billion |
+| 2 | PT JNE Express | 1,500+ | Rp 60-100 billion |
+| 3 | PT Nippon Express | 1,000+ | Rp 50-100 billion |
+| 4 | PT Kamadjaja Logistics | 800+ | Rp 40-80 billion |
 
 **Pain Points**:
 - Vehicle downtime = lost revenue
@@ -63,13 +94,20 @@ Understanding your buyers in fleet and workshop segments.
 
 ---
 
-## Procurement Officer
+### Procurement Officer (Corporate/BUMN)
 
 **Profile**:
 - Corporate, mid-large companies
 - Manages vendor relationships
 - KPI: cost savings + vendor reliability
 - 28-45 years old
+
+**Top Mining Companies:**
+| Company | Location | Fleet Size | Annual Parts Budget |
+|---------|----------|------------|---------------------|
+| PT Kaltim Prima Coal | East Kalimantan | 200+ dump trucks | Rp 100-300M per truck/year |
+| PT Adaro Indonesia | South Kalimantan | 150+ dump trucks | Very High |
+| PT Freeport Indonesia | Papua | 300+ heavy trucks | Very High |
 
 **Pain Points**:
 - Finding competitive quotes
@@ -91,7 +129,7 @@ Understanding your buyers in fleet and workshop segments.
 
 ---
 
-## Sales Approach
+## Sales Approach by Segment
 
 ### Workshop
 - Visit personally, bring samples
@@ -119,10 +157,33 @@ Understanding your buyers in fleet and workshop segments.
 | Fleet Manager | Intro call | Email quote | Monthly |
 | Procurement | Email proposal | Meeting | Quarterly |
 
+## Key Procurement Portals
+
+| Organization | Portal | Access |
+|--------------|--------|--------|
+| TransJakarta | eproc.transjakarta.co.id | Government tender |
+| DAMRI | eproc.damri.co.id | Government tender |
+| Other BUMN | eproc.bumn.go.id | National e-procurement |
+
+## Seasonal Insights
+
+**Peak Demand Periods:**
+- Pre-Lebaran (March–April): Rush logistics
+- Post-harvest (September–October): Palm oil transport
+- Q4: Year-end budget spending
+
+**Plantation Fleets (Palm Oil):**
+- Peak: April–October (harvest season)
+- Companies: Astra Agro, Wilmar, Musim Mas
+- Remote locations need reliable supply
+
 ## Data Source
 
-- [Full B2B Fleet Analysis →](../research/19-fleet-demand-b2b-analysis.md)
+- [Full Fleet Demand Analysis →](../research/19-fleet-demand-b2b-analysis.md)
+- [Wholesale Margin Analysis →](../research/18-wholesale-margin-analysis.md)
 
 ## Related
 
-- [B2B Customer Personas Workshop owner, fleet manager, procurement officer buying behaviors]
+- [Pricing Strategy](../pricing-calculator.md) — Bulk pricing tiers
+- [Sourcing Guide](./sourcing-guide.md) — Where to buy for B2B
+- [Seasonal Calendar](./seasonal-calendar.md) — When fleets buy
