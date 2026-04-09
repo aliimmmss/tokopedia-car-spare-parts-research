@@ -1103,6 +1103,128 @@ Not money. Not permission. Just <strong>your experience.</strong>
 
 ---
 
+<!-- _class: stats -->
+
+<div class="stats-row">
+<div class="stat-item">
+<div class="section-idx">[ BIAYA PLATFORM ]</div>
+<h2 style="margin-top:16px;">Biaya Platform Hanya 5-7%</h2>
+</div>
+</div>
+
+<div class="stats-row" style="margin-top:48px;">
+<div class="stat-item">
+<div class="stat-value">7.0%</div>
+<div class="stat-label">Tokopedia</div>
+<p class="body-sm" style="text-align:center; margin-top:8px;">5.5% komisi + 1.5% pembayaran</p>
+</div>
+<div class="stat-item">
+<div class="stat-value green">6.5%</div>
+<div class="stat-label">TikTok Shop</div>
+<p class="body-sm" style="text-align:center; margin-top:8px;">4% komisi + 1% pembayaran + 1.5% layanan</p>
+</div>
+<div class="stat-item">
+<div class="stat-value gold">5.0%</div>
+<div class="stat-label">Power Merchant</div>
+<p class="body-sm" style="text-align:center; margin-top:8px;">Setelah 500+ order per bulan</p>
+</div>
+</div>
+
+<div class="callout callout-green" style="margin-top:48px;">
+<p class="body-sm"><strong>Bandingkan:</strong> Toko offline kehilangan 20-30% untuk sewa, listrik, karyawan. Online hanya 5-7%.</p>
+</div>
+
+---
+
+<div class="label">[ MARGIN KEUNTUNGAN ]</div>
+
+<h2>Margin Per Produk Tetap Sehat</h2>
+
+<table>
+<thead>
+<tr>
+<th>Produk</th>
+<th>Harga Jual</th>
+<th>Biaya Platform</th>
+<th>Ongkir (Java)</th>
+<th>Margin Bersih*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Filter Oli</td>
+<td>Rp 50.000</td>
+<td>Rp 3.500</td>
+<td>Rp 10.000</td>
+<td>~Rp 11.500</td>
+</tr>
+<tr>
+<td>Kampas Rem</td>
+<td>Rp 200.000</td>
+<td>Rp 14.000</td>
+<td>Rp 20.000</td>
+<td>~Rp 46.000</td>
+</tr>
+<tr>
+<td>Alternator</td>
+<td>Rp 800.000</td>
+<td>Rp 56.000</td>
+<td>Rp 25.000</td>
+<td>~Rp 219.000</td>
+</tr>
+<tr>
+<td>Radiator</td>
+<td>Rp 1.500.000</td>
+<td>Rp 105.000</td>
+<td>Rp 50.000</td>
+<td>~Rp 345.000</td>
+</tr>
+<tr>
+<td>Piston Set</td>
+<td>Rp 2.500.000</td>
+<td>Rp 175.000</td>
+<td>Rp 60.000</td>
+<td>~Rp 515.000</td>
+</tr>
+<tr>
+<td><strong>Paket Servis</strong></td>
+<td>Rp 807.500</td>
+<td>Rp 56.525</td>
+<td><strong>GRATIS</strong></td>
+<td><strong>~Rp 287.000</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p class="caption" style="margin-top:16px;">*Estimasi setelah COGS. Margin aktual tergantung harga beli dari supplier.</p>
+
+---
+
+<div class="label">[ STRATEGI HARGA ]</div>
+
+<h2>Harga Sama, Pasar Lebih Besar</h2>
+
+<div class="card-grid" style="margin-top:24px;">
+<div class="card card-accent-gold">
+<h4>Harga Tetap Sama</h4>
+<p class="body-sm">Harga jual online = harga toko offline. Pelanggan lama tidak merasa dirugikan, pelanggan baru mendapat harga yang sama kompetitif.</p>
+</div>
+<div class="card card-accent-green">
+<h4>Gratis Ongkir Otomatis</h4>
+<p class="body-sm">Order Rp 500rb+ (Jawa) dan Rp 1jt+ (luar Jawa) gratis ongkir. Mendorong pembelian lebih banyak dalam satu order.</p>
+</div>
+<div class="card">
+<h4>Paket Servis Berkala</h4>
+<p class="body-sm">Pre-built service kits untuk Isuzu, Mitsubishi, Hino, Daihatsu. Diskon 5% + gratis ongkir. Solusi satu klik untuk mekanik fleet.</p>
+</div>
+</div>
+
+<div class="callout" style="margin-top:32px;">
+<p class="body-sm"><strong>Pelanggan online adalah pelanggan dari kota yang TIDAK BISA datang ke toko di Bandung.</strong> Pie tidak berpindah — pie menjadi lebih besar.</p>
+</div>
+
+---
+
 <!-- _class: cta -->
 
 <div class="section-idx">10 — Decision</div>
