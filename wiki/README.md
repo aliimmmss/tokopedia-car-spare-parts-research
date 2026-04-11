@@ -12,6 +12,7 @@ Quick reference pages for day-to-day operations.
 
 ### Products & Sourcing
 - [Vehicle Brands Reference](./pages/vehicle-brands.md) — Hino, Isuzu, Mitsubishi specs
+- [Isuzu Catalog System](./pages/isuzu-catalog-system.md) — Official dealer parts catalog access
 - [Product Catalog Index](./pages/product-catalog-index.md) — Top SKUs with prices
 - [Sourcing Guide](./pages/sourcing-guide.md) — Where to buy, MOQ, quality tiers
 
@@ -31,9 +32,10 @@ See [../research/](../research/) for full pricing, demand, and strategy files.
 | Category | Count |
 |----------|-------|
 | Research files | 21 |
-| Wiki pages | 9 |
+| Wiki pages | 10 |
 | Vehicle brands | 3 (Hino, Isuzu, Mitsubishi) |
 | Product categories | 6 |
+| Catalog systems | 1 (Isuzu i-Parts Center) |
 
 ---
 
