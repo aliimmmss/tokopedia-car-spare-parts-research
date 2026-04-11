@@ -31,6 +31,7 @@ Quick reference pages for day-to-day operations.
 - [Pricing Matrix](./pages/pricing-matrix.md) — Dealer pricing vs marketplace comparison
 - [Competitor Tracking](./pages/competitor-tracking.md) — 176 parts cataloged with price gaps
 - [Dealer Parts Database](./pages/dealer_parts_full_export.json) — Full JSON export (176 parts)
+- [Tokopedia Live Tracking](./pages/tokopedia-competitor-tracking-live.md) — Real marketplace data (15 listings)
 
 ---
 
@@ -39,11 +40,12 @@ Quick reference pages for day-to-day operations.
 | Category | Count |
 |----------|-------|
 | Research files | 21 |
-| Wiki pages | 14 |
+| Wiki pages | 15 |
 | Vehicle brands | 3 (Hino, Isuzu, Mitsubishi) |
 | Product categories | 17 |
 | Catalog systems | 1 (Isuzu i-Parts Center) |
 | Dealer parts cataloged | 176 |
+| Live marketplace data | 15 products scraped |
 | Concurrent research | 5 tracks complete |
 
 ---
