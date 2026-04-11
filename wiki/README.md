@@ -22,8 +22,12 @@ Quick reference pages for day-to-day operations.
 ### Platform & Seller Academy
 - [Tokopedia & TikTok Shop Seller Academy](./pages/tokopedia-tiktok-seller-academy.md) — Complete platform rules, policies, fees
 
-### Research (Deep Dives)
-See [../research/](../research/) for full pricing, demand, and strategy files.
+### Research Repository
+- See [../research/](../research/) for full pricing, demand, and strategy files.
+
+### Concurrent Research
+- [Concurrent Research Findings](./pages/research-concurrent-findings.md) — Chinese trucks, Euro 4, B50 mandate, TikTok scan
+- [Pricing Intel Template](./pages/pricing-intel-template.md) — Ready for product list integration
 
 ---
 
@@ -32,10 +36,11 @@ See [../research/](../research/) for full pricing, demand, and strategy files.
 | Category | Count |
 |----------|-------|
 | Research files | 21 |
-| Wiki pages | 10 |
+| Wiki pages | 12 |
 | Vehicle brands | 3 (Hino, Isuzu, Mitsubishi) |
 | Product categories | 6 |
 | Catalog systems | 1 (Isuzu i-Parts Center) |
+| Concurrent research | 5 tracks active |
 
 ---
 
