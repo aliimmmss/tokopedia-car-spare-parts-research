@@ -28,6 +28,7 @@ Quick reference pages for day-to-day operations.
 ### Concurrent Research
 - [Concurrent Research Findings](./pages/research-concurrent-findings.md) — Chinese trucks, Euro 4, B50 mandate, TikTok scan
 - [Pricing Intel Template](./pages/pricing-intel-template.md) — Ready for product list integration
+- [Pricing Matrix](./pages/pricing-matrix.md) — Dealer pricing vs marketplace comparison
 
 ---
 
