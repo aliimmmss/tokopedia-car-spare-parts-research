@@ -29,6 +29,8 @@ Quick reference pages for day-to-day operations.
 - [Concurrent Research Findings](./pages/research-concurrent-findings.md) — Chinese trucks, Euro 4, B50 mandate, TikTok scan
 - [Pricing Intel Template](./pages/pricing-intel-template.md) — Ready for product list integration
 - [Pricing Matrix](./pages/pricing-matrix.md) — Dealer pricing vs marketplace comparison
+- [Competitor Tracking](./pages/competitor-tracking.md) — 176 parts cataloged with price gaps
+- [Dealer Parts Database](./pages/dealer_parts_full_export.json) — Full JSON export (176 parts)
 
 ---
 
@@ -37,11 +39,12 @@ Quick reference pages for day-to-day operations.
 | Category | Count |
 |----------|-------|
 | Research files | 21 |
-| Wiki pages | 12 |
+| Wiki pages | 14 |
 | Vehicle brands | 3 (Hino, Isuzu, Mitsubishi) |
-| Product categories | 6 |
+| Product categories | 17 |
 | Catalog systems | 1 (Isuzu i-Parts Center) |
-| Concurrent research | 5 tracks active |
+| Dealer parts cataloged | 176 |
+| Concurrent research | 5 tracks complete |
 
 ---
 
