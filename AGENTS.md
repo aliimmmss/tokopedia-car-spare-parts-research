@@ -16,16 +16,20 @@
 ## Repo Structure
 
 ```
-├── research/          # Full research files (21 files)
-│   ├── 01-*.md       # Marketplace fundamentals
-│   ├── 14-*.md       # Product catalogs
-│   └── 17-19*.md     # Market analysis & B2B
+├── docs/              # Canonical content (MkDocs source + GitHub Pages)
+│   ├── fundamentals/  # Marketplace rules, listing guides, shipping
+│   ├── market-research/  # Pricing, demand, competitor analysis
+│   ├── catalogs/      # Product catalogs (engine, brake, filters)
+│   ├── analysis/      # B2B, wholesale, marketplace comparison
+│   └── tiktok-shop/   # TikTok Shop strategy & checklists
+├── research/          # Unique research files WITHOUT docs/ counterpart
+│   └── XX-*.md        # Deep dives on topics not yet in docs/
 ├── wiki/              # Quick-reference wiki pages
 │   ├── README.md
 │   └── pages/         # Vehicle brands, sourcing, personas, etc.
 ├── luxor-studio/      # Web dashboard application
 ├── tools/             # Python automation scripts
-├── slides/            # Marp presentation files
+├── slides/            # Marp presentation files (.md sources)
 └── AGENTS.md          # This file
 ```
 
@@ -33,11 +37,20 @@
 
 ## File Categories
 
-### research/ — Deep Research Files
+### docs/ — Canonical Content (MkDocs Source)
+- **Purpose:** Primary publishing format for GitHub Pages. Single source of truth.
+- **Naming:** `kebab-case.md` (descriptive, topic-based)
+- **Structure:** Organized by category (`fundamentals/`, `market-research/`, `catalogs/`, `analysis/`, `tiktok-shop/`)
+- **Content:** Full research, tables, pricing data, mermaid diagrams
+- **Examples:** `fundamentals/product-listing-guide.md`, `catalogs/engine-parts.md`
+
+### research/ — Unique Deep Research (No docs/ Counterpart)
+- **Purpose:** Archive for research topics that have NOT been migrated to docs/ yet
 - **Naming:** `XX-description.md` (2-digit number)
 - **Size:** 200-500 lines minimum
 - **Content:** Full market analysis, pricing data, competitor deep dives
-- **Examples:** `17-marketplace-comparison.md`, `19-fleet-demand-b2b-analysis.md`
+- **Examples:** `23-isuzu-iparts-margin-analysis.md`, `26-importer-price-analysis-comparison.md`
+- **Rule:** If a topic exists in docs/, do NOT maintain a duplicate in research/
 
 ### wiki/pages/ — Quick Reference
 - **Naming:** `kebab-case.md` (descriptive)
@@ -96,7 +109,7 @@
 
 ### Update Order
 When modifying related files:
-1. Update `research/` file (detailed data)
+1. Update `docs/` file (canonical detailed data)
 2. Update `wiki/pages/` file (summary/quick ref)
 3. Commit separately or together if small changes
 4. Push
@@ -108,7 +121,7 @@ When modifying related files:
 ### Adding Wiki Page
 ```
 Create wiki/pages/[page-name].md
-- Use research/ files as sources (relative links: ../research/XX-file.md)
+- Use docs/ files as sources (relative links: ../docs/category/file.md)
 - Keep under 150 lines
 - Include "Related" section with links
 - Commit:
@@ -116,7 +129,7 @@ Create wiki/pages/[page-name].md
 
 ### Updating Research
 ```
-Update research/[XX-file].md
+Update docs/[category]/[file].md
 - Add new pricing data
 - Update tables
 - Check wiki/pages/ if summary needs update
@@ -127,7 +140,7 @@ Update research/[XX-file].md
 
 ## Prohibited Actions
 
-- Do NOT delete existing research files
+- Do NOT maintain duplicate content in `research/` and `docs/` — `docs/` is canonical
 - Do NOT change `research/` file naming convention (XX-*.md)
 - Do NOT use placeholder text like "Market dependent" for prices
 - Do NOT focus on consumer car parts — commercial vehicles only
