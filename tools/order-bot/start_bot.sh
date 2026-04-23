@@ -3,7 +3,7 @@
 # For Tokopedia and TikTok Shop - Commercial Vehicle Spare Parts
 
 # Change to bot directory
-cd ~/order-notification-bot
+cd "$(dirname "$0")"
 
 # Check if venv exists
 if [ ! -d "venv" ]; then

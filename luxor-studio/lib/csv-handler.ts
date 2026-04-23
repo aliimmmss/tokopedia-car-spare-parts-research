@@ -5,7 +5,7 @@ import { Product } from './types'
 import fs from 'fs'
 import path from 'path'
 
-const DATA_DIR = path.join(process.cwd(), '..', 'tools', 'description-generator')
+const DATA_DIR = path.join(process.cwd(), 'data')
 const PRODUCTS_CSV = path.join(DATA_DIR, 'products.csv')
 
 // Parse CSV to Products
@@ -75,7 +75,9 @@ export function productsToCSV(products: Product[]): string {
     'condition',
     'oem_number',
     'key_features',
-    'notes'
+    'notes',
+    'status',
+    'date_added'
   ]
   
   const rows = products.map(p => {
