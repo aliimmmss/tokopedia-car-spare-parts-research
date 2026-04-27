@@ -76,7 +76,9 @@ Daily operational tasks for running the spare parts business.
 - **TikTok Shop Seller** — Content, orders
 - **WhatsApp Business** — B2B communication
 - **Google Sheets** — Stock tracking, sales log
-- **Luxor Studio** — Photo processing, description generation
+- **Photo Processor** (`tools/photo-processor/`) — Background removal, watermarking
+- **Description Generator** (`tools/description-generator/`) — AI product descriptions
+- **Order Bot** (`tools/order-bot/`) — Telegram order notifications
 
 ## Related
 

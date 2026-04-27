@@ -27,9 +27,9 @@
 ├── wiki/              # Quick-reference wiki pages
 │   ├── README.md
 │   └── pages/         # Vehicle brands, sourcing, personas, etc.
-├── luxor-studio/      # Web dashboard application
 ├── tools/             # Python automation scripts
 ├── slides/            # Marp presentation files (.md sources)
+├── data/              # Product CSV database (29 commercial vehicle parts)
 └── AGENTS.md          # This file
 ```
 
