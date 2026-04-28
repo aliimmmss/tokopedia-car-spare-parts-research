@@ -77,16 +77,29 @@ export default function About() {
         </div>
 
         {/* Google Maps Embed */}
-        <div className="mt-16 border border-[#222222]">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.45178947392!2d107.4080066!3d-6.9034443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
-            width="100%"
-            height="300"
-            style={{ border: 0, borderRadius: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+        <div className="mt-16">
+          <div className="border border-[#222222]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9!2d107.6014182!3d-6.9160929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e63cf7cb7d8b%3A0x15ce5334f005c7dc!2sLuxor%20Automotive%20Parts!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+              width="100%"
+              height="350"
+              style={{ border: 0, borderRadius: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+          <p className="mt-3 text-xs text-[#888888]">
+            Kunjungi toko kami di{" "}
+            <a
+              href="https://maps.app.goo.gl/Apy2fvFQjK6sLbnm7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-white transition-colors"
+            >
+              Google Maps
+            </a>
+          </p>
         </div>
       </div>
     </section>
