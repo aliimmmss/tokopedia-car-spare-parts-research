@@ -1,56 +1,64 @@
 @import "tailwindcss";
 
-@theme {
-  --color-luxor-black: #000000;
-  --color-luxor-card: #0A0A0A;
-  --color-luxor-border: #222222;
-  --color-luxor-muted: #888888;
-  --color-luxor-secondary: #666666;
-  --color-luxor-whatsapp: #25D366;
-  --color-luxor-surface: #111111;
-  --color-luxor-white: #FFFFFF;
-  --font-heading: "Space Grotesk", system-ui, sans-serif;
-  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+:root {
+  /* Nothing Design — Dark Mode */
+  --nd-black: #000000;
+  --nd-surface: #111111;
+  --nd-surface-raised: #1A1A1A;
+  --nd-border: #222222;
+  --nd-border-visible: #333333;
+  --nd-text-disabled: #666666;
+  --nd-text-secondary: #999999;
+  --nd-text-primary: #E8E8E8;
+  --nd-text-display: #FFFFFF;
+  --nd-accent: #D71921;
+  --nd-success: #4A9E5C;
+  --nd-warning: #D4A843;
+  --nd-interactive: #5B9BF6;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* Fonts */
+  --font-display: 'Doto', 'Space Mono', monospace;
+  --font-body: 'Space Grotesk', 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'Space Mono', 'JetBrains Mono', monospace;
 }
 
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2") format("woff2");
-  font-weight: 300 700;
-  font-display: swap;
+body {
+  background: var(--nd-black);
+  color: var(--nd-text-primary);
+  font-family: var(--font-body);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: var(--font-body);
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-/* Dot grid background pattern */
+/* Dot Grid Patterns */
 .dot-grid {
-  background-image: radial-gradient(circle, #222 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-image: radial-gradient(circle, var(--nd-border-visible) 1px, transparent 1px);
+  background-size: 16px 16px;
 }
 
-/* Scrollbar styling */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #000000;
-}
-::-webkit-scrollbar-thumb {
-  background: #333333;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555555;
+.dot-grid-subtle {
+  background-image: radial-gradient(circle, var(--nd-border) 0.5px, transparent 0.5px);
+  background-size: 12px 12px;
 }
 
-/* Line clamp for product names */
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--nd-black); }
+::-webkit-scrollbar-thumb { background: var(--nd-border-visible); }
+
+/* Line clamp */
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;

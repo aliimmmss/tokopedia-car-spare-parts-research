@@ -4,37 +4,29 @@ import { useState, useMemo } from "react";
 import { Search, MessageCircle, Settings } from "lucide-react";
 import { products, formatPrice, generateWhatsAppLink, type Category } from "@/lib/products";
 
-const categories: { label: string; value: Category | "Semua" }[] = [
-  { label: "Semua Produk", value: "Semua" },
-  { label: "Kemudi", value: "Kemudi" },
-  { label: "Engine", value: "Engine" },
-  { label: "Rem", value: "Rem" },
-  { label: "Suspensi", value: "Suspensi" },
-  { label: "Lainnya", value: "Lainnya" },
-];
+const categories = ["Semua", "Kemudi", "Engine", "Rem", "Suspensi", "Lainnya"] as const;
+type FilterCategory = (typeof categories)[number];
 
 const categoryBadgeColors: Record<Category, string> = {
-  Kemudi: "bg-[#1A1A2E] text-[#8888CC]",
-  Engine: "bg-[#1A2E1A] text-[#88CC88]",
-  Rem: "bg-[#2E1A1A] text-[#CC8888]",
-  Suspensi: "bg-[#2E2E1A] text-[#CCCC88]",
-  Lainnya: "bg-[#1A2E2E] text-[#88CCCC]",
+  Kemudi: "var(--nd-text-secondary)",
+  Engine: "var(--nd-text-secondary)",
+  Rem: "var(--nd-text-secondary)",
+  Suspensi: "var(--nd-text-secondary)",
+  Lainnya: "var(--nd-text-secondary)",
 };
 
 export default function ProductCatalog() {
   const [search, setSearch] = useState("");
-  const [activeCategory, setActiveCategory] = useState<Category | "Semua">("Semua");
+  const [activeCategory, setActiveCategory] = useState<FilterCategory>("Semua");
 
   const filtered = useMemo(() => {
     return products.filter((p) => {
-      const matchesCategory = activeCategory === "Semua" || p.category === activeCategory;
-      const q = search.toLowerCase();
       const matchesSearch =
-        !q ||
-        p.name.toLowerCase().includes(q) ||
-        p.brand.toLowerCase().includes(q) ||
-        p.category.toLowerCase().includes(q);
-      return matchesCategory && matchesSearch;
+        search === "" ||
+        p.name.toLowerCase().includes(search.toLowerCase()) ||
+        p.brand.toLowerCase().includes(search.toLowerCase());
+      const matchesCategory = activeCategory === "Semua" || p.category === activeCategory;
+      return matchesSearch && matchesCategory;
     });
   }, [search, activeCategory]);
 
@@ -42,103 +34,251 @@ export default function ProductCatalog() {
     <section id="produk" className="py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-12">
-          <span className="text-xs tracking-[0.15em] text-[#888888] uppercase block mb-3">Katalog</span>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-[-0.02em] font-[var(--font-heading)]">
+        <div className="mb-10">
+          <span
+            style={{
+              fontFamily: "var(--font-mono)",
+              fontSize: 11,
+              letterSpacing: "0.1em",
+              color: "var(--nd-text-disabled)",
+              textTransform: "uppercase",
+              display: "block",
+              marginBottom: 12,
+            }}
+          >
+            KATALOG
+          </span>
+          <h2
+            style={{
+              fontFamily: "var(--font-body)",
+              fontSize: "clamp(28px, 4vw, 36px)",
+              fontWeight: 600,
+              letterSpacing: "-0.02em",
+              color: "var(--nd-text-display)",
+            }}
+          >
             Produk Kami
           </h2>
-          <p className="mt-3 text-[#888888] text-sm max-w-lg">
-            Spare part kendaraan niaga dari brand terpercaya. Klik &quot;Pesan via WhatsApp&quot; untuk cek ketersediaan.
-          </p>
         </div>
 
         {/* Search */}
         <div className="relative mb-6">
-          <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#666666]" />
+          <Search
+            size={18}
+            strokeWidth={1.5}
+            style={{ position: "absolute", left: 16, top: "50%", transform: "translateY(-50%)", color: "var(--nd-text-disabled)" }}
+          />
           <input
             type="text"
-            placeholder="Cari produk, brand, atau kategori..."
+            placeholder="Cari spare part..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full bg-[#0A0A0A] border border-[#222222] text-white text-sm pl-11 pr-4 py-3 placeholder:text-[#666666] focus:outline-none focus:border-[#444444] transition-colors"
+            className="w-full"
+            style={{
+              background: "var(--nd-surface)",
+              border: "1px solid var(--nd-border)",
+              borderRadius: 8,
+              padding: "12px 16px 12px 44px",
+              fontFamily: "var(--font-body)",
+              fontSize: 14,
+              color: "var(--nd-text-primary)",
+              outline: "none",
+              transition: "border-color 200ms ease-out",
+            }}
+            onFocus={(e) => (e.currentTarget.style.borderColor = "var(--nd-border-visible)")}
+            onBlur={(e) => (e.currentTarget.style.borderColor = "var(--nd-border)")}
           />
         </div>
 
         {/* Category Filters */}
-        <div className="flex flex-wrap gap-2 mb-8">
-          {categories.map((cat) => (
-            <button
-              key={cat.value}
-              onClick={() => setActiveCategory(cat.value)}
-              className={`px-4 py-2 text-xs tracking-wide transition-colors ${
-                activeCategory === cat.value
-                  ? "bg-white text-black font-medium"
-                  : "border border-[#222222] text-[#888888] hover:border-[#444444] hover:text-white"
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
+        <div className="flex flex-wrap gap-2 mb-6">
+          {categories.map((cat) => {
+            const isActive = activeCategory === cat;
+            return (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: 11,
+                  letterSpacing: "0.06em",
+                  textTransform: "uppercase",
+                  padding: "8px 16px",
+                  minHeight: 36,
+                  borderRadius: 999,
+                  background: isActive ? "var(--nd-text-display)" : "transparent",
+                  color: isActive ? "var(--nd-black)" : "var(--nd-text-secondary)",
+                  border: isActive ? "none" : "1px solid var(--nd-border-visible)",
+                  cursor: "pointer",
+                  transition: "all 200ms ease-out",
+                }}
+              >
+                {cat}
+              </button>
+            );
+          })}
         </div>
 
         {/* Results Count */}
-        <p className="text-xs text-[#666666] mb-6">
+        <p
+          style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: 11,
+            color: "var(--nd-text-disabled)",
+            marginBottom: 24,
+          }}
+        >
           Menampilkan {filtered.length} produk
         </p>
 
         {/* Product Grid */}
-        {filtered.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[1px] bg-[#222222]">
-            {filtered.map((product) => (
-              <div key={product.id} className="bg-[#0A0A0A] flex flex-col">
-                {/* Image Placeholder */}
-                <div className="relative aspect-square bg-[#111111] flex items-center justify-center">
-                  <Settings size={48} className="text-[#222222]" />
-                  <span className="absolute top-3 left-3 text-[10px] tracking-[0.15em] uppercase px-2 py-1 bg-[#111111] border border-[#222222] text-[#888888]">
-                    {product.category}
-                  </span>
-                </div>
-
-                {/* Info */}
-                <div className="p-4 flex flex-col flex-1">
-                  <span className="text-[10px] tracking-[0.15em] text-[#666666] uppercase mb-1.5">
-                    {product.brand}
-                  </span>
-                  <h3 className="text-sm text-white leading-snug line-clamp-2 mb-3 flex-1">
-                    {product.name}
-                  </h3>
-                  <div className="text-lg font-bold tracking-tight mb-1">
-                    {formatPrice(product.price)}
-                  </div>
-                  <p className="text-[11px] text-[#666666] mb-4">{product.quantity}</p>
-
-                  <a
-                    href={generateWhatsAppLink(product)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#25D366] text-black px-4 py-2.5 text-xs font-medium hover:bg-[#20BD5A] transition-colors w-full"
-                  >
-                    <MessageCircle size={14} />
-                    Pesan via WhatsApp
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-20 border border-[#222222]">
-            <p className="text-[#666666] text-sm">Tidak ada produk yang cocok dengan pencarian.</p>
-            <button
-              onClick={() => {
-                setSearch("");
-                setActiveCategory("Semua");
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {filtered.map((product) => (
+            <div
+              key={product.id}
+              style={{
+                background: "var(--nd-surface)",
+                border: "1px solid var(--nd-border)",
+                borderRadius: 12,
+                overflow: "hidden",
+                transition: "background 200ms ease-out, border-color 200ms ease-out",
               }}
-              className="mt-4 text-xs text-white underline underline-offset-4 hover:text-[#888888] transition-colors"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "var(--nd-surface-raised)";
+                e.currentTarget.style.borderColor = "var(--nd-border-visible)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "var(--nd-surface)";
+                e.currentTarget.style.borderColor = "var(--nd-border)";
+              }}
             >
-              Reset filter
-            </button>
-          </div>
-        )}
+              {/* Image Area */}
+              <div
+                className="relative"
+                style={{
+                  background: "var(--nd-surface)",
+                  aspectRatio: "1/1",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  position: "relative",
+                }}
+              >
+                {product.image ? (
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                ) : (
+                  <Settings size={48} strokeWidth={1.5} style={{ color: "var(--nd-border-visible)" }} />
+                )}
+                {/* Category Badge */}
+                <span
+                  className="absolute top-3 left-3"
+                  style={{
+                    background: "var(--nd-surface-raised)",
+                    borderRadius: 999,
+                    padding: "4px 10px",
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 10,
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                    color: "var(--nd-text-secondary)",
+                  }}
+                >
+                  {product.category}
+                </span>
+              </div>
+
+              {/* Info Area */}
+              <div style={{ padding: 16 }}>
+                <span
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 11,
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                    color: "var(--nd-text-disabled)",
+                    display: "block",
+                    marginBottom: 4,
+                  }}
+                >
+                  {product.brand}
+                </span>
+                <h3
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontSize: 14,
+                    color: "var(--nd-text-primary)",
+                    lineHeight: 1.4,
+                    marginBottom: 12,
+                    minHeight: 40,
+                  }}
+                  className="line-clamp-2"
+                >
+                  {product.name}
+                </h3>
+                <div style={{ marginBottom: 4 }}>
+                  <span
+                    style={{
+                      fontFamily: "var(--font-mono)",
+                      fontSize: 11,
+                      color: "var(--nd-text-disabled)",
+                      marginRight: 4,
+                    }}
+                  >
+                    Rp
+                  </span>
+                  <span
+                    style={{
+                      fontFamily: "var(--font-mono)",
+                      fontSize: 24,
+                      fontWeight: 700,
+                      color: "var(--nd-text-display)",
+                    }}
+                  >
+                    {formatPrice(product.price).replace("Rp", "")}
+                  </span>
+                </div>
+                <p
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 11,
+                    color: "var(--nd-text-disabled)",
+                    marginBottom: 16,
+                  }}
+                >
+                  {product.quantity}
+                </p>
+                <a
+                  href={generateWhatsAppLink(product)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                  style={{
+                    background: "var(--nd-success)",
+                    color: "#FFFFFF",
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 11,
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                    padding: "12px 16px",
+                    minHeight: 44,
+                    borderRadius: 999,
+                    width: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 8,
+                    transition: "opacity 200ms ease-out",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
+                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+                >
+                  <MessageCircle size={14} strokeWidth={1.5} />
+                  PESAN VIA WHATSAPP
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
