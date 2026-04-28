@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-luxor-black: #000000;
+  --color-luxor-card: #0A0A0A;
+  --color-luxor-border: #222222;
+  --color-luxor-muted: #888888;
+  --color-luxor-secondary: #666666;
+  --color-luxor-whatsapp: #25D366;
+  --color-luxor-surface: #111111;
+  --color-luxor-white: #FFFFFF;
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* Dot grid background pattern */
+.dot-grid {
+  background-image: radial-gradient(circle, #222 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Line clamp for product names */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
