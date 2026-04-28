@@ -56,8 +56,11 @@ export default function Hero() {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <div className="w-[1px] h-8 bg-[#222222]" />
-        <span className="text-[10px] tracking-[0.15em] text-[#666666] uppercase">Scroll</span>
+        <span className="text-[10px] tracking-[0.2em] text-[#444444] uppercase">Scroll</span>
+        <div
+          className="w-[1px] h-8"
+          style={{ background: "linear-gradient(to bottom, #444444, transparent)" }}
+        />
       </div>
     </section>
   );
