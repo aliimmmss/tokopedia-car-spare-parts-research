@@ -33,3 +33,6 @@ node_modules/
 
 # MkDocs build output
 site/
+
+# Raw product photos (too large for git, keep locally)
+photos-source/
