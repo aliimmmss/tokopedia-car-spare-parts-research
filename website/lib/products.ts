@@ -7,7 +7,7 @@
 //
 // To add photos:
 // 1. Organize photos in subfolders (one per product)
-// 2. Run: ./scripts/rename-photos.sh ./my-photos/
+// 2. Run: node scripts/rename-photos.mjs D:/LUXOR/photos/
 // 3. Run: node scripts/optimize.mjs
 // 4. Run: node scripts/update-product-images.mjs
 // 5. Paste the output into this file
