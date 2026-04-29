@@ -6,6 +6,8 @@ const PRODUCTS_DIR = 'public/products';
 
 async function main() {
   const files = await readdir(PRODUCTS_DIR);
+  // Match {slug}-{number}.{jpg|jpeg|png} or {slug}.{jpg|jpeg|png}
+  // Skip files already in .webp format
   const images = files.filter(f => /\.(jpg|jpeg|png)$/i.test(f));
 
   if (images.length === 0) {
