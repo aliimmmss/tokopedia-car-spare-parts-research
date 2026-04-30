@@ -1,0 +1,1383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=2N_sDSC0" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://www.mql5.com/en/articles/page4","20250629163806","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1751215086");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+
+  <meta name="description" content="Articles on MQL4 programming, testing and optimization of Expert Advisors and indicators for MetaTrader 5. Page 4">
+  <meta property="og:url" content="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/articles/page4">
+  <meta property="og:title" content="MQL5 Articles">
+  <meta property="og:description" content="MQL5 Programming Articles">
+  <meta property="og:image" content="https://web.archive.org/web/20250629163806im_/https://www.mql5.com/en/articles/images/og/fb/mt5">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@mql5com">
+  <meta name="twitter:image" content="https://web.archive.org/web/20250629163806im_/https://www.mql5.com/en/articles/images/og/fb/mt5">
+  <meta name="theme-color" content="#4a76b8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-config" content="none">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta property="qc:admins" content="36367170677651456375">
+  <meta property="wb:webmaster" content="073d7690269bcd81">
+  <link rel="shortcut icon" href="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/favicon4.ico">
+  <link rel="dns-prefetch" href="https://web.archive.org/web/20250629163806/https://c.mql5.com/">
+  <link href="https://web.archive.org/web/20250629163806cs_/https://c.mql5.com/styles/core.6e0eaedf7f630bc8e513e483ed67e738.css" type="text/css" rel="stylesheet" media="all">
+  <link href="https://web.archive.org/web/20250629163806cs_/https://c.mql5.com/styles/all.4fada1fb4a562e9491fc3976eba37da5.css" type="text/css" rel="stylesheet" media="all">
+  <link href="https://web.archive.org/web/20250629163806cs_/https://c.mql5.com/styles/articles.0043a1f61375edb5264dc2c9e641a499.css" type="text/css" rel="stylesheet" media="all">
+  <link href="/web/20250629163806/https://www.mql5.com/en/articles/rss" rel="alternate" type="application/rss+xml" title="Articles on the development and application of MetaTrader 5 trading robots and technical indicators">
+  <link rel="canonical" href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/articles/page4">
+  <link rel="next" href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/articles/page5">
+  <link rel="prev" href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/articles/page3">
+  <title>Articles on algorithmic/automated trading in MetaTrader 4 and MQL4 programming - Page 4</title>
+
+
+
+<script type="text/javascript">
+  !function(){window.mqGlobal={};var t=!1,n=!1,e=[],o=[],i=[];function d(t){var n;for(n=0;n<t.length;n+=1)t[n]()}function c(){t||(t=!0,d(e),d(o),o=[],e=[])}function a(){c(),n||(n=!0,d(i),i=[])}if(mqGlobal.AddOnReady=function(n,i){t?n(document):i?e.push(n):o.push(n)},mqGlobal.AddOnLoad=function(t){n?t(document):i.push(t)},mqGlobal.AddOnActiveWindowChange=function(t){this._onvisibility||(this._onvisibility=[]),this._onvisibility[this._onvisibility.length]=t},document.addEventListener)document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",a,!1);else if(document.attachEvent&&(document.attachEvent("onreadystatechange",(function(){switch(document.readyState){case"interactive":c();break;case"complete":a()}})),window.attachEvent("onload",a),document.documentElement.doScroll&&window==window.top)){!function n(){if(!t&&document.body)try{document.documentElement.doScroll("left"),c()}catch(t){setTimeout(n,0)}}()}}();
+  mqGlobal.CookieDomain = ".mql5.com";
+  mqGlobal.Language = 'en';
+  mqGlobal.IsMobile = false;
+  mqGlobal.ClearRteStorage = function (e) { if (window.GStorage || (window.GStorage = globalStorage()), window.GStorage.supported) try { var o = e; window.GStorage.getItem("rte_autosave_uid", function (e, t) { t == o && (window.GStorage.removeItem("rte_autosave_text"), window.GStorage.removeItem("rte_autosave_date"), window.GStorage.removeItem("rte_autosave_uid")) }) } catch (e) { } };
+</script>
+  
+
+    <script src="https://web.archive.org/web/20250629163806js_/https://c.mql5.com/js/all.9ed56f64a9c2277a0183458968784110.js" type="text/javascript" defer="defer"></script>
+  <script src="https://web.archive.org/web/20250629163806js_/https://c.mql5.com/js/vendor.c835e89fc229687ff8d147480b60f6c8.js" type="text/javascript" defer="defer"></script>
+  <script src="https://web.archive.org/web/20250629163806js_/https://c.mql5.com/js/articles.97aa874b951b5b41c95e6067e2395877.js" type="text/javascript" defer="defer"></script>
+
+
+</head>
+
+<body id="cover" class="cover">
+
+
+  <nav class="head">
+    <a href="https://web.archive.org/web/20250629163806/https://www.mql5.com/" class="head__logo" title="MQL5 - Language of trade strategies built-in the MetaTrader 5 client terminal"></a>
+      <div class="head__content">
+        <div class="main-menu" id="mainmenu">
+          
+                    <ul class="main-menu__top-level" id="menuTopLevel">
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/forum" data-fz-event="MQL5+Menu+Forum">Forum</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/market" data-fz-event="MQL5+Menu+Market">Market</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/signals" data-fz-event="MQL5+Menu+Signals">Signals</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/job" data-fz-event="MQL5+Menu+Job">Freelance</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/vps" data-fz-event="MQL5+Menu+VPS">VPS</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/quotes/overview" data-fz-event="MQL5+Menu+Overview">Quotes</a></li>
+                  </ul><ul class="main-menu__second-level" id="menuSecondLevel">
+                    <li class="main-menu__selected"><a href="/web/20250629163806/https://www.mql5.com/en/articles" data-fz-event="MQL5+Menu+Articles"><img src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/menu/icon-articles4.svg" alt="" width="16" height="16"/>Articles</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/code" data-fz-event="MQL5+Menu+CodeBase"><img src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/menu/icon-code4.svg" alt="" width="16" height="16"/>CodeBase</a></li>
+                    <li><a href="https://web.archive.org/web/20250629163806/https://forge.mql5.io/" target="_blank" rel="nofollow noopener" data-fz-event="MQL5+Menu+AlgoForge"><img src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/menu/icon-algoforge4.svg" alt="" width="16" height="16"/>Algo Forge</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/docs" data-fz-event="MQL5+Menu+Docs"><img src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/menu/icon-docs4.svg" alt="" width="16" height="16"/>Documentation</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/book" data-fz-event="MQL5+Menu+Book"><img src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/menu/icon-book4.svg" alt="" width="16" height="16"/>AlgoBook</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/neurobook" data-fz-event="MQL5+Menu+Neurobook"><img src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/menu/icon-neurobook4.svg" alt="" width="16" height="16"/>NeuroBook</a></li>
+                    <li><a href="/web/20250629163806/https://www.mql5.com/en/economic-calendar" data-fz-event="MQL5+Menu+Economic+Calendar"><img src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/menu/icon-economic-calendar4.svg" alt="" width="16" height="16"/>Calendar</a></li>
+                    <li><a href="https://web.archive.org/web/20250629163806/https://web.metatrader.app/terminal?mode=demo" target="_blank" rel="nofollow noopener" data-fz-event="MQL5+Menu+Trading"><img src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/menu/icon-trading4.svg" alt="" width="16" height="16"/>WebTerminal</a></li>
+                    <li class="main-menu__mobile"><a href="/web/20250629163806/https://www.mql5.com/en/about">About</a></li>
+                    <li class="main-menu__second-tools"><a rel="noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe?utm_source=www.mql5.com&amp;utm_campaign=download" title="Get the latest version of the trading platform for free" class="button-mt" data-vars-fz="MetaTrader+5+Desktop+Download+Submenu"><img width="18" height="18" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/download.svg" alt="" loading="lazy">Download MetaTrader 5</a></li>
+                    </ul>
+        </div>
+          <div class="main-menu__active">
+            <a id="mainMenuSelected" href="#">
+              <span class="main-menu__primary">Articles</span><span class="main-menu__secondary">Sections</span>
+            </a>
+          </div>
+
+<form action="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/search" onsubmit="return false;" autocomplete="off" id="headerSearchForm" class="header-search" method="post">
+<button type="button" id="headerSearchButton" title="Search" class="header-search__button"></button><div class="header-search__input"><input name="keyword" type="text" enterkeyhint="search" title="Enter search text" placeholder="Search" id="headerSearchKeyword"/><label for="headerSearchKeyword" class="header-search__placeholder">Type <span>/</span> to search:  @user, $symbol, ...</label><button id="headerSearchSubmit" class="header-search__submit"></button></div><button type="button" id="headerSearchClean" title="Close" class="header-search__clean"></button></form>        <input class="blurHandler" id="mainMenuBlurHandler" type="checkbox">
+      </div>
+      <div class="head__toolbar" id="headerToolbar">
+          <div class="container loginRegister">
+            <nav>
+              <ul id="loginRegisterButtons"><li><a class="login" title="Please sign in. OpenID supported" href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/auth_login" rel="nofollow" data-fz-event="MQL5+Menu+Siginin">Log in</a></li><li><a class="registration en" title="Please register" href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/auth_register" rel="nofollow" data-fz-event="MQL5+Menu+Register" onclick="window.fpush('MQL5+Button+Click');">Create an account</a></li></ul>
+            </nav>
+          </div>
+        <div class="toggle-button" id="sidebarToggleButton">
+          <i></i>
+        </div>
+
+        <div class="group-menu" id="groupMenu">
+
+
+          <div class="container lang-menu-container">
+            <div id="langMenuContainer" class="lang-menu">
+              <input class="blurHandler" id="langmenuBlurHandler" type="checkbox">
+              <nav>
+                <ul class="lang-menu__list" id="langmenu">
+                  <li class="lang-menu__list-item lang-menu__list-item_selected"><a href="/web/20250629163806/https://www.mql5.com/en/articles" aria-label="English (English)"><i class="icons-languages icons-languages_en"></i><span>English</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/ru/articles" aria-label="Русский (Russian)"><i class="icons-languages icons-languages_ru"></i><span>Русский</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/zh/articles" aria-label="中文 (Chinese)"><i class="icons-languages icons-languages_zh"></i><span>中文</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/es/articles" aria-label="Español (Spanish)"><i class="icons-languages icons-languages_es"></i><span>Español</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/pt/articles" aria-label="Português (Portuguese)"><i class="icons-languages icons-languages_pt"></i><span>Português</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/ja/articles" aria-label="日本語 (Japanese)"><i class="icons-languages icons-languages_ja"></i><span>日本語</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/de/articles" aria-label="Deutsch (German)"><i class="icons-languages icons-languages_de"></i><span>Deutsch</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/ko/articles" aria-label="한국어 (Korean)"><i class="icons-languages icons-languages_ko"></i><span>한국어</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/fr/articles" aria-label="Français (French)"><i class="icons-languages icons-languages_fr"></i><span>Français</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/it/articles" aria-label="Italiano (Italian)"><i class="icons-languages icons-languages_it"></i><span>Italiano</span></a></li>
+<li class="lang-menu__list-item"><a href="/web/20250629163806/https://www.mql5.com/tr/articles" aria-label="Türkçe (Turkish)"><i class="icons-languages icons-languages_tr"></i><span>Türkçe</span></a></li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+
+
+    <div id="left-sidebar-selector" class="left-sidebar__selector left-sidebar__selector_padding">
+        <div class="left-sidebar__title">
+        All
+        </div>
+        <i class="icons-ux icons-ux_arrow-down-black"></i>
+    </div>
+  <div class="articles-container block-with-sidebar">
+    <aside class="left-sidebar left-sidebar_270" id="left-sidebar">
+      
+    <ul class="tree-menu-ul"><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/examples"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/examples.svg" alt="" loading="lazy"/>Examples</a><ul class="tree-menu__list tree-menu__list_nested"><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/examples_indicators"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/examples_indicators.svg" alt="" loading="lazy"/>Indicators</a></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/examples_experts"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/examples_experts.svg" alt="" loading="lazy"/>Experts</a></li></ul></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/strategy_tester"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/strategy_tester.svg" alt="" loading="lazy"/>Tester</a></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/trading"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/trading.svg" alt="" loading="lazy"/>Trading</a></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/trading_systems"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/trading_systems.svg" alt="" loading="lazy"/>Trading systems</a></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/integration"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/integration.svg" alt="" loading="lazy"/>Integration</a></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/indicators"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/indicator.svg" alt="" loading="lazy"/>Indicators</a></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/expert_advisors"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/expert.svg" alt="" loading="lazy"/>Expert Advisors</a></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/statistics"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/statistics.svg" alt="" loading="lazy"/>Statistics and analysis</a></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/machine_learning"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/machine_learning.svg" alt="" loading="lazy"/>Machine learning</a></li><li class="tree-menu__item"><a class="tree-menu__link" href="/web/20250629163806/https://www.mql5.com/en/articles/interviews"><img class="tree-menu__icon" width="20" height="20" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/sidebar/interviews.svg" alt="" loading="lazy"/>Interviews</a></li></ul>
+    
+        <div class="hints-panel">
+            <div class="hints-panel__item">
+                <i class="icons-hints icons-hints_tw-square icons-hints_24px"></i><div class="hints-panel__content">
+Find us on <a href="https://web.archive.org/web/20250629163806/https://x.com/mql5com" target="_blank" rel="nofollow">Twitter</a>!<br> Join our fan page</div>
+            </div>
+            <div class="hints-panel__item">
+                <i class="icons-hints icons-hints_rules"></i>
+                <div class="hints-panel__content">
+                    Write an article<br>and we <a href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/articles/408" target="_blank">will pay</a> you 200 USD!
+                </div>
+            </div>
+            <div class="hints-panel__item">
+                <i class="icons-hints icons-hints_mt-5"></i>
+                <div class="hints-panel__content">
+                    Download <a href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe?utm_source=www.mql5.com&amp;utm_campaign=download" data-fz-event="MetaTrader+5+Desktop+Download+Articles">MetaTrader 5</a> and trade automatically
+                </div>
+            </div>
+        </div>
+<div id="vgckrufggwxdtfscpyalmenexmvhljduja" class="rf4hzdv00fzwhk1ph gjez9oorw"></div>
+    </aside>
+    <article class="content-with-sidebar articles-content splashed">
+      
+
+
+
+    <div class="module-intro-block module-intro-block_with-button ui">
+        <h1>MQL4 and MQL5 Programming Articles</h1>
+        <div class="module-intro-block__wrapper">
+            <img class="moduleIntroIco" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/articles/articles-icon.png" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/articles/articles-icon_2x.png 2x" alt="icon" loading="lazy" width="60" height="60">
+<p>Study <a href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/docs" target="_blank">the MQL5 language for programming trading strategies</a> in numerous published articles mostly written by you - the community members. The articles are grouped into categories to help you quicker find answers to any questions related to programming: Integration, Tester, Trading Strategies, etc.</p>
+
+<p>Follow our new publications and discuss them on the <a href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/forum" target="_blank">Forum</a>!</p>        </div>
+            <div class="module-intro-block__button-area">
+                        <a class="button button_green button_with-icon" href="javascript:void(false);" onclick="window.fpush('MQL5+Article+New+Article'); if(window.registerLoginPopup){ window.registerLoginPopup.show(); }">
+                            <i class="icons-buttons icons-buttons_add-article"></i>
+                            Add a new article
+                        </a>
+
+<div class="hidden" id="popupRegisterLogin">
+  <div class="register-login-popup">
+    <div class="register-login-popup__header">
+      <img src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/registerlandings/logo-2.png" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/i/registerlandings/logo-2_2x.png 2x" alt="MQL5 - Language of trade strategies built-in the MetaTrader 5 client terminal" loading="lazy" width="74" height="24"/>
+    </div>
+    <div class="register-login-popup__content">
+      <div class="register-login-popup__desc">
+        <div class="register-login-popup__title">You are missing trading opportunities:</div>
+        <ul>
+<li>Free trading apps</li>
+<li>Over 8,000 signals for copying</li>
+<li>Economic news for exploring financial markets</li>
+</ul>
+      </div>
+      <div class="register-login-popup__forms ui">
+        <div class="register-login-popup__tabs" id="registerLoginPopupTabs">
+          <span data-id="register" id="registerLoginPopupTab_register" class="register-login-popup__tab register-login-popup__tab_active">Registration</span>
+          <span data-id="login" id="registerLoginPopupTab_login" class="register-login-popup__tab">Log in</span>
+        </div>
+        <div id="registerLoginPopupTabContent_register">
+          <div class="ui auth-form__content">
+    
+  <script type="text/javascript">/*<![CDATA[*/ if (!window.V) var V = []; /*]]>*/</script>
+<script type="text/javascript">/*<![CDATA[*/ if(! window.V) var V=[]; /*]]>*/</script>
+<form method="POST" action="/web/20250629163806/https://www.mql5.com/en/auth_register_short" id="PopupRegisterquickRegisterForm" onsubmit="PopupRegisterquickRegistration.OnSubmit(this,'en');if(Validate(this)) Ajax.form(this,{onready:PopupRegisterquickRegistration.OnSuccessPopup,onerror:PopupRegisterquickRegistration.OnError,onbeginrequest:PopupRegisterquickRegistration.DisableInputs,onendrequest:PopupRegisterquickRegistration.EnableInputs});return(false);" enctype="multipart/form-data"><input type="hidden" name="__signature" value="4a420e3ca3015a0f4a8553148e6ce4ce"/>
+    <div class="auth-form__inputs">
+      <input type="hidden" value="0" name="IsValidate" id="PopupRegisterIsValidate"/>
+
+      <!--[if lt IE 10]><div class="note">Login:</div><![endif]-->
+      <div class="auth-form__box-input">
+        <input type="text" id="PopupRegisterusername" name="username" class="input" maxlength="32" onchange="if(window.PopupRegisterquickRegistration){PopupRegisterquickRegistration.CheckUserName();}" onkeyup="if(window.PopupRegisterquickRegistration){PopupRegisterquickRegistration.ValidateUserName(this, 'Enter a valid login');}" placeholder="Login" title="May contain Latin letters, digits, dots, dashes,underscore characters. Cannot start or end with a dot. The allowed length is 3 to 32 characters." onfocus="if(window.PopupRegisterquickRegistration){PopupRegisterquickRegistration.OnFocus(this,'');}" onblur="if(window.PopupRegisterquickRegistration){PopupRegisterquickRegistration.OnBlur(this);}">
+        <script type="text/javascript" id="validate_PopupRegisterusername">/*<![CDATA[*/ mqGlobal.AddOnReady(function() {V.push(['PopupRegisterusername',10,'You may use Latin characters, numbers, underscores and periods.',validate_username]);}); /*]]>*/</script>
+
+        <label class="label" for="PopupRegisterusername">latin characters without spaces</label>
+      </div>
+      <!--[if lt IE 10]><div class="note">Your email:</div><![endif]-->
+      <div class="auth-form__box-input">
+        <input class="input" type="email" id="PopupRegisteremail" name="email" placeholder="Your email" title="Please enter the email (it may not exceed 256 characters). For example: john@example.com" onchange="if(window.PopupRegisterquickRegistration){PopupRegisterquickRegistration.OnChange(this);}" onfocus="if(window.PopupRegisterquickRegistration){PopupRegisterquickRegistration.OnFocus(this,'');}" onblur="if(window.PopupRegisterquickRegistration){PopupRegisterquickRegistration.OnBlur(this);}">
+        <script type="text/javascript" id="validate_PopupRegisteremail">/*<![CDATA[*/ mqGlobal.AddOnReady(function() {V.push(['PopupRegisteremail',10,'Enter a valid email address',validate_email]);}); /*]]>*/</script>
+
+        <label class="label" for="PopupRegisteremail">a password will be sent to this email</label>
+      </div>
+      <input name="PrefixId" type="hidden" value="Popup+Register"/>
+    </div>
+    <span id="PopupRegisterquickRegisterSubmit">
+      <input type="submit" value="Register" id="PopupRegisterquickRegisterButton" title="Sign up and receive an email with your password" class="button button_yellow"/>
+    </span>
+    <span id="PopupRegisterquickRegisterErrorMessage" class="quick-register-error-message field-validation-error" style="text-align: center; margin-top: 16px; display: none;">
+      An error occurred
+    </span>
+</form>
+    
+</div>
+<div class="auth-social">
+  <ul class="auth-social-list" id="socialList">
+    <li><a onclick="window.fpush({name: 'MQL5+Popup+Register+Google', unit: 'section', value: 'Articles'}); " href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/auth_oauth2?provider=Google&amp;amp;return=popup&amp;amp;reg=1" class="auth-soc-button qa-google-button auth-soc-button_google" rel="nofollow">Log in With Google</a></li>
+  </ul>
+</div>
+<div class="auth-block-agree">
+  <p>
+    You agree to <a target="_blank" href="/web/20250629163806/https://www.mql5.com/en/about/privacy">website policy</a> and <a target="_blank" href="/web/20250629163806/https://www.mql5.com/en/about/terms">terms of use</a>
+  </p>
+</div>
+
+
+        </div>
+        <div id="registerLoginPopupTabContent_login" class="hidden">
+            <div class="auth-form__text">
+    If you do not have an account, please <a href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/auth_register" rel="nofollow" style="vertical-align: top">register</a>
+  </div>
+<div class="ui auth-form__content auth-form__content_login" id="loginFormWrapper">
+    
+  <div id="needCookies" class="need-cookies hidden">
+    <div class="danger-box">
+      <p>Allow the use of cookies to log in to the MQL5.com website.</p>
+<p>Please enable the necessary setting in your browser, otherwise you will not be able to log in.</p>
+    </div>
+  </div>
+<script type="text/javascript">/*<![CDATA[*/ if(! window.V) var V=[]; /*]]>*/</script>
+<form method="POST" action="/web/20250629163806/https://www.mql5.com/en/auth_login" id="loginForm" onsubmit="if(window.quickLogin){return window.quickLogin.onSubmit(this);}var result = Validate(this); if(result) { preventDoubleSubmit(this); } return result;"><input id="RedirectAfterLoginUrl" name="RedirectAfterLoginUrl" type="hidden" value=""/><input id="RegistrationUrl" name="RegistrationUrl" type="hidden" value=""/><input data-val="true" data-val-required="The ShowOpenId field is required." id="ShowOpenId" name="ShowOpenId" type="hidden" value="True"/><input id="TrackingSection" name="TrackingSection" type="hidden" value="Articles"/>    <input name="ViewType" type="hidden" value="5"/>
+      <input name="PrefixId" type="hidden" value="Popup+Login"/>
+    <!--[if lt IE 10]><div class="note">Your login:</div><![endif]-->
+    <div class="auth-form__box-input">
+      <input class="input qa-login" id="Login" name="Login" onchange="if(window.quickLogin){window.quickLogin.onChange(this);}" placeholder="Login" title="Your login" type="text" value=""/>
+      <script type="text/javascript" id="validate_Login">/*<![CDATA[*/ mqGlobal.AddOnReady(function() {V.push(['Login',1,'Enter login specified when signing up']);});mqGlobal.AddOnReady(function() {V.push(['Login',10,'Email cannot be used. Enter your login please',validateLogin]);}); /*]]>*/</script>
+    </div>
+    <!--[if lt IE 10]><div class="note">Password:</div><![endif]-->
+    <div class="auth-form__box-input">
+      <div class="input-with-show">
+        <input autocomplete="off" class="input qa-password" id="Password" name="Password" onchange="if(window.quickLogin){window.quickLogin.onChange(this);}" placeholder="Password" title="Enter the password please" type="password"/>
+        <span class="input-with-show__icon" title="Show password" onclick="if(window.quickLogin){window.quickLogin.showPass(this, 'Show password', 'Hide password');}"></span>
+      </div>
+      <script type="text/javascript" id="validate_Password">/*<![CDATA[*/ mqGlobal.AddOnReady(function() {V.push(['Password',1,'Please enter the password']);}); /*]]>*/</script>
+    </div>
+    <script type="text/javascript">
+    function validateLogin(input) {
+      console.log('validate login ' + input.value);
+      return !/^\w+([-+.'']{1,2}\w+)* @\w+([-.]\w+)*\.\w+([-.]\w+)*$/i.test(input.value);
+    }
+    </script>
+    <div class="forgot" id="loginForgotBlock"><a id="loginForgotLink" href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/auth_forgotten?return=popup">Forgot your login/password?</a></div>
+    <input type="submit" class="button button_yellow qa-submit" id="loginSubmit" value="Log in" title="Enter">
+</form></div>
+
+  <div class="auth-social" id="authSocialBlock">
+    <ul class="auth-social-list" id="socialList">
+      <li><a onclick="window.fpush({name: 'MQL5+Popup+Login+Google', unit: 'section', value: 'Articles'}); " href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/auth_oauth2?provider=Google&amp;amp;return=popup" class="auth-soc-button qa-google-button auth-soc-button_google" rel="nofollow">Log in With Google</a></li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script id="popupSection" type="application/json">{"section": "Articles"}</script>
+<script id="popupTranslate" data-type="translate" type="application/json">
+{
+  "popup":
+  {
+  "EmailTitle" : "The password has been sent to {0}",
+  "EmailDescription" : "Log in using the obtained password and the login specified during the registration",
+  "SubmitButtonText" : "Activate account",
+  "RegistrationTip" : "If you have not received the password email, check the spam folder or &lt;a href={0}&gt;repeat the registration&lt;/a&gt;"
+  }
+}
+</script>
+
+            </div>
+    </div>
+
+<div class="search-component__wrapper-articles">
+  <div class="search-component__wrapper">
+    <form action="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/search" class="search-component ui" id="searchComponent">
+      <input type="text" placeholder="Search Articles" name="keyword" autocomplete="off" method="post" class="input" id="searchComponentKeyword"/>
+      <button class="button" aria-label="Search"><i class="icons-ux icons-ux_search"></i></button>
+    </form>
+    <ul class="search-component__suggestions hidden" id="searchComponentSuggestions"></ul>
+  </div>
+</div>
+
+
+
+    <div class="article__sub-top">
+            <div class="articles__filter">
+latest                     | <a href="/web/20250629163806/https://www.mql5.com/en/articles/best">best</a>
+            </div>
+            <div class="paginatorEx articles-top-paginator">
+<a href="/web/20250629163806/https://www.mql5.com/en/articles" rel="nofollow">1</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page2" rel="nofollow">2</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page3" rel="nofollow">3</a><a class="selected" href="/web/20250629163806/https://www.mql5.com/en/articles/page4" rel="nofollow">4</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page5" rel="nofollow">5</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page6" rel="nofollow">6</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page7" rel="nofollow">7</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page8" rel="nofollow">8</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page9" rel="nofollow">9</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page10" rel="nofollow">10</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page11" rel="nofollow">11</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page34" rel="nofollow">...</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page56" rel="nofollow">56</a>            </div>
+    </div>
+
+    <div class="article-list article-list_page">
+<div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(128,111,87)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwYEBf/EACIQAAEEAgEEAwAAAAAAAAAAAAEAAgMEESEFEjEyQlFxof/EABYBAQEBAAAAAAAAAAAAAAAAAAIDBP/EABgRAQEBAQEAAAAAAAAAAAAAAAEAAhJB/9oADAMBAAIRAxEAPwDmO4eWo0GR+SPlLDfkrtA6vHtjSp7ccUjSHbU7coxZOD+LNrC+1hCSPnJn+5WkchkAuDiftTskIjOiUQsSs0HaR40S6G//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Trading_with_the_MQL5_Economic_Calendar_Part_7_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Trading_with_the_MQL5_Economic_Calendar_Part_7_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Trading_with_the_MQL5_Economic_Calendar_Part_7_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Trading_with_the_MQL5_Economic_Calendar_Part_7_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Trading_with_the_MQL5_Economic_Calendar_Part_7_600x314.jpg" alt="Trading with the MQL5 Economic Calendar (Part 7): Preparing for Strategy Testing with Resource-Based News Event Analysis" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(128,111,87, 0.9) 0%, rgba(128,111,87, 0.9) 10%, rgba(128,111,87, 0.7) 50%, rgba(128,111,87, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(128,111,87,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17603">Trading with the MQL5 Economic Calendar (Part 7): Preparing for Strategy Testing with Resource-Based News Event Analysis</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we prepare our MQL5 trading system for strategy testing by embedding economic calendar data as a resource for non-live analysis. We implement event loading and filtering for time, currency, and impact, then validate it in the Strategy Tester. This enables effective backtesting of news-driven strategies.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(128,111,87, 0.9) 0%, rgba(128,111,87, 0.9) 10%, rgba(128,111,87, 0.7) 50%, rgba(128,111,87, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(18,28,66)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAABAwf/xAAgEAABBAEEAwAAAAAAAAAAAAABAAIDESESEzFBUXGh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABcRAQEBAQAAAAAAAAAAAAAAAAABESH/2gAMAwEAAhEDEQA/AOaQs2zZbZ6SnOkdWo2PFohncVBM68lbIltPJplECvSxIaOD8RjI49qxJjJT6Ov/2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/From_Novice_to_Expert_Programming_Candlesticks_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/From_Novice_to_Expert_Programming_Candlesticks_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/From_Novice_to_Expert_Programming_Candlesticks_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/From_Novice_to_Expert_Programming_Candlesticks_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/From_Novice_to_Expert_Programming_Candlesticks_600x314.jpg" alt="From Novice to Expert: Programming Candlesticks" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(18,28,66, 0.9) 0%, rgba(18,28,66, 0.9) 10%, rgba(18,28,66, 0.7) 50%, rgba(18,28,66, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(18,28,66,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17525">From Novice to Expert: Programming Candlesticks</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we take the first step in MQL5 programming, even for complete beginners. We&#x27;ll show you how to transform familiar candlestick patterns into a fully functional custom indicator. Candlestick patterns are valuable as they reflect real price action and signal market shifts. Instead of manually scanning charts—an approach prone to errors and inefficiencies—we&#x27;ll discuss how to automate the process with an indicator that identifies and labels patterns for you. Along the way, we’ll explore key concepts like indexing, time series, Average True Range (for accuracy in varying market volatility), and the development of a custom reusable Candlestick Pattern library for use in future projects.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(18,28,66, 0.9) 0%, rgba(18,28,66, 0.9) 10%, rgba(18,28,66, 0.7) 50%, rgba(18,28,66, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item">
+  <div class="articles-item__wrapper" style="background-color: rgb(145,145,171)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMFBP/EAB8QAAICAgEFAAAAAAAAAAAAAAECAAMREgQTISIxkf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgT/xAAZEQADAAMAAAAAAAAAAAAAAAAAAQIREkH/2gAMAwEAAhEDEQA/AKZB194iF4VZfdgCYdtoCkE/JPey3bCMcTRezCcItINVxAYd5kouZV8mJjusDHDZNJcP/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Do_b7sico_ao_intermedi1rio_Comando_SWITCH_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Do_bnsico_ao_intermedi7rio_Comando_SWITCH_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Do_b7sico_ao_intermedisrio_Comando_SWITCH_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Do_b7sico_ao_intermedi1rio_Comando_SWITCH_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Do_b7sico_ao_intermedi1rio_Comando_SWITCH_600x314.jpg" alt="From Basic to Intermediate: SWITCH Statement" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(145,145,171, 0.9) 0%, rgba(145,145,171, 0.9) 10%, rgba(145,145,171, 0.7) 50%, rgba(145,145,171, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(145,145,171,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15391">From Basic to Intermediate: SWITCH Statement</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we will learn how to use the SWITCH statement in its simplest and most basic form. The content presented here is intended solely for educational purposes. Under no circumstances should the application be viewed for any purpose other than to learn and master the concepts presented.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(145,145,171, 0.9) 0%, rgba(145,145,171, 0.9) 10%, rgba(145,145,171, 0.7) 50%, rgba(145,145,171, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(3,10,16)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDB//EAB0QAAICAwADAAAAAAAAAAAAAAABAhEDITESUYH/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMo3FehwyOPNE3KwQhWeaTq3wfm65H6icWkDlZRf/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Integrating_AI_model_into_already_existing_MQL5_trading_strategy_V3_600x314__1.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Integrating_AI_model_into_already_existing_MQL5_trading_strategy_V3_1200x628__1.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Integrating_AI_model_into_already_existing_MQL5_trading_strategy_V3_300x157__1.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Integrating_AI_model_into_already_existing_MQL5_trading_strategy_V3_600x314__1.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Integrating_AI_model_into_already_existing_MQL5_trading_strategy_V3_600x314__1.jpg" alt="Integrating AI model into already existing MQL5 trading strategy" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(3,10,16, 0.9) 0%, rgba(3,10,16, 0.9) 10%, rgba(3,10,16, 0.7) 50%, rgba(3,10,16, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(3,10,16,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/16973">Integrating AI model into already existing MQL5 trading strategy</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">This topic focuses on incorporating a trained AI model (such as a reinforcement learning model like LSTM or a machine learning-based predictive model) into an existing MQL5 trading strategy.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(3,10,16, 0.9) 0%, rgba(3,10,16, 0.9) 10%, rgba(3,10,16, 0.7) 50%, rgba(3,10,16, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(20,37,54)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgMEB//EACEQAAIBAwMFAAAAAAAAAAAAAAECAAMRMQQhYRITMkFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAYEQADAQEAAAAAAAAAAAAAAAAAARFBMf/aAAwDAQACEQMRAD8A50itbG3Jl6en6xdnVBzIKbZ3j7gHqXdwiouiq0xT8XU/BM5vfMTMpOIIq6DmH//Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Price_Action_Analysis_Toolkit_Development_Part_20_V2_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Price_Action_Analysis_Toolkit_Development_Part_20_V2_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Price_Action_Analysis_Toolkit_Development_Part_20_V2_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Price_Action_Analysis_Toolkit_Development_Part_20_V2_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Price_Action_Analysis_Toolkit_Development_Part_20_V2_600x314.jpg" alt="Price Action Analysis Toolkit Development (Part 20): External Flow (IV) — Correlation Pathfinder" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(20,37,54, 0.9) 0%, rgba(20,37,54, 0.9) 10%, rgba(20,37,54, 0.7) 50%, rgba(20,37,54, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(20,37,54,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17742">Price Action Analysis Toolkit Development (Part 20): External Flow (IV) — Correlation Pathfinder</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Correlation Pathfinder offers a fresh approach to understanding currency pair dynamics as part of the Price Action Analysis Toolkit Development Series. This tool automates data collection and analysis, providing insight into how pairs like EUR/USD and GBP/USD interact. Enhance your trading strategy with practical, real-time information that helps you manage risk and spot opportunities more effectively.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(20,37,54, 0.9) 0%, rgba(20,37,54, 0.9) 10%, rgba(20,37,54, 0.7) 50%, rgba(20,37,54, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(49,40,43)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEB//EACIQAAIBAwIHAAAAAAAAAAAAAAECAAMEIRFhBRITFCJRgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//EABkRAAIDAQAAAAAAAAAAAAAAAABBAQISEf/aAAwDAQACEQMRAD8Az2hbLnx5juJUlornRqevyTpWanlcGH3lX3JOkaRxjq3DUC6hCJGbMAxxunYZJMHq7xV0w2yoP//Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Decoding_Opening_Range_Breakout_Intraday_Trading_Strategies_V2_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Decoding_Opening_Range_Breakout_Intraday_Trading_Strategies_V2_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Decoding_Opening_Range_Breakout_Intraday_Trading_Strategies_V2_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Decoding_Opening_Range_Breakout_Intraday_Trading_Strategies_V2_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/135/Decoding_Opening_Range_Breakout_Intraday_Trading_Strategies_V2_600x314.jpg" alt="Decoding Opening Range Breakout Intraday Trading Strategies" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(49,40,43, 0.9) 0%, rgba(49,40,43, 0.9) 10%, rgba(49,40,43, 0.7) 50%, rgba(49,40,43, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(49,40,43,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17745">Decoding Opening Range Breakout Intraday Trading Strategies</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Opening Range Breakout (ORB) strategies are built on the idea that the initial trading range established shortly after the market opens reflects significant price levels where buyers and sellers agree on value. By identifying breakouts above or below a certain range, traders can capitalize on the momentum that often follows as the market direction becomes clearer. In this article, we will explore three ORB strategies adapted from the Concretum Group.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(49,40,43, 0.9) 0%, rgba(49,40,43, 0.9) 10%, rgba(49,40,43, 0.7) 50%, rgba(49,40,43, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(41,37,65)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwQBB//EACAQAQACAQIHAAAAAAAAAAAAAAEAAgUDMQQSEyEiQVH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwT/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAIDEhP/2gAMAwEAAhEDEQA/AOdOOV7sQxa13iGskQ4m/wBmjzGTkFNbFtR8iE4+x7Jd1l3mc5Eayl1f/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Transformer_for_Point_Cloud__600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Transformer_for_Point_Cloud__1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Transformer_for_Point_Cloud__300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Transformer_for_Point_Cloud__600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Transformer_for_Point_Cloud__600x314.jpg" alt="Neural Networks in Trading: Transformer for the Point Cloud (Pointformer)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(41,37,65, 0.9) 0%, rgba(41,37,65, 0.9) 10%, rgba(41,37,65, 0.7) 50%, rgba(41,37,65, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(41,37,65,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15820">Neural Networks in Trading: Transformer for the Point Cloud (Pointformer)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we will talk about algorithms for using attention methods in solving problems of detecting objects in a point cloud. Object detection in point clouds is important for many real-world applications.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(41,37,65, 0.9) 0%, rgba(41,37,65, 0.9) 10%, rgba(41,37,65, 0.7) 50%, rgba(41,37,65, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(118,122,116)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQD/8QAHhAAAgICAwEBAAAAAAAAAAAAAQIAAwQRBRJxIVH/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBf/EABsRAAICAwEAAAAAAAAAAAAAAAABAgMREiFB/9oADAMBAAIRAxEAPwBkC1QSjFR+CC8pnXqxBdjqIvnMAQqqfYfkV1X7Nigkw8NEItdj9ALc+1jruQPZpQ3ZCS2/ZWeKpZ9nWvJSnH0Iuh8jYtY4TZ5b6f/Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Formulating_Dynamic_Multi-Pair_EA_Part_2_V3_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Formulating_Dynamic_Multi-Pair_EA_Part_2_V3_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Formulating_Dynamic_Multi-Pair_EA_Part_2_V3_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Formulating_Dynamic_Multi-Pair_EA_Part_2_V3_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Formulating_Dynamic_Multi-Pair_EA_Part_2_V3_600x314.jpg" alt="Formulating Dynamic Multi-Pair EA (Part 2): Portfolio Diversification and Optimization" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(118,122,116, 0.9) 0%, rgba(118,122,116, 0.9) 10%, rgba(118,122,116, 0.7) 50%, rgba(118,122,116, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(118,122,116,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/16089">Formulating Dynamic Multi-Pair EA (Part 2): Portfolio Diversification and Optimization</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Portfolio Diversification and Optimization strategically spreads investments across multiple assets to minimize risk while selecting the ideal asset mix to maximize returns based on risk-adjusted performance metrics.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(118,122,116, 0.9) 0%, rgba(118,122,116, 0.9) 10%, rgba(118,122,116, 0.7) 50%, rgba(118,122,116, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item">
+  <div class="articles-item__wrapper" style="background-color: rgb(229,236,229)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAABAEDB//EAB8QAAICAgEFAAAAAAAAAAAAAAECAAMRQSEEEmFx8P/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDVrLO0cQF17M3JPoGKsIO4ZqgTIzUV9QxwAWx95iltONw6VKuzLQQII//Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Feature_Engineering_With_Python_And_MQL5_Part_IV_600x314__2.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Feature_Engineering_With_Python_And_MQL5_Part_IV_1200x628__2.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Feature_Engineering_With_Python_And_MQL5_Part_IV_300x157__2.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Feature_Engineering_With_Python_And_MQL5_Part_IV_600x314__2.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Feature_Engineering_With_Python_And_MQL5_Part_IV_600x314__2.jpg" alt="Feature Engineering With Python And MQL5 (Part IV): Candlestick Pattern Recognition With UMAP Regression" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(229,236,229, 0.9) 0%, rgba(229,236,229, 0.9) 10%, rgba(229,236,229, 0.7) 50%, rgba(229,236,229, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(229,236,229,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17631">Feature Engineering With Python And MQL5 (Part IV): Candlestick Pattern Recognition With UMAP Regression</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Dimension reduction techniques are widely used to improve the performance of machine learning models. Let us discuss a relatively new technique known as Uniform Manifold Approximation and Projection (UMAP). This new technique has been developed to explicitly overcome the limitations of legacy methods that create artifacts and distortions in the data. UMAP is a powerful dimension reduction technique, and it helps us group similar candle sticks in a novel and effective way that reduces our error rates on out of sample data and improves our trading performance.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(229,236,229, 0.9) 0%, rgba(229,236,229, 0.9) 10%, rgba(229,236,229, 0.7) 50%, rgba(229,236,229, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item">
+  <div class="articles-item__wrapper" style="background-color: rgb(203,206,195)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABAUGB//EACIQAAIBAwQCAwAAAAAAAAAAAAECAwAEERIhItETcUFRYf/EABUBAQEAAAAAAAAAAAAAAAAAAAMB/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQARAhL/2gAMAwEAAhEDEQA/ANGvJZSvBtOPmpq8ldpOU6kj7I7qiuGDDApbLCpOdKk+qNNYwPWwlhcTeQYmyPY7p/HO+nc0ugUqd1jA/FPdHKy4qhk71t//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Manual_Backtesting_Made_Easy_Building_a_Custom_Toolkit_for_Strategy_Tester_in_MQL5_600x314__1.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Manual_Backtesting_Made_Easy_Building_a_Custom_Toolkit_for_Strategy_Tester_in_MQL5_1200x628__1.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Manual_Backtesting_Made_Easy_Building_a_Custom_Toolkit_for_Strategy_Tester_in_MQL5_300x157__1.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Manual_Backtesting_Made_Easy_Building_a_Custom_Toolkit_for_Strategy_Tester_in_MQL5_600x314__1.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/134/Manual_Backtesting_Made_Easy_Building_a_Custom_Toolkit_for_Strategy_Tester_in_MQL5_600x314__1.jpg" alt="Manual Backtesting Made Easy: Building a Custom Toolkit for Strategy Tester in MQL5" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(203,206,195, 0.9) 0%, rgba(203,206,195, 0.9) 10%, rgba(203,206,195, 0.7) 50%, rgba(203,206,195, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(203,206,195,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17751">Manual Backtesting Made Easy: Building a Custom Toolkit for Strategy Tester in MQL5</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we design a custom MQL5 toolkit for easy manual backtesting in the Strategy Tester. We explain its design and implementation, focusing on interactive trade controls. We then show how to use it to test strategies effectively</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(203,206,195, 0.9) 0%, rgba(203,206,195, 0.9) 10%, rgba(203,206,195, 0.7) 50%, rgba(203,206,195, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(17,34,46)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgEEB//EABwQAAICAwEBAAAAAAAAAAAAAAABAhESE0EhYf/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhEDEQA/AOdxly2l8G3DFU5WZ79HtaVFlohGUqfjZFMuyXHQcn0SEv/Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Mastering_Log_Records_Part_6__600x314__1.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Mastering_Log_Records_Part_6__1200x628__1.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Mastering_Log_Records_Part_6__300x157__1.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Mastering_Log_Records_Part_6__600x314__1.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Mastering_Log_Records_Part_6__600x314__1.jpg" alt="Mastering Log Records (Part 6): Saving logs to database" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(17,34,46, 0.9) 0%, rgba(17,34,46, 0.9) 10%, rgba(17,34,46, 0.7) 50%, rgba(17,34,46, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(17,34,46,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17709">Mastering Log Records (Part 6): Saving logs to database</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">This article explores the use of databases to store logs in a structured and scalable way. It covers fundamental concepts, essential operations, configuration and implementation of a database handler in MQL5. Finally, it validates the results and highlights the benefits of this approach for optimization and efficient monitoring.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(17,34,46, 0.9) 0%, rgba(17,34,46, 0.9) 10%, rgba(17,34,46, 0.7) 50%, rgba(17,34,46, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(72,73,114)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABAUAAgMG/8QAIRAAAgIBAwUBAAAAAAAAAAAAAQIAAxEEIZESFBUxYXH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgT/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AOdrXoIOMS4RHJLGCvqdsBRzB2vYnablpDJuKa2TCmTx1RAJ9/sWVallm/ffBzAhFv/Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_sistema_de_Replay_Parte_64_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_sistema_de_Replay_Parte_64_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_sistema_de_Replay_Parte_64_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_sistema_de_Replay_Parte_64_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_sistema_de_Replay_Parte_64_600x314.jpg" alt="Developing a Replay System (Part 64): Playing the service (V)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(72,73,114, 0.9) 0%, rgba(72,73,114, 0.9) 10%, rgba(72,73,114, 0.7) 50%, rgba(72,73,114, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(72,73,114,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/12250">Developing a Replay System (Part 64): Playing the service (V)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we will look at how to fix two errors in the code. However, I will try to explain them in a way that will help you, beginner programmers, understand that things don&#x27;t always go as you expect. Anyway, this is an opportunity to learn. The content presented here is intended solely for educational purposes. In no way should this application be considered as a final document with any purpose other than to explore the concepts presented.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(72,73,114, 0.9) 0%, rgba(72,73,114, 0.9) 10%, rgba(72,73,114, 0.7) 50%, rgba(72,73,114, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item">
+  <div class="articles-item__wrapper" style="background-color: rgb(77,157,172)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAgMEAAX/xAAcEAACAwEAAwAAAAAAAAAAAAABAgADESESMUH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgQF/8QAHBEAAgICAwAAAAAAAAAAAAAAAAEDEQIUEiEx/9oADAMBAAIRAxEAPwCBQdlNaj2ROgldVa9QEwSw3iiX7Cz8MRRcRaePwZHh8EOp1AxlEzMhPFAi7CToDhvs/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/96/Developing_a_multicurrency_advisor_Part_18_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/96/Developing_a_multicurrency_advisor_Part_18_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/96/Developing_a_multicurrency_advisor_Part_18_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/96/Developing_a_multicurrency_advisor_Part_18_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/96/Developing_a_multicurrency_advisor_Part_18_600x314.jpg" alt="Developing a multi-currency Expert Advisor (Part 18): Automating group selection considering forward period" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(77,157,172, 0.9) 0%, rgba(77,157,172, 0.9) 10%, rgba(77,157,172, 0.7) 50%, rgba(77,157,172, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(77,157,172,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15683">Developing a multi-currency Expert Advisor (Part 18): Automating group selection considering forward period</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Let&#x27;s continue to automate the steps we previously performed manually. This time we will return to the automation of the second stage, that is, the selection of the optimal group of single instances of trading strategies, supplementing it with the ability to take into account the results of instances in the forward period.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(77,157,172, 0.9) 0%, rgba(77,157,172, 0.9) 10%, rgba(77,157,172, 0.7) 50%, rgba(77,157,172, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(42,27,39)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAQIEAwb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgADESEEBTESExQiQf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//EABcRAQEBAQAAAAAAAAAAAAAAAAEAEUH/2gAMAwEAAhEDEQA/AOO8w0+LiT1twdhYuZD32Y+xxFLqeY9tFGZ9Qb4mRDtm0BYfIOowtTO3/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Desenvolvendo_um_sistema_de_Replay_Parte_63_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Desenvolvendo_um_sistema_de_Replay_Parte_63_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Desenvolvendo_um_sistema_de_Replay_Parte_63_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Desenvolvendo_um_sistema_de_Replay_Parte_63_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Desenvolvendo_um_sistema_de_Replay_Parte_63_600x314.jpg" alt="Developing a Replay System (Part 63): Playing the service (IV)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(42,27,39, 0.9) 0%, rgba(42,27,39, 0.9) 10%, rgba(42,27,39, 0.7) 50%, rgba(42,27,39, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(42,27,39,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/12240">Developing a Replay System (Part 63): Playing the service (IV)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we will finally solve the problems with the simulation of ticks on a one-minute bar so that they can coexist with real ticks. This will help us avoid problems in the future. The material presented here is for educational purposes only. Under no circumstances should the application be viewed for any purpose other than to learn and master the concepts presented.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(42,27,39, 0.9) 0%, rgba(42,27,39, 0.9) 10%, rgba(42,27,39, 0.7) 50%, rgba(42,27,39, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(73,58,40)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwUGB//EACEQAAEDBAEFAAAAAAAAAAAAAAEAAgMEBREhEhMiMWFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgT/xAAYEQEBAQEBAAAAAAAAAAAAAAABAAIDMf/aAAwDAQACEQMRAD8AzuCo4YwEyp7g8EcTv6lAaB7Rma8EoawMs6Sqaa9Sx4HIlM2X+UNHc4KRp5+mN7KMaok7UzyF8qDo3//Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Automating_Trading_Strategies_in_MQL5_Part_14_V3_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Automating_Trading_Strategies_in_MQL5_Part_14_V3_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Automating_Trading_Strategies_in_MQL5_Part_14_V3_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Automating_Trading_Strategies_in_MQL5_Part_14_V3_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Automating_Trading_Strategies_in_MQL5_Part_14_V3_600x314.jpg" alt="Automating Trading Strategies in MQL5 (Part 14): Trade Layering Strategy with MACD-RSI Statistical Methods" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(73,58,40, 0.9) 0%, rgba(73,58,40, 0.9) 10%, rgba(73,58,40, 0.7) 50%, rgba(73,58,40, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(73,58,40,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17741">Automating Trading Strategies in MQL5 (Part 14): Trade Layering Strategy with MACD-RSI Statistical Methods</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we introduce a trade layering strategy that combines MACD and RSI indicators with statistical methods to automate dynamic trading in MQL5. We explore the architecture of this cascading approach, detail its implementation through key code segments, and guide readers on backtesting to optimize performance. Finally, we conclude by highlighting the strategy’s potential and setting the stage for further enhancements in automated trading.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(73,58,40, 0.9) 0%, rgba(73,58,40, 0.9) 10%, rgba(73,58,40, 0.7) 50%, rgba(73,58,40, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(29,44,73)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAgUDBAb/xAAeEAACAwACAwEAAAAAAAAAAAABAgADBBEhBRRBYf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAwT/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgARMf/aAAwDAQACEQMRAD8AwGXx9bHkjmMky0IO1EVDU4/BD95xNk8PdCwdevyUMvIQRXZlQN0IVm12+yA6HJipHEzw3//Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Hierarchical_Learning_of_Point_Cloud_Features_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Hierarchical_Learning_of_Point_Cloud_Features_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Hierarchical_Learning_of_Point_Cloud_Features_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Hierarchical_Learning_of_Point_Cloud_Features_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Neural_Networks_in_Trading_Hierarchical_Learning_of_Point_Cloud_Features_600x314.jpg" alt="Neural Networks in Trading: Hierarchical Feature Learning for Point Clouds" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(29,44,73, 0.9) 0%, rgba(29,44,73, 0.9) 10%, rgba(29,44,73, 0.7) 50%, rgba(29,44,73, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(29,44,73,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15789">Neural Networks in Trading: Hierarchical Feature Learning for Point Clouds</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">We continue to study algorithms for extracting features from a point cloud. In this article, we will get acquainted with the mechanisms for increasing the efficiency of the PointNet method.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(29,44,73, 0.9) 0%, rgba(29,44,73, 0.9) 10%, rgba(29,44,73, 0.7) 50%, rgba(29,44,73, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(90,93,100)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQYCBP/EACIQAAEDAgYDAAAAAAAAAAAAAAEAAgMEEQUSIVFxgSJBYf/EABcBAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAaEQEAAwEBAQAAAAAAAAAAAAACAAEDIhEy/9oADAMBAAIRAxEAPwAOmw+HOC2NoO5F13Pp8rNHu6WKKItcC8pJ8kYZ6J+hPsmb9MjiQr7k5Ux6m4J7RskRzaXtwqCqLXX8bcI50YJ2QOlquqml5ivif//Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_V7_IX_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_V7_IX_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_V7_IX_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_V7_IX_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_V7_IX_600x314.jpg" alt="Creating a Trading Administrator Panel in MQL5 (Part IX): Code Organization (V): AnalyticsPanel Class" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(90,93,100, 0.9) 0%, rgba(90,93,100, 0.9) 10%, rgba(90,93,100, 0.7) 50%, rgba(90,93,100, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(90,93,100,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17397">Creating a Trading Administrator Panel in MQL5 (Part IX): Code Organization (V): AnalyticsPanel Class</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this discussion, we explore how to retrieve real-time market data and trading account information, perform various calculations, and display the results on a custom panel. To achieve this, we will dive deeper into developing an AnalyticsPanel class that encapsulates all these features, including panel creation. This effort is part of our ongoing expansion of the New Admin Panel EA, introducing advanced functionalities using modular design principles and best practices for code organization.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(90,93,100, 0.9) 0%, rgba(90,93,100, 0.9) 10%, rgba(90,93,100, 0.7) 50%, rgba(90,93,100, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(79,101,111)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcBAwUG/8QAIxAAAgEDAgcBAAAAAAAAAAAAAQIAAwQRBlIFEhUiMTJRof/EABUBAQEAAAAAAAAAAAAAAAAAAAQD/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECBAP/2gAMAwEAAhEDEQA/AKBqKoR2kCC8bqM2efJ+zj2u3JgLqpuxEuJBrpYwbbUbrgFszRXUa49hFkt9UXw0nqNXd+yFZ5YmdNo//9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Introduction_to_MQL5_Part_15_V2_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Introduction_to_MQL5_Part_15_V2_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Introduction_to_MQL5_Part_15_V2_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Introduction_to_MQL5_Part_15_V2_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/133/Introduction_to_MQL5_Part_15_V2_600x314.jpg" alt="Introduction to MQL5 (Part 15): A Beginner's Guide to Building Custom Indicators (IV)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(79,101,111, 0.9) 0%, rgba(79,101,111, 0.9) 10%, rgba(79,101,111, 0.7) 50%, rgba(79,101,111, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(79,101,111,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17689">Introduction to MQL5 (Part 15): A Beginner&#x27;s Guide to Building Custom Indicators (IV)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, you&#x27;ll learn how to build a price action indicator in MQL5, focusing on key points like low (L), high (H), higher low (HL), higher high (HH), lower low (LL), and lower high (LH) for analyzing trends. You&#x27;ll also explore how to identify the premium and discount zones, mark the 50% retracement level, and use the risk-reward ratio to calculate profit targets. The article also covers determining entry points, stop loss (SL), and take profit (TP) levels based on the trend structure.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(79,101,111, 0.9) 0%, rgba(79,101,111, 0.9) 10%, rgba(79,101,111, 0.7) 50%, rgba(79,101,111, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(44,79,92)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQMABP/EACIQAAIBAwIHAAAAAAAAAAAAAAECAAMRIQQSMVFhcYGRwf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECEjH/2gAMAwEAAhEDEQA/ABBU2jDKO052IZs5gQ1dS/E+5elqX5xpaXCa5p9HgRsAJ8SbBGNywv1h6ao4ubzGuCb/AGJpsHEo/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_Trading_System_com_base_no_Livro_de_Ofertas_Parte_I_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_Trading_System_com_base_no_Livro_de_Ofertas_Parte_I_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_Trading_System_com_base_no_Livro_de_Ofertas_Parte_I_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_Trading_System_com_base_no_Livro_de_Ofertas_Parte_I_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Desenvolvendo_um_Trading_System_com_base_no_Livro_de_Ofertas_Parte_I_600x314.jpg" alt="Developing a Trading System Based on the Order Book (Part I): Indicator" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(44,79,92, 0.9) 0%, rgba(44,79,92, 0.9) 10%, rgba(44,79,92, 0.7) 50%, rgba(44,79,92, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(44,79,92,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15748">Developing a Trading System Based on the Order Book (Part I): Indicator</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Depth of Market is undoubtedly a very important element for executing fast trades, especially in High Frequency Trading (HFT) algorithms. In this series of articles, we will look at this type of trading events that can be obtained through a broker on many tradable symbols. We will start with an indicator, where you can customize the color palette, position and size of the histogram displayed directly on the chart. We will also look at how to generate BookEvent events to test the indicator under certain conditions. Other possible topics for future articles include how to store price distribution data and how to use it in a strategy tester.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(44,79,92, 0.9) 0%, rgba(44,79,92, 0.9) 10%, rgba(44,79,92, 0.7) 50%, rgba(44,79,92, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(11,44,57)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAwIEBQb/xAAeEAACAgICAwAAAAAAAAAAAAABAgADESESMQQTYf/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQACAxH/2gAMAwEAAhEDEQA/AOF4g9ajV+QKEKocE94mb7WOpJSAMsxz8lO32i55SW24udmVyVzDsbejD5GEZub/2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/132/Statistical_Arbitrage_Through_Mean_Reversion_in_Pairs_Trading_V2_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/132/Statistical_Arbitrage_Through_Mean_Reversion_in_Pairs_Trading_V2_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/132/Statistical_Arbitrage_Through_Mean_Reversion_in_Pairs_Trading_V2_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/132/Statistical_Arbitrage_Through_Mean_Reversion_in_Pairs_Trading_V2_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/132/Statistical_Arbitrage_Through_Mean_Reversion_in_Pairs_Trading_V2_600x314.jpg" alt="Statistical Arbitrage Through Mean Reversion in Pairs Trading: Beating the Market by Math" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(11,44,57, 0.9) 0%, rgba(11,44,57, 0.9) 10%, rgba(11,44,57, 0.7) 50%, rgba(11,44,57, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(11,44,57,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17735">Statistical Arbitrage Through Mean Reversion in Pairs Trading: Beating the Market by Math</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">This article describes the fundamentals of portfolio-level statistical arbitrage. Its goal is to facilitate the understanding of the principles of statistical arbitrage to readers without deep math knowledge and propose a starting point conceptual framework. The article includes a working Expert Advisor, some notes about its one-year backtest, and the respective backtest configuration settings (.ini file) for the reproduction of the experiment.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(11,44,57, 0.9) 0%, rgba(11,44,57, 0.9) 10%, rgba(11,44,57, 0.7) 50%, rgba(11,44,57, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(106,122,139)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAABAwX/xAAgEAACAgIABwAAAAAAAAAAAAABAgADESEFIjNxgZGh/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/xAAaEQADAQADAAAAAAAAAAAAAAAAATEDESFR/9oADAMBAAIRAxEAPwCHiyXDBCzBrKS2Sik9oY01A8q/ZRoBOmI8RfDdYV9RDksqYbQRSWAro4nNroOMGw+olKgo6hkNEvRGUh//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Do_bfsico_ao_intermedi4rio_Diretiva_Include_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Do_b5sico_ao_intermedihrio_Diretiva_Include_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Do_b1sico_ao_intermedizrio_Diretiva_Include_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Do_bfsico_ao_intermedi4rio_Diretiva_Include_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/92/Do_bfsico_ao_intermedi4rio_Diretiva_Include_600x314.jpg" alt="From Basic to Intermediate: The Include Directive" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(106,122,139, 0.9) 0%, rgba(106,122,139, 0.9) 10%, rgba(106,122,139, 0.7) 50%, rgba(106,122,139, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(106,122,139,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15383">From Basic to Intermediate: The Include Directive</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In today&#x27;s article, we will discuss a compilation directive that is widely used in various codes that can be found in MQL5. Although this directive will be explained rather superficially here, it is important that you begin to understand how to use it, as it will soon become indispensable as you move to higher levels of programming. The content presented here is intended solely for educational purposes. Under no circumstances should the application be viewed for any purpose other than to learn and master the concepts presented.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(106,122,139, 0.9) 0%, rgba(106,122,139, 0.9) 10%, rgba(106,122,139, 0.7) 50%, rgba(106,122,139, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item">
+  <div class="articles-item__wrapper" style="background-color: rgb(90,154,183)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EABwQAAMBAAIDAAAAAAAAAAAAAAABAgMEESIxUf/EABYBAQEBAAAAAAAAAAAAAAAAAAUAAf/EABgRAAMBAQAAAAAAAAAAAAAAAAABERJR/9oADAMBAAIRAxEAPwDbtxK9dk7WdPykCtxGm4jGEaXAtYik0kkjM24Uu+00P05D+kta02UZukz/2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/95/Atmosphere_Clouds_Model_Optimization__600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/95/Atmosphere_Clouds_Model_Optimization__1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/95/Atmosphere_Clouds_Model_Optimization__300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/95/Atmosphere_Clouds_Model_Optimization__600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/95/Atmosphere_Clouds_Model_Optimization__600x314.jpg" alt="Atmosphere Clouds Model Optimization (ACMO): Theory" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(90,154,183, 0.9) 0%, rgba(90,154,183, 0.9) 10%, rgba(90,154,183, 0.7) 50%, rgba(90,154,183, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(90,154,183,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15849">Atmosphere Clouds Model Optimization (ACMO): Theory</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">The article is devoted to the metaheuristic Atmosphere Clouds Model Optimization (ACMO) algorithm, which simulates the behavior of clouds to solve optimization problems. The algorithm uses the principles of cloud generation, movement and propagation, adapting to the &quot;weather conditions&quot; in the solution space. The article reveals how the algorithm&#x27;s meteorological simulation finds optimal solutions in a complex possibility space and describes in detail the stages of ACMO operation, including &quot;sky&quot; preparation, cloud birth, cloud movement, and rain concentration.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(90,154,183, 0.9) 0%, rgba(90,154,183, 0.9) 10%, rgba(90,154,183, 0.7) 50%, rgba(90,154,183, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(86,54,63)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAwQAAgb/xAAeEAABBAIDAQAAAAAAAAAAAAABAAIDIQURBBITQv/EABYBAQEBAAAAAAAAAAAAAAAAAAQDBf/EABoRAAIDAQEAAAAAAAAAAAAAAAEDAAJRESH/2gAMAwEAAhEDEQA/AM1Hh/IbdZUdxY3Dq8UruykrhogaQXcjtZpQWhhPbGaF3UA8EWlxfGea2Es7EQg04I00x+Sge70wJOwhcMn/2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Neural_Networks_in_Trading_Point_Cloud_Analysis_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Neural_Networks_in_Trading_Point_Cloud_Analysis_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Neural_Networks_in_Trading_Point_Cloud_Analysis_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Neural_Networks_in_Trading_Point_Cloud_Analysis_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Neural_Networks_in_Trading_Point_Cloud_Analysis_600x314.jpg" alt="Neural Networks in Trading: Point Cloud Analysis (PointNet)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(86,54,63, 0.9) 0%, rgba(86,54,63, 0.9) 10%, rgba(86,54,63, 0.7) 50%, rgba(86,54,63, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(86,54,63,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15747">Neural Networks in Trading: Point Cloud Analysis (PointNet)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Direct point cloud analysis avoids unnecessary data growth and improves the performance of models in classification and segmentation tasks. Such approaches demonstrate high performance and robustness to perturbations in the original data.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(86,54,63, 0.9) 0%, rgba(86,54,63, 0.9) 10%, rgba(86,54,63, 0.7) 50%, rgba(86,54,63, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(67,80,78)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwUGAgT/xAAiEAACAQQCAQUAAAAAAAAAAAABAgADBBEhBTESIkFRYZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAGxEAAgIDAQAAAAAAAAAAAAAAAAECQRESEyH/2gAMAwEAAhEDEQA/AJKpdF0FMDQ9oCnbNVfa6mEq+ByBmdC3zjoARJt48BikNuPtltvUq4PzGzcgwABJOPuTScjUHQ/TDreMRljuDHorEejo/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Applying_VaR_Model_to_Optimize_Multicurrency_Portfolio_with_Python_and_MetaTrader_5_600x314__1.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Applying_VaR_Model_to_Optimize_Multicurrency_Portfolio_with_Python_and_MetaTrader_5_1200x628__1.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Applying_VaR_Model_to_Optimize_Multicurrency_Portfolio_with_Python_and_MetaTrader_5_300x157__1.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Applying_VaR_Model_to_Optimize_Multicurrency_Portfolio_with_Python_and_MetaTrader_5_600x314__1.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Applying_VaR_Model_to_Optimize_Multicurrency_Portfolio_with_Python_and_MetaTrader_5_600x314__1.jpg" alt="Quantitative approach to risk management: Applying VaR model to optimize multi-currency portfolio using Python and MetaTrader 5" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(67,80,78, 0.9) 0%, rgba(67,80,78, 0.9) 10%, rgba(67,80,78, 0.7) 50%, rgba(67,80,78, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(67,80,78,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15779">Quantitative approach to risk management: Applying VaR model to optimize multi-currency portfolio using Python and MetaTrader 5</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">This article explores the potential of the Value at Risk (VaR) model for multi-currency portfolio optimization. Using the power of Python and the functionality of MetaTrader 5, we demonstrate how to implement VaR analysis for efficient capital allocation and position management. From theoretical foundations to practical implementation, the article covers all aspects of applying one of the most robust risk calculation systems – VaR – in algorithmic trading.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(67,80,78, 0.9) 0%, rgba(67,80,78, 0.9) 10%, rgba(67,80,78, 0.7) 50%, rgba(67,80,78, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item">
+  <div class="articles-item__wrapper" style="background-color: rgb(235,234,237)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDB//EACAQAAICAQMFAAAAAAAAAAAAAAECABEDEjGBIUFRYXH/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/EABYRAQEBAAAAAAAAAAAAAAAAAAABIf/aAAwDAQACEQMRAD8A0w4sRYsQCfYjjah0Ei70KWGN63UcRJkXF3tyY32TVz3qNrHmEn//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Price_Action_Analysis_Toolkit_Development_Part_19___V2_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Price_Action_Analysis_Toolkit_Development_Part_19___V2_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Price_Action_Analysis_Toolkit_Development_Part_19___V2_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Price_Action_Analysis_Toolkit_Development_Part_19___V2_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Price_Action_Analysis_Toolkit_Development_Part_19___V2_600x314.jpg" alt="Price Action Analysis Toolkit Development (Part 19): ZigZag Analyzer" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(235,234,237, 0.9) 0%, rgba(235,234,237, 0.9) 10%, rgba(235,234,237, 0.7) 50%, rgba(235,234,237, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(235,234,237,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17625">Price Action Analysis Toolkit Development (Part 19): ZigZag Analyzer</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Every price action trader manually uses trendlines to confirm trends and spot potential turning or continuation levels. In this series on developing a price action analysis toolkit, we introduce a tool focused on drawing slanted trendlines for easy market analysis. This tool simplifies the process for traders by clearly outlining key trends and levels essential for effective price action evaluation.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(235,234,237, 0.9) 0%, rgba(235,234,237, 0.9) 10%, rgba(235,234,237, 0.7) 50%, rgba(235,234,237, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item">
+  <div class="articles-item__wrapper" style="background-color: rgb(230,230,231)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAgMAAQQH/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIAAxEhEjGBQXGRoaL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFREBAQAAAAAAAAAAAAAAAAAAADH/2gAMAwEAAhEDEQA/AOgsA+CxHgRtGmqHFX6hOAdscSILbn1BGlXsMsLd4QqA7MDzE3XrL1CB/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_X_CODE_IV___V2_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_X_CODE_IV___V2_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_X_CODE_IV___V2_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_X_CODE_IV___V2_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/131/Creating_a_Trading_Administrator_Panel_in_MQL5_Part_X_CODE_IV___V2_600x314.jpg" alt="Creating a Trading Administrator Panel in MQL5 (Part IX): Code Organization (IV): Trade Management Panel class" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(230,230,231, 0.9) 0%, rgba(230,230,231, 0.9) 10%, rgba(230,230,231, 0.7) 50%, rgba(230,230,231, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(230,230,231,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17396">Creating a Trading Administrator Panel in MQL5 (Part IX): Code Organization (IV): Trade Management Panel class</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">This discussion covers the updated TradeManagementPanel in our New_Admin_Panel EA. The update enhances the panel by using built-in classes to offer a user-friendly trade management interface. It includes trading buttons for opening positions and controls for managing existing trades and pending orders. A key feature is the integrated risk management that allows setting stop loss and take profit values directly in the interface. This update improves code organization for large programs and simplifies access to order management tools, which are often complex in the terminal.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(230,230,231, 0.9) 0%, rgba(230,230,231, 0.9) 10%, rgba(230,230,231, 0.7) 50%, rgba(230,230,231, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(78,56,95)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAwECBAb/xAAlEAACAQICCwAAAAAAAAAAAAABAgAEEQOREhMUISIxM0FSYXH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAgP/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQJhAxIx/9oADAMBAAIRAxEAPwDg9WCOFCBL4OGAwshJ+TftbeK5SVrnB3KsVsIeOwrOGuEI92iLp26ZyjrXv3AjCva3ISlKjFwa4z//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Hierarchical_Vector_Transformer_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Hierarchical_Vector_Transformer_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Hierarchical_Vector_Transformer_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Hierarchical_Vector_Transformer_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Hierarchical_Vector_Transformer_600x314.jpg" alt="Neural Networks in Trading: Hierarchical Vector Transformer (Final Part)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(78,56,95, 0.9) 0%, rgba(78,56,95, 0.9) 10%, rgba(78,56,95, 0.7) 50%, rgba(78,56,95, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(78,56,95,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15713">Neural Networks in Trading: Hierarchical Vector Transformer (Final Part)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">We continue studying the Hierarchical Vector Transformer method. In this article, we will complete the construction of the model. We will also train and test it on real historical data.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(78,56,95, 0.9) 0%, rgba(78,56,95, 0.9) 10%, rgba(78,56,95, 0.7) 50%, rgba(78,56,95, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(147,105,48)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwQFAgb/xAAiEAEAAgEDAwUAAAAAAAAAAAABAAIRAwQFEhNBISIxMnH/xAAWAQEBAQAAAAAAAAAAAAAAAAAFAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAMAwEAAhEDEQA/AGNLfpl9sI8pVqlk/JzVtZfj0Jl1HwsHlI5X7cjXpSuBid95S9s2RZL7mD7Qdrr5ZRsf/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_59_V3_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_59_V3_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_59_V3_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_59_V3_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_59_V3_600x314.jpg" alt="MQL5 Wizard Techniques you should know (Part 59): Reinforcement Learning (DDPG) with Moving Average and Stochastic Oscillator Patterns" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(147,105,48, 0.9) 0%, rgba(147,105,48, 0.9) 10%, rgba(147,105,48, 0.7) 50%, rgba(147,105,48, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(147,105,48,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17684">MQL5 Wizard Techniques you should know (Part 59): Reinforcement Learning (DDPG) with Moving Average and Stochastic Oscillator Patterns</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">We continue our last article on DDPG with MA and stochastic indicators by examining other key Reinforcement Learning classes crucial for implementing DDPG. Though we are mostly coding in python, the final product, of a trained network will be exported to as an ONNX to MQL5 where we integrate it as a resource in a wizard assembled Expert Advisor.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(147,105,48, 0.9) 0%, rgba(147,105,48, 0.9) 10%, rgba(147,105,48, 0.7) 50%, rgba(147,105,48, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item">
+  <div class="articles-item__wrapper" style="background-color: rgb(157,155,158)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAMFBv/EAB8QAQACAgICAwAAAAAAAAAAAAEAAgMEESESEzFBQv/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECIVH/2gAMAwEAAhEDEQA/AOytmqfokbbWFHsmZs7HlVD5gac1VtZk60VODtrcx2WsH72vRYITZsWtyLImV+win0HPD//Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Comandos_BREAK_e_CONTINUE_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Comandos_BREAK_e_CONTINUE_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Comandos_BREAK_e_CONTINUE_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Comandos_BREAK_e_CONTINUE_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Comandos_BREAK_e_CONTINUE_600x314.jpg" alt="From Basic to Intermediate: BREAK and CONTINUE Statements" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(157,155,158, 0.9) 0%, rgba(157,155,158, 0.9) 10%, rgba(157,155,158, 0.7) 50%, rgba(157,155,158, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(157,155,158,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15376">From Basic to Intermediate: BREAK and CONTINUE Statements</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we will look at how to use the RETURN, BREAK, and CONTINUE statements in a loop. Understanding what each of these statements does in the loop execution flow is very important for working with more complex applications. The content presented here is intended solely for educational purposes. Under no circumstances should the application be viewed for any purpose other than to learn and master the concepts presented.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(157,155,158, 0.9) 0%, rgba(157,155,158, 0.9) 10%, rgba(157,155,158, 0.7) 50%, rgba(157,155,158, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(41,34,41)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwQCBv/EAB4QAAICAQUBAAAAAAAAAAAAAAABAgMhBBESMkEx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEE/8QAGREBAAMBAQAAAAAAAAAAAAAAAQACERMx/9oADAMBAAIRAxEAPwDhK9TxxHCFWqT7Ec5JdUG7F7lk5i7H7tTPSVWXL7HADvfu4ErWzHJihky2SzuT/9k=">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Advanced_Memory_Management_and_Optimization_Techniques_in_MQL5_V3_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Advanced_Memory_Management_and_Optimization_Techniques_in_MQL5_V3_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Advanced_Memory_Management_and_Optimization_Techniques_in_MQL5_V3_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Advanced_Memory_Management_and_Optimization_Techniques_in_MQL5_V3_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Advanced_Memory_Management_and_Optimization_Techniques_in_MQL5_V3_600x314.jpg" alt="Advanced Memory Management and Optimization Techniques in MQL5" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(41,34,41, 0.9) 0%, rgba(41,34,41, 0.9) 10%, rgba(41,34,41, 0.7) 50%, rgba(41,34,41, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(41,34,41,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17693">Advanced Memory Management and Optimization Techniques in MQL5</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Discover practical techniques to optimize memory usage in MQL5 trading systems. Learn to build efficient, stable, and fast-performing Expert Advisors and indicators. We’ll explore how memory really works in MQL5, the common traps that slow your systems down or cause them to fail, and — most importantly — how to fix them.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(41,34,41, 0.9) 0%, rgba(41,34,41, 0.9) 10%, rgba(41,34,41, 0.7) 50%, rgba(41,34,41, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item">
+  <div class="articles-item__wrapper" style="background-color: rgb(145,158,164)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABQECAwT/xAAfEAACAgICAwEAAAAAAAAAAAABAwACESEEBTFBUXH/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABsRAAIBBQAAAAAAAAAAAAAAAAABAhESIUFR/9oADAMBAAIRAxEAPwBA9Oq4xauvk3R1qkDCqiv4Ilr2JRr6KroZMosEmqs5bJAG4c5fHN90Fj9Mnm9kzeMAQhnNcbeBBy4Nq2f/2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Rede_neural_na_prntica_O_primeiro_neurpnio_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Rede_neural_na_pr5tica_O_primeiro_neurdnio_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Rede_neural_na_pr1tica_O_primeiro_neurinio_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Rede_neural_na_prntica_O_primeiro_neurpnio_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Rede_neural_na_prntica_O_primeiro_neurpnio_600x314.jpg" alt="Neural Network in Practice: The First Neuron" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(145,158,164, 0.9) 0%, rgba(145,158,164, 0.9) 10%, rgba(145,158,164, 0.7) 50%, rgba(145,158,164, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(145,158,164,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/13745">Neural Network in Practice: The First Neuron</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we&#x27;ll start building something simple and humble: a neuron. We will program it with a very small amount of MQL5 code. The neuron worked great in my tests. Let&#x27;s go back a bit in this series of articles about neural networks to understand what I&#x27;m talking about.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(145,158,164, 0.9) 0%, rgba(145,158,164, 0.9) 10%, rgba(145,158,164, 0.7) 50%, rgba(145,158,164, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(76,98,71)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUD/8QAHRAAAgMAAwEBAAAAAAAAAAAAAQMAAhESITEFFP/EABYBAQEBAAAAAAAAAAAAAAAAAAMBBP/EABgRAQEBAQEAAAAAAAAAAAAAAAEAEQIh/9oADAMBAAIRAxEAPwCSl/5SOIAyNZ9S7V8dsZFO2tuxNWAVyZnkfWLctGUowE2PcmNWOfUS1m+GFtpPsXkSml//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Archery_Algorithm_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Archery_Algorithm_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Archery_Algorithm_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Archery_Algorithm_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Archery_Algorithm_600x314.jpg" alt="Archery Algorithm (AA)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(76,98,71, 0.9) 0%, rgba(76,98,71, 0.9) 10%, rgba(76,98,71, 0.7) 50%, rgba(76,98,71, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(76,98,71,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15782">Archery Algorithm (AA)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">The article takes a detailed look at the archery-inspired optimization algorithm, with an emphasis on using the roulette method as a mechanism for selecting promising areas for &quot;arrows&quot;. The method allows evaluating the quality of solutions and selecting the most promising positions for further study.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(76,98,71, 0.9) 0%, rgba(76,98,71, 0.9) 10%, rgba(76,98,71, 0.7) 50%, rgba(76,98,71, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(54,45,75)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwUGAQL/xAAfEAACAgICAwEAAAAAAAAAAAABAgADBBEhMQVRYXH/xAAVAQEBAAAAAAAAAAAAAAAAAAACBP/EABkRAQADAQEAAAAAAAAAAAAAAAEAAhEDEv/aAAwDAQACEQMRAD8AgSzt2ZtfDe4M3hRwonByGPyVCECbHWPeFA51HGL5QU16Da/JHC5t9wwy2A7gu+pRzs1Mn//Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Simple_solutions_for_convenient_work_with_indicators__V2_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Simple_solutions_for_convenient_work_with_indicators__V2_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Simple_solutions_for_convenient_work_with_indicators__V2_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Simple_solutions_for_convenient_work_with_indicators__V2_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/93/Simple_solutions_for_convenient_work_with_indicators__V2_600x314.jpg" alt="Simple solutions for handling indicators conveniently" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(54,45,75, 0.9) 0%, rgba(54,45,75, 0.9) 10%, rgba(54,45,75, 0.7) 50%, rgba(54,45,75, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(54,45,75,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/14672">Simple solutions for handling indicators conveniently</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, I will describe how to make a simple panel to change the indicator settings directly from the chart, and what changes need to be made to the indicator to connect the panel. This article is intended for novice MQL5 users.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(54,45,75, 0.9) 0%, rgba(54,45,75, 0.9) 10%, rgba(54,45,75, 0.7) 50%, rgba(54,45,75, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(17,17,43)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAwABAgQH/8QAHRAAAgICAwEAAAAAAAAAAAAAAAECAxESEyExYf/EABYBAQEBAAAAAAAAAAAAAAAAAAEABP/EABoRAAICAwAAAAAAAAAAAAAAAAABAhIRMUH/2gAMAwEAAhEDEQA/AMurgm+yxZXtFYBb/CSuaNLyEarYGdbixovHoaVm/qFHjS7jlkmwdeH/2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Automating_Trading_Strategies_in_MQL5_Part_13_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Automating_Trading_Strategies_in_MQL5_Part_13_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Automating_Trading_Strategies_in_MQL5_Part_13_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Automating_Trading_Strategies_in_MQL5_Part_13_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/Automating_Trading_Strategies_in_MQL5_Part_13_600x314.jpg" alt="Automating Trading Strategies in MQL5 (Part 13): Building a Head and Shoulders Trading Algorithm" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(17,17,43, 0.9) 0%, rgba(17,17,43, 0.9) 10%, rgba(17,17,43, 0.7) 50%, rgba(17,17,43, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(17,17,43,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17618">Automating Trading Strategies in MQL5 (Part 13): Building a Head and Shoulders Trading Algorithm</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">In this article, we automate the Head and Shoulders pattern in MQL5. We analyze its architecture, implement an EA to detect and trade it, and backtest the results. The process reveals a practical trading algorithm with room for refinement.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(17,17,43, 0.9) 0%, rgba(17,17,43, 0.9) 10%, rgba(17,17,43, 0.7) 50%, rgba(17,17,43, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(55,50,46)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAwQCBQb/xAAhEAACAgEEAgMAAAAAAAAAAAABAgADBBESIXEUIjJRkf/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAf/EABgRAAMBAQAAAAAAAAAAAAAAAAABMRFx/9oADAMBAAIRAxEAPwDK17KzwvPUM+XsT1BHRlZZYV+LH9gGyGB4l0xLYO2ZjsSTrrFLLFdtWBJ7i75LGQ8hvoQ2Mof/2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Day_Trading_Larry_Connors_RSI2_Mean-Reversion_Strategies_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Day_Trading_Larry_Connors_RSI2_Mean-Reversion_Strategies_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Day_Trading_Larry_Connors_RSI2_Mean-Reversion_Strategies_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Day_Trading_Larry_Connors_RSI2_Mean-Reversion_Strategies_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Day_Trading_Larry_Connors_RSI2_Mean-Reversion_Strategies_600x314.jpg" alt="Day Trading Larry Connors RSI2 Mean-Reversion Strategies" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(55,50,46, 0.9) 0%, rgba(55,50,46, 0.9) 10%, rgba(55,50,46, 0.7) 50%, rgba(55,50,46, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(55,50,46,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17636">Day Trading Larry Connors RSI2 Mean-Reversion Strategies</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Larry Connors is a renowned trader and author, best known for his work in quantitative trading and strategies like the 2-period RSI (RSI2), which helps identify short-term overbought and oversold market conditions. In this article, we’ll first explain the motivation behind our research, then recreate three of Connors’ most famous strategies in MQL5 and apply them to intraday trading of the S&amp;P 500 index CFD.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(55,50,46, 0.9) 0%, rgba(55,50,46, 0.9) 10%, rgba(55,50,46, 0.7) 50%, rgba(55,50,46, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(143,99,44)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAABAUCAwb/xAAeEAACAgICAwAAAAAAAAAAAAABAgADBREEMRIhQv/EABUBAQEAAAAAAAAAAAAAAAAAAAEF/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQACEf/aAAwDAQACEQMRAD8AnTm0pXxHcuTPBlI3MtVtm20LVawNkmR1qXJtZl9bKt3F1vIFrlie4FyGX5gbWNv0Y5OxpC//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_58_V3_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_58_V3_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_58_V3_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_58_V3_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/130/MQL5_Wizard_Techniques_you_should_know_Part_58_V3_600x314.jpg" alt="MQL5 Wizard Techniques you should know (Part 58): Reinforcement Learning (DDPG) with Moving Average and Stochastic Oscillator Patterns" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(143,99,44, 0.9) 0%, rgba(143,99,44, 0.9) 10%, rgba(143,99,44, 0.7) 50%, rgba(143,99,44, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(143,99,44,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17668">MQL5 Wizard Techniques you should know (Part 58): Reinforcement Learning (DDPG) with Moving Average and Stochastic Oscillator Patterns</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Moving Average and Stochastic Oscillator are very common indicators whose collective patterns we explored in the prior article, via a supervised learning network, to see which “patterns-would-stick”. We take our analyses from that article, a step further by considering the effects&#x27; reinforcement learning, when used with this trained network, would have on performance. Readers should note our testing is over a very limited time window. Nonetheless, we continue to harness the minimal coding requirements afforded by the MQL5 wizard in showcasing this.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(143,99,44, 0.9) 0%, rgba(143,99,44, 0.9) 10%, rgba(143,99,44, 0.7) 50%, rgba(143,99,44, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(51,50,96)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAgQBAwb/xAAdEAACAgIDAQAAAAAAAAAAAAAAAQIDESEEEzFB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwQF/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQACEQP/2gAMAwEAAhEDEQA/AMNTSnLCHehQhtC1dzh8QdnJcjSqgQHW0KVSxpMpcGnrBD5EvEwezPoN3ZVzwn//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Learning_MQL5_-_From_Beginner_to_Pro_Part_V_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Learning_MQL5_-_From_Beginner_to_Pro_Part_V_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Learning_MQL5_-_From_Beginner_to_Pro_Part_V_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Learning_MQL5_-_From_Beginner_to_Pro_Part_V_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/91/Learning_MQL5_-_From_Beginner_to_Pro_Part_V_600x314.jpg" alt="Master MQL5 from beginner to pro (Part V): Fundamental control flow operators" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(51,50,96, 0.9) 0%, rgba(51,50,96, 0.9) 10%, rgba(51,50,96, 0.7) 50%, rgba(51,50,96, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(51,50,96,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15499">Master MQL5 from beginner to pro (Part V): Fundamental control flow operators</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">This article explores the key operators used to modify the program&#x27;s execution flow: conditional statements, loops, and switch statements. Utilizing these operators will allow the functions we create to behave more &quot;intelligently&quot;.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(51,50,96, 0.9) 0%, rgba(51,50,96, 0.9) 10%, rgba(51,50,96, 0.7) 50%, rgba(51,50,96, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(37,38,42)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAABAABAwUGB//EACAQAAICAQMFAAAAAAAAAAAAAAECAAMEETFREhQhQpH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhFRIv/aAAwDAQACEQMRAD8A5tVWKdl88yda1sOrbcQY3k+q/I4yGEbeBUdLfGSitekqIcttIGhMzYynEXdPzJ0ynJ//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Introduction_to_MQL5_Part_14__V3_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Introduction_to_MQL5_Part_14__V3_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Introduction_to_MQL5_Part_14__V3_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Introduction_to_MQL5_Part_14__V3_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/129/Introduction_to_MQL5_Part_14__V3_600x314.jpg" alt="Introduction to MQL5 (Part 14): A Beginner's Guide to Building Custom Indicators (III)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(37,38,42, 0.9) 0%, rgba(37,38,42, 0.9) 10%, rgba(37,38,42, 0.7) 50%, rgba(37,38,42, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(37,38,42,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17574">Introduction to MQL5 (Part 14): A Beginner&#x27;s Guide to Building Custom Indicators (III)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">Learn to build a Harmonic Pattern indicator in MQL5 using chart objects. Discover how to detect swing points, apply Fibonacci retracements, and automate pattern recognition.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(37,38,42, 0.9) 0%, rgba(37,38,42, 0.9) 10%, rgba(37,38,42, 0.7) 50%, rgba(37,38,42, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(42,38,52)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAgUDBAf/xAAfEAACAgEFAQEAAAAAAAAAAAABAgADBBETISIxUWH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAQL/xAAbEQACAQUAAAAAAAAAAAAAAAAAAQIREiExUf/aAAwDAQACEQMRAD8AzoVgnhTqZaqxWHL9R+yDeKeewWynJ5MWhmL6Nq7qccdV1b7AfNVm1IETtexg7pkwtC3tn//Z">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/128/Automating_Trading_Strategies_in_MQL5_Part_6_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/128/Automating_Trading_Strategies_in_MQL5_Part_6_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/128/Automating_Trading_Strategies_in_MQL5_Part_6_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/128/Automating_Trading_Strategies_in_MQL5_Part_6_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/128/Automating_Trading_Strategies_in_MQL5_Part_6_600x314.jpg" alt="Build Self Optimizing Expert Advisors in MQL5 (Part 6): Self Adapting Trading Rules (II)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(42,38,52, 0.9) 0%, rgba(42,38,52, 0.9) 10%, rgba(42,38,52, 0.7) 50%, rgba(42,38,52, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(42,38,52,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/17571">Build Self Optimizing Expert Advisors in MQL5 (Part 6): Self Adapting Trading Rules (II)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">This article explores optimizing RSI levels and periods for better trading signals. We introduce methods to estimate optimal RSI values and automate period selection using grid search and statistical models. Finally, we implement the solution in MQL5 while leveraging Python for analysis. Our approach aims to be pragmatic and straightforward to help you solve potentially complicated problems, with simplicity.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(42,38,52, 0.9) 0%, rgba(42,38,52, 0.9) 10%, rgba(42,38,52, 0.7) 50%, rgba(42,38,52, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div><div class="articles-item articles-item_light">
+  <div class="articles-item__wrapper" style="background-color: rgb(50,85,95)">
+      <img class="articles-item__image-preview" loading="lazy" width="32" height="16" alt="preview" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsICAoIBwsKCQoNDAsNERwSEQ8PESIZGhQcKSQrKigkJyctMkA3LTA9MCcnOEw5PUNFSElIKzZPVU5GVEBHSEX/2wBDAQwNDREPESESEiFFLicuRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUX/wAARCAAQACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EAB4QAAICAgIDAAAAAAAAAAAAAAECAAMEESExEyJB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgME/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERAv/aAAwDAQACEQMRAD8AxWJjrXokS9jWMqepElUE75Aj3lVU47lswyarD3sxB2ZJupVn2Yd7z9O4u1xJ6iiCmz//2Q==">
+    <section class="articles-item__image">
+        <picture>
+          <source srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/90/image_15688_neural_networks_600x314.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/90/image_15688_neural_networks_1200x628.jpg 2x" media="(min-width:700px)">
+          <img class="articles-item__image-main" loading="lazy" width="600" height="314" srcset="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/90/image_15688_neural_networks_300x157.jpg, https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/90/image_15688_neural_networks_600x314.jpg 2x" src="https://web.archive.org/web/20250629163806im_/https://c.mql5.com/2/90/image_15688_neural_networks_600x314.jpg" alt="Neural Networks in Trading: Hierarchical Vector Transformer (HiVT)" onerror="this.style.display='none';">
+        </picture>
+      <div class="articles-item__image-fill" style="background: linear-gradient(to top, rgba(50,85,95, 0.9) 0%, rgba(50,85,95, 0.9) 10%, rgba(50,85,95, 0.7) 50%, rgba(50,85,95, 0) 100%);"></div>
+    </section>
+    <section class="articles-item__content" style="background: rgba(50,85,95,0.9);">
+      <header>
+        <h3 class="articles-item__title">
+          <a href="/web/20250629163806/https://www.mql5.com/en/articles/15688">Neural Networks in Trading: Hierarchical Vector Transformer (HiVT)</a>
+        </h3>
+      </header>
+      <div class="articles-item__description">We invite you to get acquainted with the Hierarchical Vector Transformer (HiVT) method, which was developed for fast and accurate forecasting of multimodal time series.</div>
+      <div class="articles-item__fill" style="background: linear-gradient(to top, rgba(50,85,95, 0.9) 0%, rgba(50,85,95, 0.9) 10%, rgba(50,85,95, 0.7) 50%, rgba(50,85,95, 0) 100%);"></div>
+    </section>
+    <div class="articles-item__blackout"></div>
+  </div>
+</div>    </div>
+
+    <div class="paginator__articles">
+        <span class="paginatorEx">
+<a href="/web/20250629163806/https://www.mql5.com/en/articles">1</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page2">2</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page3">3</a><a class="selected" href="/web/20250629163806/https://www.mql5.com/en/articles/page4">4</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page5">5</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page6">6</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page7">7</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page8">8</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page9">9</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page10">10</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page11">11</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page34">...</a><a href="/web/20250629163806/https://www.mql5.com/en/articles/page56">56</a>      
+        </span>
+    </div>
+
+<div class="clear-fix"></div>
+
+
+<div id="wdausxxqrpvhekbwjrjlhqjghyhesrqqau" class="r5nwxv7plv7rg3s8t r5nwxv7plv7rg3s8t_articles gjez9oorw"></div>
+
+    </article>
+  </div>
+
+
+
+<div aria-hidden="true" class="footer  desktop" id="footer">
+  <ul class="links  links_desktop">
+      <li id="navFooterCommunity">
+        <b>MQL5.community</b>
+        <nav>
+          <ul>
+            <li><a href="https://web.archive.org/web/20250629163806/https://web.metatrader.app/terminal?mode=demo" target="_blank" rel="nofollow noopener" data-fz-event="MQL5+Footer+Trading">Online trading / WebTerminal</a></li>
+            <li><a href="/web/20250629163806/https://www.mql5.com/en/code" data-fz-event="MQL5+Footer+CodeBase">Free technical indicators and robots</a></li>
+            <li><a href="/web/20250629163806/https://www.mql5.com/en/articles" data-fz-event="MQL5+Footer+Articles">Articles about programming and trading</a></li>
+            <li><a href="/web/20250629163806/https://www.mql5.com/en/job" data-fz-event="MQL5+Footer+Job">Order trading robots on the Freelance</a></li>
+            <li><a href="/web/20250629163806/https://www.mql5.com/en/market" data-fz-event="MQL5+Footer+Market">Market of Expert Advisors and applications&#x9;</a></li>
+            <li><a href="/web/20250629163806/https://www.mql5.com/en/signals" data-fz-event="MQL5+Footer+Signals">Follow forex signals</a></li>
+            <li><a href="/web/20250629163806/https://www.mql5.com/en/vps" data-fz-event="MQL5+Footer+VPS">Low latency forex VPS</a></li>
+            <li><a href="/web/20250629163806/https://www.mql5.com/en/forum" data-fz-event="MQL5+Footer+Forum">Traders forum</a></li>
+            <li><a href="/web/20250629163806/https://www.mql5.com/en/blogs" data-fz-event="MQL5+Footer+Blogs">Trading blogs</a></li>
+            <li><a rel="nofollow" href="/web/20250629163806/https://www.mql5.com/en/charts" data-fz-event="MQL5+Footer+Charts">Charts</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li id="navFooterMt5">
+        <b>MetaTrader 5</b>
+        <nav>
+          <ul>
+            <li><a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.metatrader5.com/" data-fz-event="MQL5+Footer+MetaTrader+5"><span class="nobr">MetaTrader 5</span> Trading Platform</a></li>
+            <li><a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.metatrader5.com/en/releasenotes" data-fz-event="MQL5+Footer+MetaTrader+5"><span class="nobr">MetaTrader 5</span> latest updates</a></li>
+            <li><a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.metatrader5.com/en/news" data-fz-event="MQL5+Footer+MetaTrader+5">News, implementations and technology</a></li>
+            <li><a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.metatrader5.com/en/terminal/help" data-fz-event="MQL5+Footer+MetaTrader+5"><span class="nobr">MetaTrader 5</span> User Manual</a></li>
+            <li><a href="/web/20250629163806/https://www.mql5.com/en/docs" data-fz-event="MQL5+Footer+Docs">MQL5 language of trading strategies</a></li>
+            <li><a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://cloud.mql5.com/" data-fz-event="MQL5+Footer+Cloud">MQL5 Cloud Network</a></li>
+            <li><a rel="noopener" href="https://web.archive.org/web/20250629163806/https://forge.mql5.io/" data-fz-event="MQL5+Footer+Forge" target="_blank">MQL5 Algo Forge</a></li>
+              <li><a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe?utm_source=www.mql5.com&amp;utm_campaign=download" data-fz-event="MetaTrader+5+Desktop+Download+Footer">Download <span class="nobr">MetaTrader 5</span></a></li>
+              <li><a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.metatrader5.com/en/terminal/help/start_advanced/installation" data-fz-event="MQL5+Footer+MetaTrader+5">Install Platform</a></li>
+              <li><a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.metatrader5.com/en/terminal/help/start_advanced/deinstallation" data-fz-event="MQL5+Footer+MetaTrader+5">Uninstall Platform</a></li>
+          </ul>
+        </nav>
+
+      </li>
+    <li id="navFooterWebsite">
+        <b>Website</b>
+        <nav>
+          <ul>
+            <li><a rel="nofollow" href="/web/20250629163806/https://www.mql5.com/en/about" data-fz-event="MQL5+Footer+About">About</a></li>
+              <li><a href="/web/20250629163806/https://www.mql5.com/en/wall" data-fz-event="MQL5+Footer+Wall">Timeline</a></li>
+            <li><a rel="nofollow" href="/web/20250629163806/https://www.mql5.com/en/about/terms" data-fz-event="MQL5+Footer+About">Terms and Conditions</a></li>
+            <li><a rel="nofollow" href="/web/20250629163806/https://www.mql5.com/en/about/autopayments" data-fz-event="MQL5+Footer+About">Recurring Payment Agreement</a></li>
+            <li><a rel="nofollow" href="/web/20250629163806/https://www.mql5.com/en/about/agencyagreement" data-fz-event="MQL5+Footer+About">Agency Agreement – Offer</a></li>
+            <li><a rel="nofollow" href="/web/20250629163806/https://www.mql5.com/en/about/privacy" data-fz-event="MQL5+Footer+About">Privacy and Data Protection Policy</a></li>
+            <li><a rel="nofollow" href="/web/20250629163806/https://www.mql5.com/en/about/cookies" data-fz-event="MQL5+Footer+About">Cookies Policy</a></li>
+            <li>
+                <a rel="nofollow" href="/web/20250629163806/https://www.mql5.com/en/contact" data-fz-event="MQL5+Footer+Contacts">Contacts and requests</a>
+            </li>
+          </ul>
+        </nav>
+    </li>
+
+      <li>
+        <div class="footer__products">
+            <div class="footer__product">
+              <a target="_blank" rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.metatrader5.com/" class="footer__product-name">MetaTrader 5</a>
+              <div class="footer__product-links">
+              <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon windows" data-fz-event="MetaTrader+5+Desktop+Download+Footer"><div class="footer__product-link-hint footer__product-link-hint-short">Download MetaTrader 5 for Windows</div></a>
+              <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/MetaTrader5.pkg.zip?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon macos" data-fz-event="MetaTrader+5+Desktop+Download+Footer"><div class="footer__product-link-hint footer__product-link-hint-short">Download MetaTrader 5 for MacOS</div></a>
+              <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.mql5.com/en/articles/625?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon linux" data-fz-event="MetaTrader+5+Desktop+Download+Footer"><div class="footer__product-link-hint footer__product-link-hint-short">Download MetaTrader 5 for Linux</div></a>
+              <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://web.metatrader.app/terminal?mode=demo" class="icon web"><div class="footer__product-link-hint footer__product-link-hint-short">Open MetaTrader 5 WebTerminal</div></a>
+              <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/mobile/mt5/ios?utm_source=www.mql5.com&amp;utm_campaign=install.metaquotes" class="icon ios" data-fz-event="MetaTrader+5+iOS+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/F1qzfrtIhDp.png)">Scan to install from App Store</div></a>
+              <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/mobile/mt5/android?utm_source=www.mql5.com&amp;utm_campaign=install.metaquotes" class="icon android" data-fz-event="MetaTrader+5+Android+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/5y81uvyFMPW.png)">Scan to install from Google Play</div></a>
+              <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/mobile/mt5/android/app-gallery?utm_source=www.mql5.com&amp;utm_campaign=install.metaquotes" class="icon huawei" data-fz-event="MetaTrader+5+Android+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/ZgFlSvLLbPn.png)">Scan to install from Huawei AppGallery</div></a>
+              <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/metatrader5.apk?utm_source=www.mql5.com&amp;utm_campaign=install.metaquotes" class="icon ark" data-fz-event="MetaTrader+5+Android+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/Lwmc2V3KIPA.png)">Scan to get Android APK file</div></a>
+              </div>
+            </div>
+            <div>
+              <div class="footer__product">
+                <a target="_blank" rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.metatrader5.com/en/news/2270" class="footer__product-name">MQL5 Channels</a>
+                <div class="footer__product-links">
+                <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/mobile/mql5.channels/ios?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon ios" data-fz-event="MQL5+Channels+iOS+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/yXkH8gcWl8A.png)">Scan to install from App Store</div></a>
+                <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/mobile/mql5.channels/android?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon android" data-fz-event="MQL5+Channels+Android+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/Vi4XegV9Yr7.png)">Scan to install from Google Play</div></a>
+                <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/mobile/mql5.channels/android/app-gallery?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon huawei" data-fz-event="MQL5+Channels+Android+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/S7GLL6gia6p.png)">Scan to install from Huawei AppGallery</div></a>
+                <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/web/metaquotes.software.corp/mql5channels/mql5channels.apk?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon ark" data-fz-event="MQL5+Channels+Android+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/GavZeMoJbi7.png)">Scan to get Android APK file</div></a>
+                </div>
+              </div>
+              <div class="footer__product">
+                <a target="_blank" rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://www.tradays.com/en/download?utm_source=www.mql5.com&amp;utm_campaign=download" data-fz-event="MQL5+Footer+Download+Tradays" class="footer__product-name">Economic Calendar</a>
+                <div class="footer__product-links">
+                <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/mobile/tradays/ios?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon ios" data-fz-event="Tradays+iOS+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/RSdc9QEIOU9.png)">Scan to install from App Store</div></a>
+                <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/mobile/tradays/android?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon android" data-fz-event="Tradays+Android+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/BgT2JC9nsN7.png)">Scan to install from Google Play</div></a>
+                <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/mobile/tradays/android/app-gallery?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon huawei" data-fz-event="Tradays+Android+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/CDbwhhgyysd.png)">Scan to install from Huawei AppGallery</div></a>
+                <a rel="nofollow noopener" href="https://web.archive.org/web/20250629163806/https://download.mql5.com/cdn/web/metaquotes.software.corp/tradays/tradays.apk?utm_source=www.mql5.com&amp;utm_campaign=download" class="icon ark" data-fz-event="Tradays+Android+Download+Footer"><div class="footer__product-link-hint" style="background-image: url(https://web.archive.org/web/20250629163806im_/https://c.mql5.com/qr/VGWFy3By-09.png)">Scan to get Android APK file</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__networks">
+            <div class="footer__networks-list">
+            <a href="https://web.archive.org/web/20250629163806/https://www.facebook.com/mql5.community/" target="_blank" rel="nofollow" title="Facebook"><i class="icons-networks icons-networks_fb"></i></a><a href="https://web.archive.org/web/20250629163806/https://t.me/mql5dev" target="_blank" rel="nofollow" title="Telegram"><i class="icons-networks icons-networks_tg"></i></a><a href="https://web.archive.org/web/20250629163806/https://x.com/mql5com" target="_blank" rel="nofollow" title="X (Twitter)"><i class="icons-networks icons-networks_tw"></i></a>
+            </div>
+            <span>Follow us on socials for top articles and CodeBase updates</span>
+          </div>
+  
+        <div class="footer__other">
+          <div class="footer__not-a-broker">Not a broker, no real trading accounts</div>
+          <div class="copyright">35 Dodekanisou str, Germasogeia, 4043,&nbsp;Limassol,&nbsp;Cyprus</div>
+          <div class="copyright">Copyright 2000-2025, <span class="nobr">MetaQuotes Ltd</span></div>
+        </div>
+      </li>
+  </ul>
+</div>
+
+
+
+<div class="shadow-layer" id="layer"></div>
+    
+
+  <div class="b-fixed-mt" id="bFixedMt" style="display: none;">
+    
+  </div>
+
+
+<script type="text/javascript">
+		(function (a, e, f, g, b, c, d) { a[b] || (a.FintezaCoreObject = b, a[b] = a[b] || function () { (a[b].q = a[b].q || []).push(arguments) }, a[b].l = 1 * new Date, c = e.createElement(f), d = e.getElementsByTagName(f)[0], c.async = !0, c.defer = !0, c.src = g, d && d.parentNode && d.parentNode.insertBefore(c, d)) })
+      (window, document, "script", "/ff/core.js", "fz");
+		window.fz("register", "website", {
+      id: "sqjxkxkswybhifrohpyooonwgbvsfzmayq",
+			trackLinks: true
+		});
+        mqGlobal.AddOnReady(function () { Mql5Cookie.init('mql5.com', '5071509284802321902'); });
+mqGlobal.AddOnReady(function(){window.PopupRegisterquickRegistration=new QuickRegistration('PopupRegister','Popup+Register','Articles');});function validate_username(input){var reg=/^([a-z0-9]){1}([\-._a-z0-9]){1,30}([\-_a-z0-9]){1}$/i,value=input.value,result=true;if(reg.test(value)){result=true;}else{result=false;window.fpush({name:'MQL5+Popup+Register+Invalid+Login',unit:'section',value:'Articles'});}return result;}function validate_email(input){var reg=/^\w+([-+.'']{1,2}\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/i,value=input.value,result=true,length_value=value.length;if(reg.test(value)&&length_value>=1&&length_value<=40){result=true;}else{result=false;window.fpush({name:'MQL5+Popup+Register+Invalid+Email',unit:'section',value:'Articles'});}return result;};mqGlobal.AddOnReady(function(){var username=$('PopupRegisterusername'),email=$('PopupRegisteremail');if(username)username.value='';if(email)email.value='';});mqGlobal.AddOnReady(function(){window.quickLogin=new QuickLogin('Popup+Login','Articles');});mqGlobal.AddOnReady(function(){window.searchComponent.init({id:'searchComponent',module:'Articles',url:'https://web.archive.org/web/20250629163806/https://www.mql5.com/en/search',language:"en",suggestionsUrl:'https://web.archive.org/web/20250629163806/https://search.mql5.com/api/suggest',useGet:false,searchUrl:'',keywordParamName:'',extraQuery:''});});if(!window.paginatorOnLoad){mqGlobal.AddOnLoad(function(){setHotKeysPaginator('','/en/articles/page3','/en/articles/page5');});window.paginatorOnLoad=true;};window.fz("show","wdausxxqrpvhekbwjrjlhqjghyhesrqqau");mqGlobal.AddOnReady(function(){window.initHeaderSearch('','https://web.archive.org/web/20250629163806/https://www.mql5.com/en/search');});</script><script type="text/javascript">mqGlobal.AddOnReady(function(){window.initSuggestions("headerSearchKeyword","en","https://web.archive.org/web/20250629163806/https://search.mql5.com/api/query","https://web.archive.org/web/20250629163806/https://www.mql5.com/en/users_search/suggestion");});window.fz("show","vgckrufggwxdtfscpyalmenexmvhljduja");mqGlobal.AddOnReady(function(){window.floatVerticalPanelNode=FloatVerticalPanel('This website uses cookies. Learn more about our <a href="/en/about/cookies">Cookies Policy</a>.','cookie_accept');});							if (typeof Attach !== "undefined")
+			Attach.setAcceptFilter(".zip, .txt, .log, .mqh, .ex5, .mq5, .mq4, .mqproj, .ex4, .mt5, .set, .tpl, .cl, .py, .sqlite, .csv, .ini, .ipynb, .onnx, .gif, .png, .jpg, .jpeg, .mp4, .webm");
+	</script>
+
+<script type="application/ld+json">
+		[
+			{
+				"@context": "https://web.archive.org/web/20250629163806/https://schema.org",
+				"@type": "Organization",
+				"url": "https://web.archive.org/web/20250629163806/https://www.mql5.com",
+				"logo": "https://web.archive.org/web/20250629163806/https://c.mql5.com/i/community/logo_mql5-2.png",
+				"sameAs": [
+					"https://web.archive.org/web/20250629163806/https://www.facebook.com/mql5.community",
+					"https://web.archive.org/web/20250629163806/https://www.x.com/mql5com",
+					"https://web.archive.org/web/20250629163806/https://www.youtube.com/user/MetaQuotesOfficial"
+				 ]
+			},
+			{
+				"@context": "https://web.archive.org/web/20250629163806/https://schema.org",
+				"@type": "WebSite",
+				"name": "MQL5 Community",
+				"url": "https://web.archive.org/web/20250629163806/https://www.mql5.com",
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://web.archive.org/web/20250629163806/https://www.mql5.com/en/search?keyword={keyword}",
+					"query-input": "required name=keyword"
+				}
+			}
+		
+, 
+{"@context":"https://web.archive.org/web/20250629163806/https://schema.org","@type":"ItemList","itemListElement":[{"@type":"SiteNavigationElement","position":1,"name":"Forum","description":"Discussions of trading strategies and algorithmic trading. MQL5.community  the largest forex forum","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/forum","children":[]},{"@type":"SiteNavigationElement","position":2,"name":"Market","description":"MetaTrader Market - a Market of trading robots, indicators, trading books and magazines","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/market","children":[]},{"@type":"SiteNavigationElement","position":3,"name":"Signals","description":"Social trading, copy trading and account monitoring with MetaTrader - Trading Signals on MQL5.com","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/signals","children":[]},{"@type":"SiteNavigationElement","position":4,"name":"Freelance","description":"Order trading robots, technical indicators and algorithmic trading applications. Forex jobs. Freelance on MQL5.com. Hire MetaTrader experts and specialists","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/job","children":[]},{"@type":"SiteNavigationElement","position":5,"name":"Quotes","description":"","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/quotes/overview","children":[]},{"@type":"SiteNavigationElement","position":6,"name":"WebTerminal","description":"WebTerminal for the MetaTrader trading platform. Online forex trading.","url":"https://web.archive.org/web/20250629163806/https://web.metatrader.app/terminal?mode=demo","children":[]},{"@type":"SiteNavigationElement","position":7,"name":"Calendar","description":"","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/economic-calendar","children":[]},{"@type":"SiteNavigationElement","position":8,"name":"VPS","description":"","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/vps","children":[]},{"@type":"SiteNavigationElement","position":9,"name":"Articles","description":"","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/articles","children":[]},{"@type":"SiteNavigationElement","position":10,"name":"CodeBase","description":"Download trading robots, technical indicators and scripts with source code - MQL5 Code Base for MetaTrader 5","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/code","children":[]},{"@type":"SiteNavigationElement","position":11,"name":"Algo Forge","description":"","url":"https://web.archive.org/web/20250629163806/https://forge.mql5.io","children":[]},{"@type":"SiteNavigationElement","position":12,"name":"Documentation","description":"MetaQuotes Language 5 (MQL5) Reference - Documentation on MQL5.com","url":"https://web.archive.org/web/20250629163806/https://www.mql5.com/en/docs","children":[]}]}		
+		]
+	</script>
+</body>
+</html><!--
+     FILE ARCHIVED ON 16:38:06 Jun 29, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:41:33 Apr 29, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.496
+  exclusion.robots: 0.036
+  exclusion.robots.policy: 0.028
+  esindex: 0.009
+  cdx.remote: 13.981
+  LoadShardBlock: 104.429 (3)
+  PetaboxLoader3.datanode: 230.552 (4)
+  PetaboxLoader3.resolve: 50.24 (2)
+  load_resource: 186.228
+-->
